@@ -46,6 +46,9 @@ intents = discord.Intents.default()
 intents.members = True
 intents.emojis = True
 intents.reactions = True
+
+print('Kanade Bot\n\n')
+
 '''
 Debug Mode details
 sets various bot behaviors that make it easier to prod for bugs.
@@ -57,6 +60,10 @@ debugValue = 2: only prints message debug info
 -Changes command prefix to kyt!
 '''
 debugValue = int(input('Input desired debug value. \n (1) for debug display plus randoms to 100%. \n (2) for debug display only. \n (0) for standard operation.\n'))
+if debugValue >= 1:
+	masterQuery = int(input('Is a Master .env in use? \n (1) for yes. \n (0) for no. \n'))
+	if masterQuery == 1:
+		testTOKEN = os.getenv('DEBUG_TOKEN')
 
 stDict = dictionaryStatuses()
 
@@ -792,6 +799,10 @@ async def on_message(message):
 			await message.channel.send('https://www.youtube.com/watch?v=WnAWW6Zy1I8')
 			return
 
+		case 'camel':
+			await message.channel.send(f"{michael.mention}")
+			await message.channel.send(file=discord.File('img/camel.mp4'))
+
 	if chance == 1:
 		if "im " == dumbLetters[0:3]:
 			await message.channel.send("Hi \"" + string.capwords(dumb[3:]) + "\", I'm Kanade Bot!")
@@ -878,4 +889,8 @@ async def on_message(message):
 			if key == ranStr:
 				await message.channel.send(mDict.fRare.get(key))
 				return
-bot.run(TOKEN)
+
+if masterQuery == 1:
+	bot.run(testTOKEN)
+else:
+	bot.run(TOKEN)
