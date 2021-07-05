@@ -47,7 +47,7 @@ intents.members = True
 intents.emojis = True
 intents.reactions = True
 
-print('Kanade Bot\n\n')
+print('Kanade Bot\n')
 
 '''
 Debug Mode details
@@ -803,6 +803,11 @@ async def on_message(message):
 		case 'camel':
 			await message.channel.send(f"{michael.mention}")
 			await message.channel.send(file=discord.File('img/camel.mp4'))
+			return
+
+		case 'niegil':
+			await message.channel.send(mDict.otherRare.get('4'))
+			return
 
 	if chance == 1:
 		if "im " == dumbLetters[0:3]:
