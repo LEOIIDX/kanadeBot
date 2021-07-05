@@ -577,42 +577,6 @@ async def on_message(message):
 			await bot.process_commands(message)
 			return
 
-	if dumbLetters == 'ななひら' or dumbLetters =='confetto':
-		dumbLetters = 'nanahira'
-
-	if dumbLetters == '皆伝':
-		dumbLetters = 'kaiden'
-
-	if dumbLetters == '初音ミク':
-		dumbLetters = 'miku'
-
-	if dumbLetters == 'sussy':
-		dumbLetters = 'sus'
-
-	if dumbLetters == 'god i wish that was me':
-		dumbLetters = 'god i wish that were me'
-
-	if dumbLetters == 'dancedancerevolution' or dumbLetters == 'dance dance revolution':
-		dumbLetters = 'ddr'
-
-	if dumbLetters == 'in the groove':
-		dumbLetters = 'itg'
-
-	if dumbLetters == 'glonf' or dumbLetters == 'putt-putt':
-		dumbLetters = 'golf'
-
-	if dumbLetters == 'yo':
-		dumbLetters = 'beach'
-
-	if dumbLetters == 'ばらんが' or dumbLetters == 'baranga':
-		dumbLetters = 'valanga'
-	
-	if dumbLetters == 'credits':
-		dumbLetters = 'credit'
-
-	if dumbLetters == '突撃' or dumb == '🐬' or dumbLetters == 'とつげき':
-		dumbLetters = 'totsugeki'
-
 	mDict = dictionaryMessages() #generates everything needed for dictionaries
 
 	iidxRan = random.randint(1, mDict.iidxCount)
@@ -658,7 +622,7 @@ async def on_message(message):
 		chance =  1
 		superRare = 1
 		ultraRare = 1
-		fuckinRare = 1
+		fuckinRare = 0
 		print('chance: ' + str(chance))
 		print('superRare: ' + str(superRare))
 		print('ultraRare: ' + str(ultraRare))
@@ -667,7 +631,7 @@ async def on_message(message):
 		chance = random.randint(1,5)
 		superRare =random.randint(1,25)
 		ultraRare =random.randint(1,100)
-		fuckinRare = random.randint(1,1000)
+		fuckinRare = random.randint(1,500)
 		print('chance: ' + str(chance))
 		print('superRare: ' + str(superRare))
 		print('ultraRare: ' + str(ultraRare)) 
@@ -676,7 +640,7 @@ async def on_message(message):
 		chance = random.randint(1,5)
 		superRare = random.randint(1,25)
 		ultraRare = random.randint(1,100)
-		fuckinRare = random.randint(1,1000)
+		fuckinRare = random.randint(1,500)
 
 #	If the message sent contains a keyword in the dumbLetters dictionary.
 #	The corresponding value is sent to the message's channel
@@ -686,7 +650,7 @@ async def on_message(message):
 			await message.channel.send(mDict.dumbPhrases.get(key))
 			return
 
-	for key in mDict.dumbImages: #sends simple text replies
+	for key in mDict.dumbImages: #sends simple image replies
 		if key in dumbLetters:
 			await message.channel.send(file=discord.File("img/" + mDict.dumbImages.get(key)))
 			return
@@ -703,6 +667,10 @@ async def on_message(message):
 	if lolzep == dumbLetters:
 		await message.delete()
 		await message.channel.send(message.author.mention + " fuck u")
+
+	for key in mDict.otherResponses:
+		if key in dumbLetters:
+			dumbLetters = mDict.otherResponses.get(key)
 
 #	If rareChance integer equals 1.
 #	It will check if the message falls under a keyword.
@@ -794,15 +762,6 @@ async def on_message(message):
 					return
 		case 'beast':
 			await message.channel.send('Mankind knew they cannot change society.\n\nSo instead of reflecting on themselves, they blamed the Beasts.')
-			return
-
-		case 'smell of the game':
-			await message.channel.send('https://www.youtube.com/watch?v=WnAWW6Zy1I8')
-			return
-
-		case 'camel':
-			await message.channel.send(f"{michael.mention}")
-			await message.channel.send(file=discord.File('img/camel.mp4'))
 			return
 
 		case 'niegil':

@@ -287,7 +287,7 @@ class infoEmbeds:
 
 	aboutEMBED.add_field(name="Kanade Bot", value='Multi Purpose Discord bot made for the Nanahira Monke server', inline=False)
 	aboutEMBED.add_field(name="Contributors", value='Lolzep #5723\nProphetOfTruth1#1783\n☆LEO!☆#7340', inline=False)
-	aboutEMBED.add_field(name="Recent Changes", value='The Guilty Gear Patch\n突撃!!!', inline=False)
+	aboutEMBED.add_field(name="Recent Changes", value='The Guilty Gear Patch Pt.2\nNew keyword recognition', inline=False)
 
 	aboutTEST = discord.Embed(colour = discord.Colour.red())
 
