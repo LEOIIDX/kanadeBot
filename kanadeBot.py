@@ -59,6 +59,7 @@ debugValue = 2: only prints message debug info
 
 -Changes command prefix to kyt!
 '''
+masterQuery = 0
 debugValue = int(input('Input desired debug value. \n (1) for debug display plus randoms to 100%. \n (2) for debug display only. \n (0) for standard operation.\n'))
 if debugValue >= 1:
 	masterQuery = int(input('Is a Master .env in use? \n (1) for yes. \n (0) for no. \n'))
