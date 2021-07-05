@@ -62,6 +62,8 @@ class dictionaryMessages:
 	fRare = {}
 	fRareCount = 0
 
+	otherResponses = {}
+
 	with open('txt/'+'dumbPhrases.txt') as f:
 		for line in f:
 	    		(key, val) = line.split('~')
@@ -193,6 +195,12 @@ class dictionaryMessages:
 			newVal = val.rstrip()
 			fRare[str(key)] = newVal
 			fRareCount = fRareCount + 1
+
+	with open('txt/'+'otherResponses.txt') as f:
+		for line in f:
+			(key, val) = line.split('|')
+			newVal = val.rstrip()
+			otherResponses[str(key)] = newVal
 
 class dictionaryStatuses:
 	multiStatus = {}

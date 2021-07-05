@@ -577,42 +577,6 @@ async def on_message(message):
 			await bot.process_commands(message)
 			return
 
-	if dumbLetters == 'ななひら' or dumbLetters =='confetto':
-		dumbLetters = 'nanahira'
-
-	if dumbLetters == '皆伝':
-		dumbLetters = 'kaiden'
-
-	if dumbLetters == '初音ミク':
-		dumbLetters = 'miku'
-
-	if dumbLetters == 'sussy':
-		dumbLetters = 'sus'
-
-	if dumbLetters == 'god i wish that was me':
-		dumbLetters = 'god i wish that were me'
-
-	if dumbLetters == 'dancedancerevolution' or dumbLetters == 'dance dance revolution':
-		dumbLetters = 'ddr'
-
-	if dumbLetters == 'in the groove':
-		dumbLetters = 'itg'
-
-	if dumbLetters == 'glonf' or dumbLetters == 'putt-putt':
-		dumbLetters = 'golf'
-
-	if dumbLetters == 'yo':
-		dumbLetters = 'beach'
-
-	if dumbLetters == 'ばらんが' or dumbLetters == 'baranga':
-		dumbLetters = 'valanga'
-	
-	if dumbLetters == 'credits':
-		dumbLetters = 'credit'
-
-	if dumbLetters == '突撃' or dumb == '🐬' or dumbLetters == 'とつげき':
-		dumbLetters = 'totsugeki'
-
 	mDict = dictionaryMessages() #generates everything needed for dictionaries
 
 	iidxRan = random.randint(1, mDict.iidxCount)
@@ -658,7 +622,7 @@ async def on_message(message):
 		chance =  1
 		superRare = 1
 		ultraRare = 1
-		fuckinRare = 1
+		fuckinRare = 0
 		print('chance: ' + str(chance))
 		print('superRare: ' + str(superRare))
 		print('ultraRare: ' + str(ultraRare))
@@ -703,6 +667,10 @@ async def on_message(message):
 	if lolzep == dumbLetters:
 		await message.delete()
 		await message.channel.send(message.author.mention + " fuck u")
+
+	for key in mDict.otherResponses:
+		if key in dumbLetters:
+			dumbLetters = mDict.otherResponses.get(key)
 
 #	If rareChance integer equals 1.
 #	It will check if the message falls under a keyword.
