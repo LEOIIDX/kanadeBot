@@ -47,7 +47,7 @@ intents.members = True
 intents.emojis = True
 intents.reactions = True
 
-print('Kanade Bot\n')
+print('Kanade Bot Speedstar 1.0\n')
 
 '''
 Debug Mode details
@@ -310,6 +310,13 @@ async def memberupdate(ctx):
 		await bot.get_channel(channel).edit(name = f'Members: {guild.member_count}')
 	else:
 		await ctx.channel.send('ERROR: Debug Mode is on!')
+
+@bot.command(name='forceabout')
+#shows public facing ky!about for when debug mode is on
+async def forceabout(ctx):
+	about = infoEmbeds()
+
+	await ctx.channel.send(embed=about.aboutEMBED)
 
 @bot.command()
 async def copy(ctx):
@@ -647,15 +654,21 @@ async def on_message(message):
 
 	for key in mDict.dumbPhrases: #sends simple text replies
 		if key in dumbLetters:
+			if debugValue >= 1:
+				print('Triggered Keyword: ' + key + '\n')
 			await message.channel.send(mDict.dumbPhrases.get(key))
 			return
 
 	for key in mDict.dumbImages: #sends simple image replies
 		if key in dumbLetters:
+			if debugValue >= 1:
+				print('Triggered Keyword: ' + key + '\n')
 			await message.channel.send(file=discord.File("img/" + mDict.dumbImages.get(key)))
 			return
 
 	if dumbLetters == "bork":
+		if debugValue >= 1:
+			print('Triggered Keyword: ' + dumbLetters + '\n')
 		with open("txt/bestGabe.txt", "r") as f:
 			videos = [(line.strip()).split() for line in f]
 			f.close()
@@ -670,6 +683,8 @@ async def on_message(message):
 
 	for key in mDict.otherResponses:
 		if key in dumbLetters:
+			if debugValue >= 1:
+				print('Triggered Keyword: ' + key + '\n')
 			dumbLetters = mDict.otherResponses.get(key)
 
 #	If rareChance integer equals 1.

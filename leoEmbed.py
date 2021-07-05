@@ -271,7 +271,7 @@ class infoEmbeds:
 
 	eventEMBED = discord.Embed(colour = discord.Colour.red())
 
-	eventEMBED.set_author(name='Nanahira Monkey Events in June')
+	eventEMBED.set_author(name='Nanahira Monkey Events in July')
 	eventEMBED.set_thumbnail(url='https://i.ibb.co/z6ftf9X/monke.png')
 
 	eventEMBED.add_field(name="Week 22", value='1. ' + eventD.get('1-1') + '2. ' + eventD.get('1-2') + '3. ' + eventD.get('1-3'), inline=False)
@@ -285,9 +285,9 @@ class infoEmbeds:
 
 	aboutEMBED.set_thumbnail(url='https://i.postimg.cc/vTbZZ43s/valanga.png')
 
-	aboutEMBED.add_field(name="Kanade Bot", value='Multi Purpose Discord bot made for the Nanahira Monke server', inline=False)
+	aboutEMBED.add_field(name="Kanade Bot Speedstar 1.0", value='Multi Purpose Discord bot made for the Nanahira Monke server', inline=False)
 	aboutEMBED.add_field(name="Contributors", value='Lolzep #5723\nProphetOfTruth1#1783\n☆LEO!☆#7340', inline=False)
-	aboutEMBED.add_field(name="Recent Changes", value='The Guilty Gear Patch Pt.2\nNew keyword recognition', inline=False)
+	aboutEMBED.add_field(name="Recent Changes", value='A new frontier in responses', inline=False)
 
 	aboutTEST = discord.Embed(colour = discord.Colour.red())
 
@@ -308,7 +308,8 @@ class infoEmbeds:
 	adminHelp.add_field(name='copy', value='ky!copy || counts every message sent in every channel (Lolzep Only)', inline=False)
 	adminHelp.add_field(name='memberupdate', value='ky!memberupdate || Updates the member count.', inline=False)
 	adminHelp.add_field(name='statuslist', value='ky!statuslist || List all availible statuses (currently useless)', inline=False)
-	
+	adminHelp.add_field(name='forceabout', value='kyt!forceabout || Forces public facing ky!about while in debug mode.', inline=False)
+
 	statusListOne = discord.Embed(colour = discord.Colour.red())
 	statusListTwo = discord.Embed(colour = discord.Colour.red())
 
