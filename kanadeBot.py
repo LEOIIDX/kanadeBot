@@ -667,7 +667,7 @@ async def on_message(message):
 		chance = random.randint(1,5)
 		superRare =random.randint(1,25)
 		ultraRare =random.randint(1,100)
-		fuckinRare = random.randint(1,1000)
+		fuckinRare = random.randint(1,500)
 		print('chance: ' + str(chance))
 		print('superRare: ' + str(superRare))
 		print('ultraRare: ' + str(ultraRare)) 
@@ -676,7 +676,7 @@ async def on_message(message):
 		chance = random.randint(1,5)
 		superRare = random.randint(1,25)
 		ultraRare = random.randint(1,100)
-		fuckinRare = random.randint(1,1000)
+		fuckinRare = random.randint(1,500)
 
 #	If the message sent contains a keyword in the dumbLetters dictionary.
 #	The corresponding value is sent to the message's channel
@@ -686,7 +686,7 @@ async def on_message(message):
 			await message.channel.send(mDict.dumbPhrases.get(key))
 			return
 
-	for key in mDict.dumbImages: #sends simple text replies
+	for key in mDict.dumbImages: #sends simple image replies
 		if key in dumbLetters:
 			await message.channel.send(file=discord.File("img/" + mDict.dumbImages.get(key)))
 			return
@@ -794,15 +794,6 @@ async def on_message(message):
 					return
 		case 'beast':
 			await message.channel.send('Mankind knew they cannot change society.\n\nSo instead of reflecting on themselves, they blamed the Beasts.')
-			return
-
-		case 'smell of the game':
-			await message.channel.send('https://www.youtube.com/watch?v=WnAWW6Zy1I8')
-			return
-
-		case 'camel':
-			await message.channel.send(f"{michael.mention}")
-			await message.channel.send(file=discord.File('img/camel.mp4'))
 			return
 
 		case 'niegil':
