@@ -274,12 +274,12 @@ class infoEmbeds:
 	eventEMBED.set_author(name='Nanahira Monkey Events in July')
 	eventEMBED.set_thumbnail(url='https://i.ibb.co/z6ftf9X/monke.png')
 
-	eventEMBED.add_field(name="Week 22", value='1. ' + eventD.get('1-1') + '2. ' + eventD.get('1-2') + '3. ' + eventD.get('1-3'), inline=False)
-	eventEMBED.add_field(name="Week 23", value='1. ' + eventD.get('2-1') + '2. ' + eventD.get('2-2') + '3. ' + eventD.get('2-3'), inline=False)
-	eventEMBED.add_field(name="Week 24", value='1. ' + eventD.get('3-1') + '2. ' + eventD.get('3-2') + '3. ' + eventD.get('3-3'), inline=False)
-	eventEMBED.add_field(name="Week 25", value='1. ' + eventD.get('4-1') + '2. ' + eventD.get('4-2') + '3. ' + eventD.get('4-3'), inline=False)
-	eventEMBED.add_field(name="Week 26", value='1. ' + eventD.get('5-1') + '2. ' + eventD.get('5-2') + '3. ' + eventD.get('5-3'), inline=False)
-	eventEMBED.add_field(name="Week 27", value='1. ' + eventD.get('6-1') + '2. ' + eventD.get('6-2') + '3. ' + eventD.get('6-3'), inline=False)
+	eventEMBED.add_field(name="Week 27", value='1. ' + eventD.get('1-1') + '2. ' + eventD.get('1-2') + '3. ' + eventD.get('1-3'), inline=False)
+	eventEMBED.add_field(name="Week 28", value='1. ' + eventD.get('2-1') + '2. ' + eventD.get('2-2') + '3. ' + eventD.get('2-3'), inline=False)
+	eventEMBED.add_field(name="Week 29", value='1. ' + eventD.get('3-1') + '2. ' + eventD.get('3-2') + '3. ' + eventD.get('3-3'), inline=False)
+	eventEMBED.add_field(name="Week 30", value='1. ' + eventD.get('4-1') + '2. ' + eventD.get('4-2') + '3. ' + eventD.get('4-3'), inline=False)
+	eventEMBED.add_field(name="Week 31", value='1. ' + eventD.get('5-1') + '2. ' + eventD.get('5-2') + '3. ' + eventD.get('5-3'), inline=False)
+	eventEMBED.add_field(name="Week 32", value='1. ' + eventD.get('6-1') + '2. ' + eventD.get('6-2') + '3. ' + eventD.get('6-3'), inline=False)
 
 	aboutEMBED = discord.Embed(colour = discord.Colour.red())
 
