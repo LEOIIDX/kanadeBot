@@ -64,6 +64,11 @@ class dictionaryMessages:
 
 	otherResponses = {}
 
+	emojiResponses = {}
+
+	isekai = {}
+	isekaiCount = 0
+
 	with open('txt/'+'dumbPhrases.txt') as f:
 		for line in f:
 	    		(key, val) = line.split('~')
@@ -201,6 +206,19 @@ class dictionaryMessages:
 			(key, val) = line.split('|')
 			newVal = val.rstrip()
 			otherResponses[str(key)] = newVal
+
+	with open('txt/'+'emojiResponses.txt') as f:
+		for line in f:
+			(key, val) = line.split('|')
+			newVal = val.rstrip()
+			emojiResponses[str(key)] = newVal
+
+	with open('txt/'+'isekai.txt') as f:
+		for line in f:
+			(key, val) = line.split('|')
+			newVal = val.rstrip()
+			isekai[str(key)] = newVal
+			isekaiCount = isekaiCount + 1
 
 class dictionaryStatuses:
 	multiStatus = {}

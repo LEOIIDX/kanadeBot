@@ -285,9 +285,9 @@ class infoEmbeds:
 
 	aboutEMBED.set_thumbnail(url='https://i.postimg.cc/vTbZZ43s/valanga.png')
 
-	aboutEMBED.add_field(name="Kanade Bot Speedstar 1.0", value='Multi Purpose Discord bot made for the Nanahira Monke server', inline=False)
+	aboutEMBED.add_field(name="Kanade Bot Speedstar 1.1", value='Multi Purpose Discord bot made for the Nanahira Monke server', inline=False)
 	aboutEMBED.add_field(name="Contributors", value='Lolzep #5723\nProphetOfTruth1#1783\n☆LEO!☆#7340', inline=False)
-	aboutEMBED.add_field(name="Recent Changes", value='A new frontier in responses', inline=False)
+	aboutEMBED.add_field(name="Recent Changes", value='Funni from another world', inline=False)
 
 	aboutTEST = discord.Embed(colour = discord.Colour.red())
 

@@ -47,7 +47,7 @@ intents.members = True
 intents.emojis = True
 intents.reactions = True
 
-print('Kanade Bot Speedstar 1.0\n')
+print('Kanade Bot Speedstar 1.1\n')
 
 '''
 Debug Mode details
@@ -603,6 +603,7 @@ async def on_message(message):
 	creditRan = random.randint(1, mDict.creditCount)
 	totsugekiRan = random.randint(1, mDict.totsugekiCount)
 	fRareRan = random.randint(1, mDict.fRareCount)
+	isekaiRan = random.randint(1, mDict.isekaiCount)
 	nanaCopyChance = random.randint(1,2)
 
 	if debugValue >= 1:
@@ -623,6 +624,7 @@ async def on_message(message):
 		print('creditRan: ' + str(creditRan))
 		print('totsugekiRan: ' + str(totsugekiRan))
 		print('fRareRan: ' + str(fRareRan))
+		print('isekaiRan: ' + str(isekaiRan))
 		print('nanaCopyChance: ' + str(nanaCopyChance) + '\n')
 
 	if debugValue == 1:
@@ -681,6 +683,10 @@ async def on_message(message):
 		await message.delete()
 		await message.channel.send(message.author.mention + " fuck u")
 
+	for key in mDict.emojiResponses:
+		if key in dumb:
+			dumbLetters = mDict.emojiResponses.get(key)
+			
 	for key in mDict.otherResponses:
 		if key in dumbLetters:
 			if debugValue >= 1:
@@ -782,6 +788,14 @@ async def on_message(message):
 		case 'niegil':
 			await message.channel.send(mDict.otherRare.get('4'))
 			return
+
+		case 'isekai':
+			for key in mDict.isekai:
+				ranStr = str(isekaiRan)
+				if key == ranStr:
+					await message.channel.send(mDict.isekai.get(key))
+					return
+
 
 	if chance == 1:
 		if "im " == dumbLetters[0:3]:
