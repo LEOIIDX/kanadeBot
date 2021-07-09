@@ -17,6 +17,7 @@ in the groove|itg
 golf|golf
 glonf|golf
 puttputt|golf
+yo|beach
 beach|beach
 bsb|beach
 valanga|valanga
@@ -42,3 +43,4 @@ party|party
 grace|grace
 another world|isekai
 isekai|isekai
+crazy|crazy
