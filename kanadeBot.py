@@ -710,16 +710,21 @@ async def on_message(message):
 					await message.channel.send(mDict.chills.get(key))
 					return
 		case 'miku':
-			if debugValue == 1:
-				await message.channel.send(f"{michael.mention}")
-				if rareChance == 1:
+			mikuCounter = 4
+			if debugValue >= 1:
+				while mikuCounter != 0:
+					await message.channel.send(f"{michael.mention}")
+					mikuCounter = mikuCounter - 1
+				if chance == 1:
 					for key in mDict.mikuDict:
 						ranStr = str(mikuRan)
 						if key == ranStr:
 							await message.channel.send(mDict.mikuDict.get(key))
 							return
-			else:
-				await message.channel.send(f"{miku.mention}")
+			else:	
+				while mikuCounter != 0:
+					await message.channel.send(f"{miku.mention}")
+					mikuCounter = mikuCounter - 1
 				if chance == 1:
 					for key in mDict.mikuDict:
 						ranStr = str(mikuRan)
