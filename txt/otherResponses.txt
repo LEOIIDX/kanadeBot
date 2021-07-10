@@ -42,3 +42,4 @@ party|party
 grace|grace
 another world|isekai
 isekai|isekai
+crazy|crazy

@@ -47,7 +47,7 @@ intents.members = True
 intents.emojis = True
 intents.reactions = True
 
-print('Kanade Bot Speedstar 1.1\n')
+print('Kanade Bot Speedstar 1.1.1\n')
 
 '''
 Debug Mode details
@@ -551,7 +551,7 @@ async def sdvxtier(ctx):
 #handler for dumb messages
 #shameless copy of code from Lolzep Bot (haha)
 async def on_message(message):
-	if message.author == bot.user or str(message.channel.id) == '751618333912072219' or str(message.channel.id) == '749844960194330714' or str(message.channel.id) == '755183591603961959':
+	if message.author == bot.user or str(message.channel.id) == '751618333912072219' or str(message.channel.id) == '749844960194330714' or str(message.channel.id) == '755183591603961959' or str(message.author) == '840869717727248444':
 		return
 
 	miku = message.guild.get_member(693294060143640586)
@@ -628,24 +628,29 @@ async def on_message(message):
 		print('nanaCopyChance: ' + str(nanaCopyChance) + '\n')
 
 	if debugValue == 1:
+		coinflip = random.randint(1,2)
 		chance =  1
 		superRare = 1
 		ultraRare = 1
-		fuckinRare = 0
+		fuckinRare = 2
+		print('coinflip: '+ str(coinflip))
 		print('chance: ' + str(chance))
 		print('superRare: ' + str(superRare))
 		print('ultraRare: ' + str(ultraRare))
 		print('fuckinRare: ' + str(fuckinRare) + '\n')
 	elif debugValue == 2:
+		coinflip = random.randint(1,2)
 		chance = random.randint(1,5)
 		superRare =random.randint(1,25)
 		ultraRare =random.randint(1,100)
 		fuckinRare = random.randint(1,500)
+		print('coinflip: '+ str(coinflip))
 		print('chance: ' + str(chance))
 		print('superRare: ' + str(superRare))
 		print('ultraRare: ' + str(ultraRare)) 
 		print('fuckinRare: ' + str(fuckinRare) + '\n')
 	else:
+		coinflip = random.randint(1,2)	
 		chance = random.randint(1,5)
 		superRare = random.randint(1,25)
 		ultraRare = random.randint(1,100)
@@ -750,34 +755,12 @@ async def on_message(message):
 				case 3:
 					await message.channel.send('STOP POSTING ABOUT AMONG US! I\'M TIRED OF SEEING IT! MY FRIENDS ON TIKTOK SEND ME MEMES, ON DISCORD IT\'S FUCKING MEMES! I was in a server, right? and ALL OF THE CHANNELS were just among us stuff. I-I showed my champion underwear to my girlfriend and t-the logo I flipped it and I said \"hey babe, when the underwear is sus HAHA DING DING DING DING DING DING DING DI DI DING\" I fucking looked at a trashcan and said \"THAT\'S A BIT SUSSY\" I looked at my penis I think of an astronauts helmet and I go \"PENIS? MORE LIKE PENSUS\" AAAAAAAAAAAAAAHGESFG')
 					return
-		case 'beach':
-			if bsbRan == 4:
-				await message.channel.send(file=discord.File('img/' + 'bsb.jpg'))
-				return
-			for key in mDict.bsb:
-				ranStr = str(bsbRan)
-				if key == ranStr:
-					await message.channel.send(mDict.bsb.get(key))
-					return
-		case 'drip':
-			for key in mDict.drip:
-				ranStr = str(dripRan)
-				if key == ranStr:
-					await message.channel.send(file=discord.File('img/dripImage/' + mDict.drip.get(key)))
-					return
-
+		
 		case 'valanga':
 			for key in mDict.valanga:
 				ranStr = str(valangaRan)
 				if key == ranStr:
 					await message.channel.send(mDict.valanga.get(key))
-					return
-
-		case 'credit':
-			for key in mDict.credit:
-				ranStr = str(creditRan)
-				if key == ranStr:
-					await message.channel.send(file=discord.File('img/creditImage/' + mDict.credit.get(key)))
 					return
 
 		case 'totsugeki':
@@ -812,23 +795,22 @@ async def on_message(message):
 			case 'glasses':
 				await message.channel.send(mDict.otherRare.get('1'))
 				return
+
 			case 'vaporeon':
 				await message.channel.send(mDict.otherRare.get('3'))
 				return
+
 			case 'kaiden':
 				await message.channel.send(mDict.otherRare.get('2'))
 				return
+
 			case 'nanahira':
-				if nanaCopyChance == 1:
-					for key in mDict.nanahira:
-						ranStr = str(nanaRan)
-						if key == ranStr:
-							await message.channel.send(mDict.nanahira.get(key))
-							return
-				else:
-					for key in mDict.nanaCopy:
-						await message.channel.send(mDict.nanaCopy.get(key) + '\n')
-						await message.channel.send(' ឵឵')
+				for key in mDict.nanahira:
+					ranStr = str(nanaRan)
+					if key == ranStr:
+						await message.channel.send(mDict.nanahira.get(key))
+						return
+	
 			case 'iidx':
 				for key in mDict.iidxQuotes:
 					ranStr = str(iidxRan)
@@ -869,24 +851,61 @@ async def on_message(message):
 				await message.channel.send('I came to start the party!\n**CAUSE IM THE PARTY STARTER!!**')
 				return
 
+			case 'beach':
+				if bsbRan == 4:
+					await message.channel.send(file=discord.File('img/' + 'bsb.jpg'))
+					return
+				for key in mDict.bsb:
+					ranStr = str(bsbRan)
+					if key == ranStr:
+						await message.channel.send(mDict.bsb.get(key))
+						return
+
+			case 'credit':
+				for key in mDict.credit:
+					ranStr = str(creditRan)
+					if key == ranStr:
+						await message.channel.send(file=discord.File('img/creditImage/' + mDict.credit.get(key)))
+						return
+
+			case 'drip':
+				for key in mDict.drip:
+					ranStr = str(dripRan)
+					if key == ranStr:
+						await message.channel.send(file=discord.File('img/dripImage/' + mDict.drip.get(key)))
+						return
+
+			case 'crazy':
+				await message.channel.send('cRRRaAaAZZy')
+				return
+
 	if ultraRare == 1:
 		match dumbLetters:
 			case 'grace':
-				print('pray for all' + '\n')
 				for key in mDict.cursedGrace:
 					await message.channel.send(mDict.cursedGrace.get(key) + '\n')
 					await message.channel.send(' ឵឵')
-			case _:
-				if debugValue >= 1:
-					pass
-				else:
-					await message.channel.send('*' + dumb + '*')
-					return
+			case 'nanahira':
+				for key in mDict.nanaCopy:
+					await message.channel.send(mDict.nanaCopy.get(key) + '\n')
+					await message.channel.send(' ឵឵')
+
 	if fuckinRare == 1:
 		for key in mDict.fRare:
 			ranStr = str(fRareRan)
 			if key == ranStr:
 				await message.channel.send(mDict.fRare.get(key))
+				return
+
+	if fuckinRare == 2:
+		if debugValue != 1:
+			pass
+		else:
+			if coinflip == 1:
+				await message.channel.send('*' + dumb + '*')
+				return
+			else:
+				await message.channel.send('||' + dumb + '||')
 				return
 
 if masterQuery == 1:
