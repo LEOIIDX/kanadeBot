@@ -69,6 +69,9 @@ class dictionaryMessages:
 	isekai = {}
 	isekaiCount = 0
 
+	china = {}
+	chinaCount = 0
+
 	with open('txt/'+'dumbPhrases.txt') as f:
 		for line in f:
 	    		(key, val) = line.split('~')
@@ -219,6 +222,14 @@ class dictionaryMessages:
 			newVal = val.rstrip()
 			isekai[str(key)] = newVal
 			isekaiCount = isekaiCount + 1
+
+	with open('txt/'+'china.txt') as f:
+		for line in f:
+			(key, val) = line.split('|')
+			newVal = val.rstrip()
+			china[str(key)] = newVal
+			chinaCount = chinaCount + 1
+
 
 class dictionaryStatuses:
 	multiStatus = {}
