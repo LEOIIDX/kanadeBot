@@ -43,3 +43,5 @@ grace|grace
 another world|isekai
 isekai|isekai
 crazy|crazy
+love live|love live
+china|china

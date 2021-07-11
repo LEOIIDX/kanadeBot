@@ -604,6 +604,7 @@ async def on_message(message):
 	totsugekiRan = random.randint(1, mDict.totsugekiCount)
 	fRareRan = random.randint(1, mDict.fRareCount)
 	isekaiRan = random.randint(1, mDict.isekaiCount)
+	chinaRan = random.randint(1, mDict.chinaCount)
 	nanaCopyChance = random.randint(1,2)
 
 	if debugValue >= 1:
@@ -625,6 +626,7 @@ async def on_message(message):
 		print('totsugekiRan: ' + str(totsugekiRan))
 		print('fRareRan: ' + str(fRareRan))
 		print('isekaiRan: ' + str(isekaiRan))
+		print('chinaRan: '+ str(chinaRan))
 		print('nanaCopyChance: ' + str(nanaCopyChance) + '\n')
 
 	if debugValue == 1:
@@ -878,6 +880,13 @@ async def on_message(message):
 			case 'crazy':
 				await message.channel.send('cRRRaAaAZZy')
 				return
+
+			case 'china':
+				for key in mDict.china:
+					ranStr = str(chinaRan)
+					if key == ranStr:
+						await message.channel.send(file=discord.File('img/chinaImage/' + mDict.china.get(key)))
+						return
 
 	if ultraRare == 1:
 		match dumbLetters:
