@@ -45,3 +45,6 @@ isekai|isekai
 crazy|crazy
 love live|love live
 china|china
+persona 5|persona 5
+mayo|mayo
+mayonnaise|mayo

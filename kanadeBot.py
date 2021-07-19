@@ -546,12 +546,28 @@ async def wacca(ctx):
 @bot.command()
 async def sdvxtier(ctx):
 	await ctx.channel.send("https://docs.google.com/spreadsheets/d/1cFltguBvPplBem-x1STHnG3k4TZzFfyNEZ-RwsQszoo/edit#gid=327051877")
+'''
+kanadeBot Message Handler
 
+The base of the code comes from lolzepBot with some modifcation from original leoBot.
+
+Bot ignores
+
+Channels:
+bot-commands
+hobbies-chat
+suggestions
+admin/mod channels
+server-resources
+birthdays
+
+Users:
+Itself
+Kanade Bot [ky!] when in debug mode
+'''
 @bot.event
-#handler for dumb messages
-#shameless copy of code from Lolzep Bot (haha)
 async def on_message(message):
-	if message.author == bot.user or str(message.channel.id) == '751618333912072219' or str(message.channel.id) == '749844960194330714' or str(message.channel.id) == '755183591603961959' or str(message.author) == '840869717727248444':
+	if message.author == bot.user or str(message.channel.id) == '751618333912072219' or str(message.channel.id) == '749844960194330714' or str(message.channel.id) == '755183591603961959' or str(message.channel.id) == '792599858572820480' or str(message.channel.id) == '750098737854021655' or str(message.channel.id) == '752960043275780224' or str(message.channel.id) == '812903612551397386' or str(message.author) == '840869717727248444':
 		return
 
 	miku = message.guild.get_member(693294060143640586)
@@ -642,7 +658,7 @@ async def on_message(message):
 		print('fuckinRare: ' + str(fuckinRare) + '\n')
 	elif debugValue == 2:
 		coinflip = random.randint(1,2)
-		chance = random.randint(1,5)
+		chance = random.randint(1,10)
 		superRare =random.randint(1,25)
 		ultraRare =random.randint(1,100)
 		fuckinRare = random.randint(1,500)
@@ -653,7 +669,7 @@ async def on_message(message):
 		print('fuckinRare: ' + str(fuckinRare) + '\n')
 	else:
 		coinflip = random.randint(1,2)	
-		chance = random.randint(1,5)
+		chance = random.randint(1,10)
 		superRare = random.randint(1,25)
 		ultraRare = random.randint(1,100)
 		fuckinRare = random.randint(1,500)
@@ -710,12 +726,6 @@ async def on_message(message):
 #	If true, the ENTIRE grace copypasta is sent to the message's channel (im sorry for whomever triggers it)
 
 	match dumbLetters:
-		case 'chills':
-			for key in mDict.chills:
-				ranStr = str(chillsRan)
-				if key == ranStr:
-					await message.channel.send(mDict.chills.get(key))
-					return
 		case 'miku':
 			mikuCounter = 4
 			if debugValue >= 1:
@@ -786,6 +796,13 @@ async def on_message(message):
 					await message.channel.send(mDict.isekai.get(key))
 					return
 
+		case 'mayo':
+			if coinflip == 1:
+				await message.channel.send('mayo is yummi')
+				return
+			else:
+				await message.channel.send('mayo is bad')
+				return
 
 	if chance == 1:
 		if "im " == dumbLetters[0:3]:
@@ -887,6 +904,17 @@ async def on_message(message):
 					if key == ranStr:
 						await message.channel.send(file=discord.File('img/chinaImage/' + mDict.china.get(key)))
 						return
+
+			case 'chills':
+                        	for key in mDict.chills:
+                                	ranStr = str(chillsRan)
+                                	if key == ranStr:
+                                         	await message.channel.send(mDict.chills.get(key))
+                                         	return
+
+			case 'persona 5':
+				await message.channel.send(mDict.otherRare.get('5'))
+				return
 
 	if ultraRare == 1:
 		match dumbLetters:
