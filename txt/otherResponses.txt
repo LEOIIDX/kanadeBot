@@ -48,3 +48,4 @@ china|china
 persona 5|persona 5
 mayo|mayo
 mayonnaise|mayo
+endymion|endymion

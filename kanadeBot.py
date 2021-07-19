@@ -47,7 +47,7 @@ intents.members = True
 intents.emojis = True
 intents.reactions = True
 
-print('Kanade Bot Speedstar 1.1.1\n')
+print('Kanade Bot Speedstar 1.2\n')
 
 '''
 Debug Mode details
@@ -650,7 +650,7 @@ async def on_message(message):
 		chance =  1
 		superRare = 1
 		ultraRare = 1
-		fuckinRare = 2
+		fuckinRare = 1
 		print('coinflip: '+ str(coinflip))
 		print('chance: ' + str(chance))
 		print('superRare: ' + str(superRare))
@@ -914,6 +914,10 @@ async def on_message(message):
 
 			case 'persona 5':
 				await message.channel.send(mDict.otherRare.get('5'))
+				return
+
+			case 'endymion':
+				await message.channel.send('https://youtu.be/g1lCI3YfoqQ')
 				return
 
 	if ultraRare == 1:
