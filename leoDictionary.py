@@ -72,6 +72,9 @@ class dictionaryMessages:
 	china = {}
 	chinaCount = 0
 
+	qotdList = {}
+	qotdCount = 0
+
 	with open('txt/'+'dumbPhrases.txt') as f:
 		for line in f:
 	    		(key, val) = line.split('~')
@@ -229,7 +232,13 @@ class dictionaryMessages:
 			newVal = val.rstrip()
 			china[str(key)] = newVal
 			chinaCount = chinaCount + 1
-
+	
+	with open('qotdResource/'+'qotd.txt') as f:
+		for line in f:
+			(key, val) = line.split('|')
+			newVal = val.rstrip()
+			qotdList[str(key)] = newVal
+			qotdCount = qotdCount + 1
 
 class dictionaryStatuses:
 	multiStatus = {}

@@ -88,7 +88,7 @@ Statuses come from dictionary generated from a txt file
 
 memberCounterChannel = 837031791994208258
 memberCounterChannelTest = 846244059768029265
-#jstNM = 837038308496375849
+qotdCh = 867088318466359338
 
 @bot.event
 async def on_ready():
@@ -99,27 +99,16 @@ async def on_ready():
 	await bot.change_presence(status=discord.Status.online, activity=discord.Game(sDict.multiStatus.get(sPick)))
 
 	if debugValue == 0:
+		print('Bot is ready!!\n')
 		while readyVer == 1:
-			print('Bot is ready!!\n')
-#			print('Changing Time\n')
-#			now = pendulum.now()
-#			nowJP = pendulum.now('Japan')
 
-#			if nowJP.hour in range(0,9):
-#				nowJPHourSTR = '0' + str(nowJP.hour)
-
-#			else:
-#				 nowJPHourSTR = str(nowJP.hour)
-
-#			if nowJP.minute in range(0,9):
-#				nowJpMinSTR = '0' + str(now.minute)
-
-#			else:
-#				nowJpMinSTR = str(now.minute)
+			now = pendulum.now()
+			
+			if now.hour == 12 and now.minute == 45: 
+				await bot.get_channel(qotdCh).send('testing haha')
 
 
-#			await bot.get_channel(jstNM).edit(name=f"(JST) {nowJP.month}/{nowJP.day}/{nowJP.year} {nowJPHourSTR}:{nowJpMinSTR}")
-			await asyncio.sleep(600)
+			await asyncio.sleep(60)
 	else:
 		pass
 
@@ -317,6 +306,11 @@ async def forceabout(ctx):
 	about = infoEmbeds()
 
 	await ctx.channel.send(embed=about.aboutEMBED)
+
+@bot.command(name='timeprint')
+async def timeprint(ctx):
+	now = pendulum.now()
+	await ctx.channel.send(now.hour)
 
 @bot.command()
 async def copy(ctx):
