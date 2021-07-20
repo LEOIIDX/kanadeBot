@@ -49,3 +49,11 @@ persona 5|persona 5
 mayo|mayo
 mayonnaise|mayo
 endymion|endymion
+literature|ddlc
+book|ddlc
+poem|ddlc
+essay|ddlc
+prose|ddlc
+manga|ddlc
+novel|ddlc
+ddlc|ddlc

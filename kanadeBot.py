@@ -814,22 +814,18 @@ async def on_message(message):
 			case 'glasses':
 				await message.channel.send(mDict.otherRare.get('1'))
 				return
-
 			case 'vaporeon':
 				await message.channel.send(mDict.otherRare.get('3'))
 				return
-
 			case 'kaiden':
 				await message.channel.send(mDict.otherRare.get('2'))
 				return
-
 			case 'nanahira':
 				for key in mDict.nanahira:
 					ranStr = str(nanaRan)
 					if key == ranStr:
 						await message.channel.send(mDict.nanahira.get(key))
-						return
-	
+						return	
 			case 'iidx':
 				for key in mDict.iidxQuotes:
 					ranStr = str(iidxRan)
@@ -869,7 +865,6 @@ async def on_message(message):
 			case 'party':
 				await message.channel.send('I came to start the party!\n**CAUSE IM THE PARTY STARTER!!**')
 				return
-
 			case 'beach':
 				if bsbRan == 4:
 					await message.channel.send(file=discord.File('img/' + 'bsb.jpg'))
@@ -879,43 +874,36 @@ async def on_message(message):
 					if key == ranStr:
 						await message.channel.send(mDict.bsb.get(key))
 						return
-
 			case 'credit':
 				for key in mDict.credit:
 					ranStr = str(creditRan)
 					if key == ranStr:
 						await message.channel.send(file=discord.File('img/creditImage/' + mDict.credit.get(key)))
 						return
-
 			case 'drip':
 				for key in mDict.drip:
 					ranStr = str(dripRan)
 					if key == ranStr:
 						await message.channel.send(file=discord.File('img/dripImage/' + mDict.drip.get(key)))
 						return
-
 			case 'crazy':
 				await message.channel.send('cRRRaAaAZZy')
 				return
-
 			case 'china':
 				for key in mDict.china:
 					ranStr = str(chinaRan)
 					if key == ranStr:
 						await message.channel.send(file=discord.File('img/chinaImage/' + mDict.china.get(key)))
 						return
-
 			case 'chills':
                         	for key in mDict.chills:
                                 	ranStr = str(chillsRan)
                                 	if key == ranStr:
                                          	await message.channel.send(mDict.chills.get(key))
                                          	return
-
 			case 'persona 5':
 				await message.channel.send(mDict.otherRare.get('5'))
 				return
-
 			case 'endymion':
 				await message.channel.send('https://youtu.be/g1lCI3YfoqQ')
 				return
@@ -926,11 +914,19 @@ async def on_message(message):
 				for key in mDict.cursedGrace:
 					await message.channel.send(mDict.cursedGrace.get(key) + '\n')
 					await message.channel.send(' ឵឵')
+					return
 			case 'nanahira':
 				for key in mDict.nanaCopy:
 					await message.channel.send(mDict.nanaCopy.get(key) + '\n')
 					await message.channel.send(' ឵឵')
-
+					return
+			case 'ddlc':
+				if coinflip == 1:
+					await message.channel.send(mDict.otherRare.get('6'))
+					return
+				else:
+					await message.channel.send(mDict.otherRare.get('7'))
+					return
 	if fuckinRare == 1:
 		for key in mDict.fRare:
 			ranStr = str(fRareRan)
