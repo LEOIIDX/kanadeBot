@@ -93,6 +93,10 @@ qotdCh = 867088318466359338
 @bot.event
 async def on_ready():
 	sDict = dictionaryStatuses()
+	qDict = dictionaryMessages()
+	uQotd = {}
+	uQotdCount = 0
+
 	readyVer = 1
 	sPick = str(input('Input Desired Status. \n (0) for random \n'))
 
@@ -104,9 +108,24 @@ async def on_ready():
 
 			now = pendulum.now()
 			
-			if now.hour == 12 and now.minute == 45: 
-				await bot.get_channel(qotdCh).send('testing haha')
+			if now.hour == 13 and now.minute == 57:
+				with open('qotdResource/'+'used-qotd.txt') as f:
+					for line in f:
+						(key, val) = line.split('|')
+						newVal = val.rstrip()
+						uQotd[str(key)] = newVal
+						uQotdCount = uQotdCount + 1
 
+				for key in uQotd:
+					qotdRan = random.randint(1, qDict.qotdCount)
+					if key == str(qotdRan):
+						pass
+					else:
+						uQotdCount = uQotdCount + 1
+						await bot.get_channel(qotdCh).send(qDict.qotdList.get(str(qotdRan)))
+						with open('qotdResource/'+'used-qotd.txt', 'a') as f:
+							f.write(str(uQotdCount)  + '|' + str(qotdRan) + '\n')
+						break
 
 			await asyncio.sleep(60)
 	else:
