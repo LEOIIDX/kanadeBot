@@ -108,7 +108,7 @@ async def on_ready():
 
 			now = pendulum.now()
 			
-			if now.hour == 13 and now.minute == 57:
+			if now.hour == 13 and now.minute == 50:
 				with open('qotdResource/'+'used-qotd.txt') as f:
 					for line in f:
 						(key, val) = line.split('|')
@@ -116,10 +116,12 @@ async def on_ready():
 						uQotd[str(key)] = newVal
 						uQotdCount = uQotdCount + 1
 
+				qotdRan = random.randint(1, qDict.qotdCount)
+				print(uQotd)
+
 				for key in uQotd:
-					qotdRan = random.randint(1, qDict.qotdCount)
-					if key == str(qotdRan):
-						pass
+					if uQotd.get(key) == str(qotdRan):
+						break
 					else:
 						uQotdCount = uQotdCount + 1
 						await bot.get_channel(qotdCh).send(qDict.qotdList.get(str(qotdRan)))
