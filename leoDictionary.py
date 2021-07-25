@@ -237,7 +237,7 @@ class dictionaryMessages:
 		for line in f:
 			(key, val) = line.split('|')
 			newVal = val.rstrip()
-			qotdList[str(key)] = newVal
+			qotdList[str(key)] = val
 			qotdCount = qotdCount + 1
 
 class dictionaryStatuses:

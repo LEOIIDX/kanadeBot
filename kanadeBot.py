@@ -108,26 +108,26 @@ async def on_ready():
 
 			now = pendulum.now()
 			
-			if now.hour == 13 and now.minute == 50:
+			if now.hour == 3 and now.minute == 26:
 				with open('qotdResource/'+'used-qotd.txt') as f:
 					for line in f:
 						(key, val) = line.split('|')
 						newVal = val.rstrip()
-						uQotd[str(key)] = newVal
+						uQotd[str(key)] = val
 						uQotdCount = uQotdCount + 1
 
 				qotdRan = random.randint(1, qDict.qotdCount)
+				print(qDict.qotdList)
 				print(uQotd)
 
-				for key in uQotd:
-					if uQotd.get(key) == str(qotdRan):
-						break
-					else:
-						uQotdCount = uQotdCount + 1
-						await bot.get_channel(qotdCh).send(qDict.qotdList.get(str(qotdRan)))
-						with open('qotdResource/'+'used-qotd.txt', 'a') as f:
-							f.write(str(uQotdCount)  + '|' + str(qotdRan) + '\n')
-						break
+				for key in qDict.qotdList:
+					if key == str(qotdRan)
+						for key in uQotd:
+							if qDict.qotdList.get(str(qotdRan)) == uQotd.get(key):
+								break
+							else:
+								
+					
 
 			await asyncio.sleep(60)
 	else:
