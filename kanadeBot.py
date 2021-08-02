@@ -107,9 +107,6 @@ async def on_ready():
 
 	if debugValue == 0:
 		print('Bot is ready!!\n')
-		while readyVer == 1:
-
-			now = pendulum.now()
 			
 #command error handler
 @bot.event
