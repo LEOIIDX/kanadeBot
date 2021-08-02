@@ -309,6 +309,7 @@ class infoEmbeds:
 	adminHelp.add_field(name='memberupdate', value='ky!memberupdate || Updates the member count.', inline=False)
 	adminHelp.add_field(name='statuslist', value='ky!statuslist || List all availible statuses (currently useless)', inline=False)
 	adminHelp.add_field(name='forceabout', value='kyt!forceabout || Forces public facing ky!about while in debug mode.', inline=False)
+	adminHelp.add_field(name='noresponse', value='ky!noresponse || Disables bot responses in all channels for 30 mins.', inline=False)
 
 	statusListOne = discord.Embed(colour = discord.Colour.red())
 	statusListTwo = discord.Embed(colour = discord.Colour.red())

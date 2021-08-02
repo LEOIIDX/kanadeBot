@@ -5,6 +5,7 @@ Priority TODO
 General TODO
 React Roles Backup (eventually)
 QOTD for ridiculous hypotheticals
+Bot disabler
 more messages
 
 Known Bugs
@@ -89,6 +90,8 @@ Statuses come from dictionary generated from a txt file
 memberCounterChannel = 837031791994208258
 memberCounterChannelTest = 846244059768029265
 qotdCh = 867088318466359338
+global responseCheck
+responseCheck = 1
 
 @bot.event
 async def on_ready():
@@ -108,31 +111,6 @@ async def on_ready():
 
 			now = pendulum.now()
 			
-			if now.hour == 3 and now.minute == 26:
-				with open('qotdResource/'+'used-qotd.txt') as f:
-					for line in f:
-						(key, val) = line.split('|')
-						newVal = val.rstrip()
-						uQotd[str(key)] = val
-						uQotdCount = uQotdCount + 1
-
-				qotdRan = random.randint(1, qDict.qotdCount)
-				print(qDict.qotdList)
-				print(uQotd)
-
-				for key in qDict.qotdList:
-					if key == str(qotdRan)
-						for key in uQotd:
-							if qDict.qotdList.get(str(qotdRan)) == uQotd.get(key):
-								break
-							else:
-								
-					
-
-			await asyncio.sleep(60)
-	else:
-		pass
-
 #command error handler
 @bot.event
 async def on_command_error(ctx, error):
@@ -332,6 +310,21 @@ async def forceabout(ctx):
 async def timeprint(ctx):
 	now = pendulum.now()
 	await ctx.channel.send(now.hour)
+
+@bot.command(name='noresponse')
+@commands.has_any_role("Admin", "Mod")
+async def noresponse(ctx):
+	global responseCheck
+
+	if responseCheck != 0:
+		responseCheck = 0
+		while responseCheck != 1:
+			await ctx.channel.send('Bot responses have been disabled for 30 mins.')
+			await asyncio.sleep(1800)
+			responseCheck = 1
+			await ctx.channel.send('Bot responses are enabled.')
+	else:
+		await ctx.channel.send('Bot responses have already been disabled.')
 
 @bot.command()
 async def copy(ctx):
@@ -579,6 +572,8 @@ birthdays
 Users:
 Itself
 Kanade Bot [ky!] when in debug mode
+
+Bot will also ignore all messages if ky!noresponse is set on
 '''
 @bot.event
 async def on_message(message):
@@ -614,6 +609,9 @@ async def on_message(message):
 		if dumb[0:3] == 'ky!': ##ignores ky! commands
 			await bot.process_commands(message)
 			return
+
+	if responseCheck != 1:
+		return
 
 	mDict = dictionaryMessages() #generates everything needed for dictionaries
 
