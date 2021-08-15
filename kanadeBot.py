@@ -1,5 +1,7 @@
-#kanadeBot.py
 '''
+kanadeBot.py
+By: Nanahira Monke Kanade Dev
+
 Priority TODO
 
 General TODO

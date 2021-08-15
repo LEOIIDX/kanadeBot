@@ -1,5 +1,6 @@
 '''
 kanadeBotQOTD.py
+By: Nanahira Monke Kanade Dev
 
 Condensed version of Kanade Bot programmed for the purpose of QOTD.
 
@@ -9,9 +10,7 @@ import os
 import discord
 import random
 import re
-import datetime
 import asyncio
-import pendulum
 import string
 import math
 
@@ -37,8 +36,11 @@ qotdCh = 867088318466359338
 
 @bot.event
 async def on_ready():
-    print('Sending QOTD')
-    await bot.get_channel(qotdCh).send('QOTD Bot Hijack test')
-    exit()
+	sentQOTD = 0
+
+	while sentQOTD != 1:
+		print('Sending QOTD')
+		await bot.get_channel(qotdCh).send('QOTD Bot Hijack test')
+	exit()
 
 bot.run(TOKEN)
