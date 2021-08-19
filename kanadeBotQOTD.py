@@ -36,7 +36,24 @@ qotdCh = 867088318466359338
 
 @bot.event
 async def on_ready():
+	qotd = {}
+	qotdCOUNT = 0
+	qotdUSED = {}
 	sentQOTD = 0
+
+    
+	with open('qotdResource/'+'qotd.txt') as f:
+		for line in f:
+			(key, val) = line.split('|')
+			newVal = val.rstrip()
+			qotd[str(key)] = val
+			qotdCOUNT = qotdCOUNT + 1
+			
+	with open('qotdResource/'+'used-qotd.txt') as f:
+		for line in f:
+			(key, val) = line.split('|')
+			newVal = val.rstrip()
+			qotdUSED[str(key)] = val
 
 	while sentQOTD != 1:
 		print('Sending QOTD')
