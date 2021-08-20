@@ -16,8 +16,6 @@ import math
 
 from discord.ext import commands
 from dotenv import load_dotenv
-from leoDictionary import dictionaryMessages, dictionaryStatuses
-from leoEmbed import iidxSPClassEmbeds, iidxDPClassEmbeds, sdvxDanEmbeds, infoEmbeds
 
 load_dotenv()
 TOKEN = os.getenv('DEBUG_TOKEN')
@@ -56,6 +54,9 @@ async def on_ready():
 			qotdUSED[str(key)] = val
 
 	while sentQOTD != 1:
+		qotdRan = str(random.randint(1,qotdCOUNT))
+		for key in qotdUSED:
+			
 		print('Sending QOTD')
 		await bot.get_channel(qotdCh).send('QOTD Bot Hijack test')
 	exit()
