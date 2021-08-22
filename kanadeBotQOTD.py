@@ -38,37 +38,44 @@ async def on_ready():
 	qotdCOUNT = 0
 	qotdUsed = {}
 	qotdUsedCOUNT = 0
-	sentQOTD = 0
+	sentQOTD = 0	
 
     
 	with open('qotdResource/'+'qotd.txt') as f:
 		for line in f:
 			(key, val) = line.split('|')
 			newVal = val.rstrip()
-			qotd[str(key)] = val
+			qotd[str(key)] = newVal
 			qotdCOUNT = qotdCOUNT + 1
 			
 	with open('qotdResource/'+'used-qotd.txt') as f:
 		for line in f:
 			(key, val) = line.split('|')
 			newVal = val.rstrip()
-			qotdUsed[str(key)] = val
+			qotdUsed[str(key)] = newVal
 			qotdUsedCOUNT = qotdUsedCOUNT + 1
 
 	while sentQOTD != 1:
 		print('attempting to send')
-		qotdRan = str(random.randint(1,qotdCOUNT))
 		usedCheck = 0
+		qotdRan = str(random.randint(1,qotdCOUNT))
 		for key in qotdUsed:
-			if qotdUsed.get(key) == qotdRan:
-				usedCheck = usedCheck + 1
-		if usedCheck >= 1:
-			pass
-		else:
+			print(qotdUsed.get(key) + ' and ' + qotdRan)
+			if str(qotdUsed.get(key)) == qotdRan:
+				print('detected already used question')
+				usedCheck = 1
+				break
+		if qotdUsedCOUNT == qotdCOUNT:
+			print('no more questions')
+			await bot.get_channel(qotdCh).send('No more questions')	
+			break
+		if usedCheck == 0:
 			with open('qotdResource/'+'used-qotd.txt', 'a') as f:
 				f.write(str(qotdUsedCOUNT + 1)  + '|' + str(qotdRan) + '\n')
 			await bot.get_channel(qotdCh).send(qotd.get(qotdRan))
-			sentQOTD = sentQOTD + 1
+			break
+		else:
+			pass
 			
 	print('stopping script')
 	exit()
