@@ -36,7 +36,8 @@ qotdCh = 867088318466359338
 async def on_ready():
 	qotd = {}
 	qotdCOUNT = 0
-	qotdUSED = {}
+	qotdUsed = {}
+	qotdUsedCOUNT = 0
 	sentQOTD = 0
 
     
@@ -51,14 +52,25 @@ async def on_ready():
 		for line in f:
 			(key, val) = line.split('|')
 			newVal = val.rstrip()
-			qotdUSED[str(key)] = val
+			qotdUsed[str(key)] = val
+			qotdUsedCOUNT = qotdUsedCOUNT + 1
 
 	while sentQOTD != 1:
+		print('attempting to send')
 		qotdRan = str(random.randint(1,qotdCOUNT))
-		for key in qotdUSED:
+		usedCheck = 0
+		for key in qotdUsed:
+			if qotdUsed.get(key) == qotdRan:
+				usedCheck = usedCheck + 1
+		if usedCheck >= 1:
+			pass
+		else:
+			with open('qotdResource/'+'used-qotd.txt', 'a') as f:
+				f.write(str(qotdUsedCOUNT + 1)  + '|' + str(qotdRan) + '\n')
+			await bot.get_channel(qotdCh).send(qotd.get(qotdRan))
+			sentQOTD = sentQOTD + 1
 			
-		print('Sending QOTD')
-		await bot.get_channel(qotdCh).send('QOTD Bot Hijack test')
+	print('stopping script')
 	exit()
 
 bot.run(TOKEN)
