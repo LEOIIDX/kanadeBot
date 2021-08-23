@@ -1,6 +1,69 @@
 1|placeholder
-2|test1
-3|test2
-4|test3
-5|test4
-6|test5
+2|What’s the weirdest smell you have ever smelled?
+3|What’s the most ridiculous fact you know?
+4|What is the funniest joke you know by heart?
+5|In 40 years, what will people be nostalgic for?
+6|What are the unwritten rules of where you work?
+7|How do you feel about putting pineapple on pizza?
+8|What part of a kid’s movie completely scarred you?
+9|What’s the best type of cheese?
+10|In one sentence, how would you sum up the internet?
+11|What’s the most imaginative insult you can come up with?
+12|What would be the absolute worst name you could give your child?
+13|What movie would be greatly improved if it was made into a musical?
+14|What two totally normal things become really weird if you do them back to back?
+15|What are some fun ways to answer everyday questions like “how’s it going” or “what do you do”?
+16|If someone asked to be your apprentice and learn all that you know, what would you teach them?
+17|If the all the States in the USA were represented by food, what food would each state be represented by?
+18|What would some fairy tales be like if they took place in the present and included modern technology and culture?
+19|What is something that is really popular now, but in 5 years everyone will look back on and be embarrassed by?
+20|What do you think is the worst thing that a person can put on their bio on a dating app?
+21|What would you do if you only had 24 hours to live?
+22|What is the soundtrack of your life?
+23|What’s your least favorite planet?
+24|What’s your secret talent?
+25|What’s one thing you wish we knew five years ago?
+26|As a child, what was your favorite game to play?
+27|What do you believe is the most horrible way to die?
+28|What is your most favorite GIF?
+29|What’s your most hated mode of transportation?
+30|What have you forgotten today?
+31|Have you ever had a D.I.Y. project go wrong?
+32|Did your high school/college have any weird traditions?
+33|What was your favorite subject in school?
+34|What was your dumbest field trip like?
+35|What is the grossest job you would do for a million dollars per year?
+36|What food have you never eaten but would really like to try?
+37|What’s something you really resent paying for?
+38|What movie can you watch over and over without ever getting tired of?
+39|When you are old, what do you think children will ask you to tell stories about?
+40|What’s the most expensive thing you’ve broken?
+41|What TV show character would it be the most fun to change places with for a week?
+42|If magic was real, what spell would you try to learn first?
+43|What game have you spent the most hours playing?
+44|What’s the craziest conversation you’ve overheard?
+45|What movie, picture, or video always makes you laugh no matter how often you watch it?
+46|What artist or band do you always recommend when someone asks for a music recommendation?
+47|What’s the most addicted to a game you’ve ever been?
+48|What’s the most depressing meal you’ve eaten?
+49|What tips or tricks have you picked up from your job / jobs?
+50|What outdoor activity haven’t you tried, but would like to?
+51|What songs hit you with a wave of nostalgia every time you hear them?
+52|What’s your worst example of procrastination?
+53|What’s the silliest thing you’ve seen someone get upset about?
+54|What word is a lot of fun to say?
+55|Where’s your go to restaurant for amazing food?
+56|If you built a themed hotel, what would the theme be and what would the rooms look like?
+57|What brand are you most loyal to?
+58|What’s the most recent show you’ve binge watched?
+59|What are some misconceptions about your hobby?
+60|What did you Google last?
+61|What’s the most frustrating product you own?
+62|What’s the coolest animal you’ve seen in the wild?
+63|What fashion trend makes you cringe or laugh every time you see it?
+64|What’s the longest rabbit hole you’ve been down?
+65|What’s incredibly cheap and you would pay way more for?
+67|What company do you despise?
+68|What’s the weirdest thing you’ve found lying on the ground / side of the road?
+69|What’s the creepiest tech out there?
+70|What outdated slang do you use on a regular basis?

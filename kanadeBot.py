@@ -739,7 +739,7 @@ async def on_message(message):
 
 	match dumbLetters:
 		case 'miku':
-			mikuCounter = 4
+			mikuCounter = 1 
 			if debugValue >= 1:
 				while mikuCounter != 0:
 					await message.channel.send(f"{michael.mention}")
@@ -793,11 +793,8 @@ async def on_message(message):
 				if key == ranStr:
 					await message.channel.send(mDict.totsugeki.get(key))
 					return
-		case 'beast':
-			await message.channel.send('Mankind knew they cannot change society.\n\nSo instead of reflecting on themselves, they blamed the Beasts.')
-			return
 
-		case 'niegil':
+				case 'niegil':
 			await message.channel.send(mDict.otherRare.get('4'))
 			return
 
@@ -919,6 +916,11 @@ async def on_message(message):
 			case 'endymion':
 				await message.channel.send('https://youtu.be/g1lCI3YfoqQ')
 				return
+
+			case 'beast':
+			await message.channel.send('Mankind knew they cannot change society.\n\nSo instead of reflecting on themselves, they blamed the Beasts.')
+			return
+
 
 	if ultraRare == 1:
 		match dumbLetters:
