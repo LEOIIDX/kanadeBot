@@ -794,7 +794,7 @@ async def on_message(message):
 					await message.channel.send(mDict.totsugeki.get(key))
 					return
 
-				case 'niegil':
+		case 'niegil':
 			await message.channel.send(mDict.otherRare.get('4'))
 			return
 
@@ -918,8 +918,8 @@ async def on_message(message):
 				return
 
 			case 'beast':
-			await message.channel.send('Mankind knew they cannot change society.\n\nSo instead of reflecting on themselves, they blamed the Beasts.')
-			return
+				await message.channel.send('Mankind knew they cannot change society.\n\nSo instead of reflecting on themselves, they blamed the Beasts.')
+				return
 
 
 	if ultraRare == 1:
