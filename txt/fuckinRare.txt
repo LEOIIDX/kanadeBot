@@ -30,3 +30,5 @@
 30|It was only partially your fault.
 31|This bot is not suitable for children or those who are easily dismembered.
 32|Don't forget to backup my .env file.
+33|Those who dream of heaven never last very long
+34|There is a will, there is a void
