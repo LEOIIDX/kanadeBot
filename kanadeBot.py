@@ -926,11 +926,12 @@ async def on_message(message):
 				await message.channel.send('Mankind knew they cannot change society.\n\nSo instead of reflecting on themselves, they blamed the Beasts.')
 				return
 
-                        case 'lain':
-                                for key in mDict.lain:
-                                    ranStr = str(lainRan)
-                                    if key == ranStr:
-                                            await message.channel.send(mDict.lain.get(key))
+			case 'lain':
+				for key in mDict.lain:
+				ranStr = str(lainRan)
+				if key == ranStr:
+					await message.channel.send(mDict.lain.get(key))
+					return
 
 
 	if ultraRare == 1:

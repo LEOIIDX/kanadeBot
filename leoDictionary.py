@@ -75,8 +75,8 @@ class dictionaryMessages:
 	qotdList = {}
 	qotdCount = 0
 
-        lain = {}
-        lainCount = 0
+	lain = {}
+	lainCount = 0
 
 	with open('txt/'+'dumbPhrases.txt') as f:
 		for line in f:
@@ -243,7 +243,7 @@ class dictionaryMessages:
 			lain[str(key)] = newVal
 			lainCount = lainCount + 1
 
-        with open('qotdResource/'+'qotd.txt') as f:
+	with open('qotdResource/'+'qotd.txt') as f:
 		for line in f:
 			(key, val) = line.split('|')
 			newVal = val.rstrip()
