@@ -633,6 +633,7 @@ async def on_message(message):
 	fRareRan = random.randint(1, mDict.fRareCount)
 	isekaiRan = random.randint(1, mDict.isekaiCount)
 	chinaRan = random.randint(1, mDict.chinaCount)
+        lainRan = random.randint(1, mDict.lainCount)
 	nanaCopyChance = random.randint(1,2)
 
 	if debugValue >= 1:
@@ -655,6 +656,7 @@ async def on_message(message):
 		print('fRareRan: ' + str(fRareRan))
 		print('isekaiRan: ' + str(isekaiRan))
 		print('chinaRan: '+ str(chinaRan))
+                print('lainRan: ' + str(lainRan))
 		print('nanaCopyChance: ' + str(nanaCopyChance) + '\n')
 
 	if debugValue == 1:
@@ -923,6 +925,12 @@ async def on_message(message):
 			case 'beast':
 				await message.channel.send('Mankind knew they cannot change society.\n\nSo instead of reflecting on themselves, they blamed the Beasts.')
 				return
+
+                        case 'lain':
+                                for key in mDict.lain:
+                                    ranStr = str(lainRan)
+                                    if key == ranStr:
+                                            await message.channel.send(mDict.lain.get(key))
 
 
 	if ultraRare == 1:
