@@ -910,29 +910,26 @@ async def on_message(message):
 						await message.channel.send(file=discord.File('img/chinaImage/' + mDict.china.get(key)))
 						return
 			case 'chills':
-                        	for key in mDict.chills:
-                                	ranStr = str(chillsRan)
-                                	if key == ranStr:
-                                         	await message.channel.send(mDict.chills.get(key))
-                                         	return
+				for key in mDict.chills:
+					ranStr = str(chillsRan)
+					if key == ranStr:
+						await message.channel.send(mDict.chills.get(key))
+						return
 			case 'persona 5':
 				await message.channel.send(mDict.otherRare.get('5'))
 				return
 			case 'endymion':
 				await message.channel.send('https://youtu.be/g1lCI3YfoqQ')
 				return
-
 			case 'beast':
 				await message.channel.send('Mankind knew they cannot change society.\n\nSo instead of reflecting on themselves, they blamed the Beasts.')
 				return
-
 			case 'lain':
 				for key in mDict.lain:
-				ranStr = str(lainRan)
-				if key == ranStr:
-					await message.channel.send(mDict.lain.get(key))
-					return
-
+					ranStr = str(lainRan)
+					if key == ranStr:
+						await message.channel.send(mDict.lain.get(key))
+						return
 
 	if ultraRare == 1:
 		match dumbLetters:
