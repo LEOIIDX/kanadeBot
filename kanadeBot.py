@@ -656,7 +656,7 @@ async def on_message(message):
 		print('fRareRan: ' + str(fRareRan))
 		print('isekaiRan: ' + str(isekaiRan))
 		print('chinaRan: '+ str(chinaRan))
-                print('lainRan: ' + str(lainRan))
+		print('lainRan: ' + str(lainRan))
 		print('nanaCopyChance: ' + str(nanaCopyChance) + '\n')
 
 	if debugValue == 1:
