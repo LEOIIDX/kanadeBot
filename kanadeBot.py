@@ -633,7 +633,7 @@ async def on_message(message):
 	fRareRan = random.randint(1, mDict.fRareCount)
 	isekaiRan = random.randint(1, mDict.isekaiCount)
 	chinaRan = random.randint(1, mDict.chinaCount)
-        lainRan = random.randint(1, mDict.lainCount)
+	lainRan = random.randint(1, mDict.lainCount)
 	nanaCopyChance = random.randint(1,2)
 
 	if debugValue >= 1:
