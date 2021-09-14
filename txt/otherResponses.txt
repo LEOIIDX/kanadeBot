@@ -57,3 +57,5 @@ prose|ddlc
 manga|ddlc
 novel|ddlc
 ddlc|ddlc
+lain|lain
+door|door

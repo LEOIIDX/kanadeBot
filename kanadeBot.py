@@ -930,6 +930,9 @@ async def on_message(message):
 					if key == ranStr:
 						await message.channel.send(mDict.lain.get(key))
 						return
+			case 'door':
+				await message.channel.send(mDict.otherRare.get('8'))
+				return
 
 	if ultraRare == 1:
 		match dumbLetters:

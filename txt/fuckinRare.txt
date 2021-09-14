@@ -39,3 +39,6 @@
 39|Protocol Seven is expected to allow the seamless sharing of information between the Wired and the Real World.
 40|玲音を好きになりましょう！
 41|かなでを好きになりましょう！
+42|make me sad
+43|make me mad
+44|make me feel alright?
