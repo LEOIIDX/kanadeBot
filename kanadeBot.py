@@ -673,7 +673,7 @@ async def on_message(message):
 	elif debugValue == 2:
 		coinflip = random.randint(1,2)
 		chance = random.randint(1,10)
-		superRare =random.randint(1,25)
+		superRare =random.randint(1,5)
 		ultraRare =random.randint(1,100)
 		fuckinRare = random.randint(1,500)
 		print('coinflip: '+ str(coinflip))
@@ -684,7 +684,7 @@ async def on_message(message):
 	else:
 		coinflip = random.randint(1,2)	
 		chance = random.randint(1,10)
-		superRare = random.randint(1,25)
+		superRare = random.randint(1,5)
 		ultraRare = random.randint(1,100)
 		fuckinRare = random.randint(1,500)
 
@@ -703,7 +703,7 @@ async def on_message(message):
 			if debugValue >= 1:
 				print('Triggered Keyword: ' + key + '\n')
 			if key == 'cum':
-				if chance == 1:
+				if superRare == 1:
 					await message.channel.send(file=discord.File("img/" + mDict.dumbImages.get(key)))
 					return
 				else:
