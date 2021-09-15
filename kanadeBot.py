@@ -702,9 +702,12 @@ async def on_message(message):
 		if key in dumbLetters:
 			if debugValue >= 1:
 				print('Triggered Keyword: ' + key + '\n')
-			if key == 'cum' and chance == 1:
-				await message.channel.send(file=discord.File("img/" + mDict.dumbImages.get(key)))
-				return
+			if key == 'cum':
+				if chance == 1:
+					await message.channel.send(file=discord.File("img/" + mDict.dumbImages.get(key)))
+					return
+				else:
+					return
 			await message.channel.send(file=discord.File("img/" + mDict.dumbImages.get(key)))
 			return
 
