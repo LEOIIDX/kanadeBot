@@ -59,7 +59,8 @@ async def on_ready():
 	while sentQOTD != 1:
 		print('attempting to send')
 		usedCheck = 0
-		qotdRan = str(random.randint(1,qotdCOUNT))
+#		qotdRan = str(random.randint(1,qotdCOUNT))
+		qotdRan = str(71)
 
 		for key in qotdUsed:
 			print(qotdUsed.get(key) + ' and ' + qotdRan)
