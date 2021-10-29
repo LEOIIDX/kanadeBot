@@ -68,3 +68,15 @@
 69|What’s the creepiest tech out there?
 70|What outdated slang do you use on a regular basis?
 71|How would you terrorize the people of an ancient civilization using modern day items?
+72|If you were to host a "Squid Game" like event, what children's game would you implement?
+73|What kind of food are you comfortable to Mukbang with?
+74|What is your favorite kind of nut?
+75|What was the proudest gaming achievement in your childhood?
+76|What line in a song is constantly stuck in your head?
+77|What is your default Subway order?
+78|What was your first exposure to Rhythm Games?
+79|What is the longest you have stayed awake?
+80|What is your dream collectable item?
+81|What is the most expensive collectable you own?
+82|What do you consider when you put together an outfit?
+83|How would you write a review for KanadeBot?
