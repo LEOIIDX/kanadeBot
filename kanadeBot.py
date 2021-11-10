@@ -708,6 +708,12 @@ async def on_message(message):
 					return
 				else:
 					return
+			if key == 'camel':
+				if superRare == 1:
+					await message.channel.send(file=discord.File("img/" + mDict.dumbImages.get(key)))
+				else:
+					return
+
 			await message.channel.send(file=discord.File("img/" + mDict.dumbImages.get(key)))
 			return
 
