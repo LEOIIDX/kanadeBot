@@ -96,3 +96,6 @@
 97|What's a video game you always end up going back to?
 98|What is your favorite alcoholic beverage?
 99|What is a fun game mechanic that comes to mind?
+100|What alternate form of transport would you like to use instead of driving?
+101|What's the lowest acceptable temperature to wear shorts in?
+102|What's a meme that will never stop being funny to you?
