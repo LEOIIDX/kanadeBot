@@ -951,14 +951,14 @@ async def on_message(message):
 			case 'grace':
 				for key in mDict.cursedGrace:
 					await message.channel.send(mDict.cursedGrace.get(key) + '\n')
-				    	await message.channel.send(' ឵឵')
-				
+					await message.channel.send(' ឵឵')
+
 				return
 			case 'nanahira':
 				for key in mDict.nanaCopy:
 					await message.channel.send(mDict.nanaCopy.get(key) + '\n')
 					await message.channel.send(' ឵឵')
-				
+
 				return
                         case 'ddlc':
 				if coinflip == 1:
