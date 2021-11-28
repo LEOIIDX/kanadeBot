@@ -846,12 +846,12 @@ async def on_message(message):
 			case 'kaiden':
 				await message.channel.send(mDict.otherRare.get('2'))
 				return
-			case 'nanahira':
-				for key in mDict.nanahira:
-					ranStr = str(nanaRan)
-					if key == ranStr:
-						await message.channel.send(mDict.nanahira.get(key))
-						return	
+#			case 'nanahira':
+#				for key in mDict.nanahira:
+#					ranStr = str(nanaRan)
+#					if key == ranStr:
+#						await message.channel.send(mDict.nanahira.get(key))
+#						return	
 			case 'iidx':
 				for key in mDict.iidxQuotes:
 					ranStr = str(iidxRan)
@@ -949,16 +949,18 @@ async def on_message(message):
 	if ultraRare == 1:
 		match dumbLetters:
 			case 'grace':
-				for key in mDict.cursedGrace:
-					await message.channel.send(mDict.cursedGrace.get(key) + '\n')
-					await message.channel.send(' ឵឵')
-					return
+			    for key in mDict.cursedGrace:
+				await message.channel.send(mDict.cursedGrace.get(key) + '\n')
+				    await message.channel.send(' ឵឵')
+				
+                            return
 			case 'nanahira':
 				for key in mDict.nanaCopy:
 					await message.channel.send(mDict.nanaCopy.get(key) + '\n')
 					await message.channel.send(' ឵឵')
-					return
-			case 'ddlc':
+				
+                            return
+                        case 'ddlc':
 				if coinflip == 1:
 					await message.channel.send(mDict.otherRare.get('6'))
 					return

@@ -102,12 +102,12 @@ class dictionaryMessages:
 
 	with open('txt/'+'nanaCopy.txt') as f:
 		for line in f:
-	    		(key, val) = line.split('~')
+	    		(key, val) = line.split('|')
 	    		nanaCopy[str(key)] = val
 
 	with open('txt/'+'cursedGrace.txt') as f:
 		for line in f:
-	    		(key, val) = line.split('~')
+	    		(key, val) = line.split('|')
 	    		cursedGrace[str(key)] = val
 
 	with open('txt/'+'miku.txt') as f:
