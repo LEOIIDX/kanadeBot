@@ -960,7 +960,7 @@ async def on_message(message):
 					await message.channel.send(' ឵឵')
 
 				return
-                        case 'ddlc':
+			case 'ddlc':
 				if coinflip == 1:
 					await message.channel.send(mDict.otherRare.get('6'))
 					return
