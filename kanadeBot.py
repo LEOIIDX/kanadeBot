@@ -949,17 +949,17 @@ async def on_message(message):
 	if ultraRare == 1:
 		match dumbLetters:
 			case 'grace':
-			    for key in mDict.cursedGrace:
-				await message.channel.send(mDict.cursedGrace.get(key) + '\n')
-				    await message.channel.send(' ឵឵')
+				for key in mDict.cursedGrace:
+					await message.channel.send(mDict.cursedGrace.get(key) + '\n')
+				    	await message.channel.send(' ឵឵')
 				
-                            return
+				return
 			case 'nanahira':
 				for key in mDict.nanaCopy:
 					await message.channel.send(mDict.nanaCopy.get(key) + '\n')
 					await message.channel.send(' ឵឵')
 				
-                            return
+				return
                         case 'ddlc':
 				if coinflip == 1:
 					await message.channel.send(mDict.otherRare.get('6'))
