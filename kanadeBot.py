@@ -32,7 +32,6 @@ import random
 import re
 import datetime
 import asyncio
-import pendulum
 import string
 import math
 
@@ -325,6 +324,12 @@ async def noresponse(ctx):
 	else:
 		await ctx.channel.send('Bot responses have already been disabled.')
 
+@bot.command(name='usergrab')
+async def usergrab(ctx):
+	author = ctx.message.author
+	authorID = ctx.message.author.id
+	await ctx.channel.send('haha')
+
 @bot.command()
 async def copy(ctx):
 	start = time.time()
@@ -600,7 +605,7 @@ async def on_message(message):
 	if 'https' in dumbLetters: #ignores links
 		return
 
-	if debugValue >= 1:
+	if debugValue <= 1:
 		if dumb[0:4] == 'kyt!': ##ignores kyt! commands
 			await bot.process_commands(message)
 			return
