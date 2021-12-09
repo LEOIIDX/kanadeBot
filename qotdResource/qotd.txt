@@ -108,3 +108,10 @@
 109|If you had a perfect six inch clone of Adolf Hitler, would you torture it?
 110|What would you do if someone walked up to you and said, "Hi, I'm the real you."?
 111|If Ursula from The Little Mermaid said, "You're cringy as fuck!", what would you do?
+112|What is your favorite kind of pizza?
+113|What is your preferred cereal?
+114|What is your favorite time of day?
+115|What's a location thats forever burned into your memory?
+116|What's the highest acceptable temperature to wear jackets in?
+117|How close do you follow the speed limit?
+118|How do you like your bread toasted?
