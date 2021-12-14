@@ -115,3 +115,8 @@
 116|What's the highest acceptable temperature to wear jackets in?
 117|How close do you follow the speed limit?
 118|How do you like your bread toasted?
+119|What is your favorite kind of pasta?
+120|What's your favorite restaurant?
+121|What is your favorite fabric?
+122|What is your favorite candy?
+123|What's a place you dream of going to?
