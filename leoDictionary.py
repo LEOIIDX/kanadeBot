@@ -1,6 +1,5 @@
 '''
 leoDictionary.py
-
 classes for creating dictionaries in LEO! BOT
 dictionaryMessages is for the response messages
 dictionaryStatuses is for randomized statuses
@@ -76,6 +75,9 @@ class dictionaryMessages:
 	qotdList = {}
 	qotdCount = 0
 
+	lain = {}
+	lainCount = 0
+
 	with open('txt/'+'dumbPhrases.txt') as f:
 		for line in f:
 	    		(key, val) = line.split('~')
@@ -100,12 +102,12 @@ class dictionaryMessages:
 
 	with open('txt/'+'nanaCopy.txt') as f:
 		for line in f:
-	    		(key, val) = line.split('~')
+	    		(key, val) = line.split('|')
 	    		nanaCopy[str(key)] = val
 
 	with open('txt/'+'cursedGrace.txt') as f:
 		for line in f:
-	    		(key, val) = line.split('~')
+	    		(key, val) = line.split('|')
 	    		cursedGrace[str(key)] = val
 
 	with open('txt/'+'miku.txt') as f:
@@ -234,6 +236,13 @@ class dictionaryMessages:
 			china[str(key)] = newVal
 			chinaCount = chinaCount + 1
 	
+	with open('txt/'+'lain.txt') as f:
+		for line in f:
+			(key, val) = line.split('|')
+			newVal = val.rstrip()
+			lain[str(key)] = newVal
+			lainCount = lainCount + 1
+
 	with open('qotdResource/'+'qotd.txt') as f:
 		for line in f:
 			(key, val) = line.split('|')

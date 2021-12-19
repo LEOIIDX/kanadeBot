@@ -6,13 +6,11 @@ Priority TODO
 
 General TODO
 React Roles Backup (eventually)
-QOTD for ridiculous hypotheticals
-Bot disabler
+CotW
+multiple cum images
+rework of message handler
 more messages
-
 Known Bugs
-Time sometimes deviates by a minute when bot is on for awhile.
-Testing
 
 Import List
 os: for filesystem interactions
@@ -314,15 +312,14 @@ async def noresponse(ctx):
 @bot.command(name='user')
 async def user(ctx):
 	members = []
+	await ctx.send("Sending member list!")
+	for members in ctx.guild: #Checks for members
+		boosters.append(members.name + "#" + members.discriminator) #puts them in a list
+		with open("members.txt", "w") as f:
+			for item in boosters:
+				f.write(item + "\n")
+		await ctx.send(file=discord.File("members.txt"))
 
-	for User in ctx.guild.User:
-		members.append(User.name)
-
-	with open('members.txt', 'w') as f:
-		for item in members:
-			f.write(item + '\n')
-	await ctx.channel.send('Created members file')
-	
 @bot.command()
 async def copy(ctx):
 	start = time.time()
@@ -631,6 +628,7 @@ async def on_message(message):
 	fRareRan = random.randint(1, mDict.fRareCount)
 	isekaiRan = random.randint(1, mDict.isekaiCount)
 	chinaRan = random.randint(1, mDict.chinaCount)
+	lainRan = random.randint(1, mDict.lainCount)
 	nanaCopyChance = random.randint(1,2)
 
 	if debugValue >= 1:
@@ -653,6 +651,7 @@ async def on_message(message):
 		print('fRareRan: ' + str(fRareRan))
 		print('isekaiRan: ' + str(isekaiRan))
 		print('chinaRan: '+ str(chinaRan))
+		print('lainRan: ' + str(lainRan))
 		print('nanaCopyChance: ' + str(nanaCopyChance) + '\n')
 
 	if debugValue == 1:
@@ -669,7 +668,7 @@ async def on_message(message):
 	elif debugValue == 2:
 		coinflip = random.randint(1,2)
 		chance = random.randint(1,10)
-		superRare =random.randint(1,25)
+		superRare =random.randint(1,5)
 		ultraRare =random.randint(1,100)
 		fuckinRare = random.randint(1,500)
 		print('coinflip: '+ str(coinflip))
@@ -680,7 +679,7 @@ async def on_message(message):
 	else:
 		coinflip = random.randint(1,2)	
 		chance = random.randint(1,10)
-		superRare = random.randint(1,25)
+		superRare = random.randint(1,5)
 		ultraRare = random.randint(1,100)
 		fuckinRare = random.randint(1,500)
 
@@ -698,6 +697,18 @@ async def on_message(message):
 		if key in dumbLetters:
 			if debugValue >= 1:
 				print('Triggered Keyword: ' + key + '\n')
+			if key == 'cum':
+				if superRare == 1:
+					await message.channel.send(file=discord.File("img/" + mDict.dumbImages.get(key)))
+					return
+				else:
+					return
+			if key == 'camel':
+				if superRare == 1:
+					await message.channel.send(file=discord.File("img/" + mDict.dumbImages.get(key)))
+				else:
+					return
+
 			await message.channel.send(file=discord.File("img/" + mDict.dumbImages.get(key)))
 			return
 
@@ -906,22 +917,29 @@ async def on_message(message):
 						await message.channel.send(file=discord.File('img/chinaImage/' + mDict.china.get(key)))
 						return
 			case 'chills':
-                        	for key in mDict.chills:
-                                	ranStr = str(chillsRan)
-                                	if key == ranStr:
-                                         	await message.channel.send(mDict.chills.get(key))
-                                         	return
+				for key in mDict.chills:
+					ranStr = str(chillsRan)
+					if key == ranStr:
+						await message.channel.send(mDict.chills.get(key))
+						return
 			case 'persona 5':
 				await message.channel.send(mDict.otherRare.get('5'))
 				return
 			case 'endymion':
 				await message.channel.send('https://youtu.be/g1lCI3YfoqQ')
 				return
-
 			case 'beast':
 				await message.channel.send('Mankind knew they cannot change society.\n\nSo instead of reflecting on themselves, they blamed the Beasts.')
 				return
-
+			case 'lain':
+				for key in mDict.lain:
+					ranStr = str(lainRan)
+					if key == ranStr:
+						await message.channel.send(mDict.lain.get(key))
+						return
+			case 'door':
+				await message.channel.send(mDict.otherRare.get('8'))
+				return
 
 	if ultraRare == 1:
 		match dumbLetters:
@@ -929,12 +947,14 @@ async def on_message(message):
 				for key in mDict.cursedGrace:
 					await message.channel.send(mDict.cursedGrace.get(key) + '\n')
 					await message.channel.send(' ឵឵')
-					return
+
+				return
 			case 'nanahira':
 				for key in mDict.nanaCopy:
 					await message.channel.send(mDict.nanaCopy.get(key) + '\n')
 					await message.channel.send(' ឵឵')
-					return
+
+				return
 			case 'ddlc':
 				if coinflip == 1:
 					await message.channel.send(mDict.otherRare.get('6'))
