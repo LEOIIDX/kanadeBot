@@ -30,3 +30,15 @@
 30|It was only partially your fault.
 31|This bot is not suitable for children or those who are easily dismembered.
 32|Don't forget to backup my .env file.
+33|Those who dream of heaven never last very long
+34|There is a will, there is a void
+35|Let's all love Lain!
+36|Let's all love Kanade!
+37|Ｌｅｔ’ｓ ａｌｌ ｌｏｖｅ Ｌａｉｎ！
+38|Ｌｅｔ’ｓ ａｌｌ ｌｏｖｅ Ｋａｎａｄｅ！
+39|Protocol Seven is expected to allow the seamless sharing of information between the Wired and the Real World.
+40|玲音を好きになりましょう！
+41|かなでを好きになりましょう！
+42|make me sad
+43|make me mad
+44|make me feel alright?
