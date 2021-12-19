@@ -311,14 +311,17 @@ async def noresponse(ctx):
 
 @bot.command(name='user')
 async def user(ctx):
-	members = []
+	Guild = bot.get_guild(ctx.guild.id)
+	memberList = []
+	for member in Guild.members:
+		memberList.append(member.display_name)
+#		print(member.display_name)
 	await ctx.send("Sending member list!")
-	for members in ctx.guild: #Checks for members
-		boosters.append(members.name + "#" + members.discriminator) #puts them in a list
-		with open("members.txt", "w") as f:
-			for item in boosters:
-				f.write(item + "\n")
-		await ctx.send(file=discord.File("members.txt"))
+#	print(memberList)
+	with open("members.txt", "w") as f:
+		for item in memberList:
+			f.write(item + "\n")
+	await ctx.send(file=discord.File("members.txt"))
 
 @bot.command()
 async def copy(ctx):
@@ -595,7 +598,7 @@ async def on_message(message):
 	if 'https' in dumbLetters: #ignores links
 		return
 
-	if debugValue <= 1:
+	if debugValue >= 1:
 		if dumb[0:4] == 'kyt!': ##ignores kyt! commands
 			await bot.process_commands(message)
 			return
@@ -841,12 +844,12 @@ async def on_message(message):
 			case 'kaiden':
 				await message.channel.send(mDict.otherRare.get('2'))
 				return
-#			case 'nanahira':
-#				for key in mDict.nanahira:
-#					ranStr = str(nanaRan)
-#					if key == ranStr:
-#						await message.channel.send(mDict.nanahira.get(key))
-#						return	
+			case 'nanahira':
+				for key in mDict.nanahira:
+					ranStr = str(nanaRan)
+					if key == ranStr:
+						await message.channel.send(mDict.nanahira.get(key))
+						return	
 			case 'iidx':
 				for key in mDict.iidxQuotes:
 					ranStr = str(iidxRan)
