@@ -6,13 +6,11 @@ Priority TODO
 
 General TODO
 React Roles Backup (eventually)
-QOTD for ridiculous hypotheticals
-Bot disabler
+CotW
+multiple cum images
+rework of message handler
 more messages
-
 Known Bugs
-Time sometimes deviates by a minute when bot is on for awhile.
-Testing
 
 Import List
 os: for filesystem interactions
