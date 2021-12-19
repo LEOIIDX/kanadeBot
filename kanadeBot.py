@@ -30,7 +30,6 @@ import random
 import re
 import datetime
 import asyncio
-import pendulum
 import string
 import math
 
@@ -120,14 +119,6 @@ async def help(ctx):
 	helpEM = infoEmbeds()
 
 	await ctx.channel.send(embed=helpEM.help)
-
-@bot.command(name='roll')
-#obligatory roll command
-#takes number given and sends a message of a number between 1 and the given number
-async def roll(ctx, number: int):
-	roll = str (random.randint(0,number))
-
-	await ctx.send(roll)
 
 @bot.command(name='exscore')
 #Calculates IIDX Score necesary to get IIDX grade ranks
@@ -303,11 +294,6 @@ async def forceabout(ctx):
 
 	await ctx.channel.send(embed=about.aboutEMBED)
 
-@bot.command(name='timeprint')
-async def timeprint(ctx):
-	now = pendulum.now()
-	await ctx.channel.send(now.hour)
-
 @bot.command(name='noresponse')
 @commands.has_any_role("Admin", "Mod")
 async def noresponse(ctx):
@@ -323,6 +309,18 @@ async def noresponse(ctx):
 	else:
 		await ctx.channel.send('Bot responses have already been disabled.')
 
+@bot.command(name='user')
+async def user(ctx):
+	members = []
+
+	for User in ctx.guild.User:
+		members.append(User.name)
+
+	with open('members.txt', 'w') as f:
+		for item in members:
+			f.write(item + '\n')
+	await ctx.channel.send('Created members file')
+	
 @bot.command()
 async def copy(ctx):
 	start = time.time()
@@ -598,7 +596,7 @@ async def on_message(message):
 	if 'https' in dumbLetters: #ignores links
 		return
 
-	if debugValue >= 1:
+	if debugValue <= 1:
 		if dumb[0:4] == 'kyt!': ##ignores kyt! commands
 			await bot.process_commands(message)
 			return

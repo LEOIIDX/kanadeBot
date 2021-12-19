@@ -1,5 +1,6 @@
-#leoDictionary.py
 '''
+leoDictionary.py
+
 classes for creating dictionaries in LEO! BOT
 dictionaryMessages is for the response messages
 dictionaryStatuses is for randomized statuses
