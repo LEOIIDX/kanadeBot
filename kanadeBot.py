@@ -6,7 +6,6 @@ Priority TODO
 
 General TODO
 React Roles Backup (eventually)
-CotW
 multiple cum images
 rework of message handler
 more messages
@@ -308,20 +307,6 @@ async def noresponse(ctx):
 			await ctx.channel.send('Bot responses are enabled.')
 	else:
 		await ctx.channel.send('Bot responses have already been disabled.')
-
-@bot.command(name='user')
-async def user(ctx):
-	Guild = bot.get_guild(ctx.guild.id)
-	memberList = []
-	for member in Guild.members:
-		memberList.append(member.display_name)
-#		print(member.display_name)
-	await ctx.send("Sending member list!")
-#	print(memberList)
-	with open("members.txt", "w") as f:
-		for item in memberList:
-			f.write(item + "\n")
-	await ctx.send(file=discord.File("members.txt"))
 
 @bot.command()
 async def copy(ctx):
