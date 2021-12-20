@@ -30,11 +30,11 @@ print('Kanade Bot COTM module\n')
 
 bot = commands.Bot(command_prefix='ky!',intents=intents)
 
-cotwCh = 841586692640735242
+cotwCh = 922405898662600755
 
 @bot.event
 async def on_ready():
-	Guild = bot.get_guild(828667775605669888)
+	Guild = bot.get_guild(744622412267782234)
 	memberIdDict = {}
 	memberIdCounter = 0
 	memberNameDict = {}
