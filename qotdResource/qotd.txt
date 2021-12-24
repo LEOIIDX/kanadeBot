@@ -125,3 +125,10 @@
 126|What is your favorite fish to eat?
 127|What kind of milk do you regularly buy?
 128|What is your favorite cut of steak?
+129|What was your first phone?
+130|What is your favorite place you visted while on vacation?
+131|Aesthetically speaking, what is your favorite color of beach sand?
+132|What franchise pizza company makes the best pizza?
+133|What is/was your favorite activity to do on the beach?
+134|What is/was your favorite activity to do in the snow?
+135|What is/was your favorite activity to do in a pool?
