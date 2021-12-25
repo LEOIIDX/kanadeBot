@@ -165,10 +165,9 @@ async def on_message(message):
 		bResp = json.load(f)
 
 	for data in bResp:
-		listStep = 0
 		respStep = 0
 		for item in data['keywords']:
-			if dumbLetters in data['keywords'][listStep]:
+			if dumbLetters in data['keywords'][0]:
 				if data['type'] == 0:
 					ran = random.randint(data['rarity'][0], data['rarity'][1])
 					if ran == 1:
@@ -186,9 +185,6 @@ async def on_message(message):
 							await message.channel.send('‏')
 							respStep = respStep + 1
 						return
-
-			else:
-				listStep = listStep + 1
 
 if masterQuery == 1:
 	bot.run(testTOKEN)
