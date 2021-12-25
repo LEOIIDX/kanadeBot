@@ -1,27 +1,28 @@
 [
 	{
-		"keyword": "placeholder",
-		"rareType": [0,0],
-		"responses": ["placeholder"]
-	},
-	{
-		"keyword": "haha",
-		"rareType": [0,0],
+		"keywords": ["haha", "hehe", "lmao"],
+		"type": 0,
+		"rarity": [1,1],
 		"responses": ["fuck u"]
-	},
-	{
-		"keyword": "bruh",
-		"rareType": [0,0],
+	},{
+		"keywords": ["bruh"],
+		"type": 0,
+		"rarity": [1,5],
 		"responses": ["bwuh"]
-	},
-	{
-		"keyword": "fuck u",
-		"rareType": [0,0],
+	},{
+		"keywords": ["fuck u"],
+		"type": 0,
+		"rarity": [1,1],
 		"responses": ["fuck u too"]
-	},
-	{
-		"keyword": "I hate u",
-		"rareType": [0,0],
+	},{
+		"keywords": ["i hate u"],
+		"type": 0,
+		"rarity": [1,1],
 		"responses": ["lmao", "go fuck urself"]
+	},{
+		"keywords": ["multi"],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": ["1", "2"]
 	}
 ]

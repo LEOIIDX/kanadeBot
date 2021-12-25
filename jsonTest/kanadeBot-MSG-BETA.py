@@ -31,9 +31,11 @@ import datetime
 import asyncio
 import string
 import math
+import json
 
 from discord.ext import commands
 from dotenv import load_dotenv
+from leoDictionary import dictionaryMessages, dictionaryStatuses
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
@@ -119,6 +121,7 @@ async def on_message(message):
 
 	miku = message.guild.get_member(693294060143640586)
 	michael = message.guild.get_member(195748601639600128)
+	lolzep = message.guild.get_member(924060600491991082)
 
 	if debugValue >= 1:
 		print('MESSAGE DEBUG VIEW\n')
@@ -139,16 +142,53 @@ async def on_message(message):
 		return
 
 	if debugValue >= 1:
-		if dumb[0:4] == 'kyt!': ##ignores kyt! commands
+		if dumb[0:4] == 'kyt!': #ignores kyt! commands
 			await bot.process_commands(message)
 			return
 	else:
-		if dumb[0:3] == 'ky!': ##ignores ky! commands
+		if dumb[0:3] == 'ky!': #ignores ky! commands
 			await bot.process_commands(message)
 			return
 
 	if responseCheck != 1:
 		return
+
+	mDict = dictionaryMessages()
+
+	for key in mDict.otherResponses:
+		if key in dumbLetters:
+			if debugValue >= 1:
+				print('Triggered Keyword: ' + key + '\n')
+			dumbLetters = mDict.otherResponses.get(key)
+
+	with open ('input.json', 'r') as f:
+		bResp = json.load(f)
+
+	for data in bResp:
+		listStep = 0
+		respStep = 0
+		for item in data['keywords']:
+			if dumbLetters in data['keywords'][listStep]:
+				if data['type'] == 0:
+					ran = random.randint(data['rarity'][0], data['rarity'][1])
+					if ran == 1:
+						for item in data['responses']:
+							respStep = respStep + 1
+						respStep = respStep - 1
+						respRan = random.randint(0, respStep)
+						await message.channel.send(data['responses'][respRan])
+						return
+				elif data['type'] == 1:
+					ran = random.randint(data['rarity'][0], data['rarity'][1])
+					if ran == 1:
+						for item in data['responses']:
+							await message.channel.send(data['responses'][respStep])
+							await message.channel.send('‏')
+							respStep = respStep + 1
+						return
+
+			else:
+				listStep = listStep + 1
 
 if masterQuery == 1:
 	bot.run(testTOKEN)
