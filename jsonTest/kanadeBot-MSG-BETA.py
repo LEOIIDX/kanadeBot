@@ -177,6 +177,8 @@ async def on_message(message):
 						respRan = random.randint(0, respStep)
 						await message.channel.send(data['responses'][respRan])
 						return
+					else:
+						pass
 				elif data['type'] == 1:
 					ran = random.randint(data['rarity'][0], data['rarity'][1])
 					if ran == 1:
@@ -185,6 +187,16 @@ async def on_message(message):
 							await message.channel.send('‏')
 							respStep = respStep + 1
 						return
+				elif data['type'] == 2:
+					ran = random.randint(data['rarity'][0], data['rarity'][1])
+					if ran == 1:
+						for item in data['responses']:
+							respStep = respStep + 1
+						respStep = respStep - 1
+						respRan = random.randint(0, respStep)
+						await message.channel.send(file=discord.File("img/" + data['responses'][respRan]))
+				else:
+					pass
 
 if masterQuery == 1:
 	bot.run(testTOKEN)

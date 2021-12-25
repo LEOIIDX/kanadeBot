@@ -1,28 +1,313 @@
 [
 	{
-		"keywords": ["haha"],
-		"type": 0,
-		"rarity": [1,1],
-		"responses": ["fuck u"]
-	},{
-		"keywords": ["bruh"],
+		"keywords": ["nanahira"],
 		"type": 0,
 		"rarity": [1,5],
-		"responses": ["bwuh"]
+		"responses": ["https://www.youtube.com/watch?v=5lUvv1NJyA8", "https://www.youtube.com/watch?v=pfgOHR-h1p8", "https://www.youtube.com/watch?v=uJIRRzCsYi8", "https://www.youtube.com/watch?v=kSC4FYaNS1U&t=68s", "どう 一 ゆー らいく 'KIKKU'!?", "https://www.youtube.com/watch?v=QeywEVgXK4c", "https://www.youtube.com/watch?v=3XOHrUm09Js", "https://www.youtube.com/watch?v=7knlsjItLX8", "https://www.youtube.com/watch?v=_05XtaUZYns", "https://www.youtube.com/watch?v=Xs1J9AXUw_I", "https://www.youtube.com/watch?v=Cp2XGTsIf8I", "バッド・スイーツ、バッド・ドリーム", "https://www.youtube.com/watch?v=3J6BfGLkEcE", "かめりあ feat. ななひら", "ななひら feat. ななひら"]
 	},{
-		"keywords": ["fuck u"],
+		"keywords": ["kaiden"],
 		"type": 0,
-		"rarity": [1,1],
-		"responses": ["fuck u too"]
+		"rarity": [1,5],
+		"responses": ["https://youtu.be/9IM2CpjvPrQ", "https://youtu.be/BVQVqVF9Ivs"]
 	},{
-		"keywords": ["i hate u"],
+		"keywords": ["miku"],
 		"type": 0,
-		"rarity": [1,1],
-		"responses": ["lmao", "go fuck urself"]
+		"rarity": [1,5],
+		"responses": ["https://www.youtube.com/watch?v=NIqm73xsias", "https://www.youtube.com/watch?v=KmvydnVTriE", "https://www.youtube.com/watch?v=zkLJoFp2UAE", "https://www.youtube.com/watch?v=ARt2fVT33Lw", "https://www.youtube.com/watch?v=PLevj9bdRRA", "https://www.youtube.com/watch?v=AvTH7J2shuI", "https://www.youtube.com/watch?v=NY__VTIUsiU", "https://www.youtube.com/watch?v=CvJELA6USuw", "https://www.youtube.com/watch?v=n0hV6a1goIk", "https://www.youtube.com/watch?v=5rFBkHb8CL8", "https://www.youtube.com/watch?v=KushW6zvazM", "https://www.youtube.com/watch?v=swqbfMh467A", "https://www.youtube.com/watch?v=5qkTpJAhywg", "https://www.youtube.com/watch?v=ldSffG5_N1s", "https://www.youtube.com/watch?v=duPJqfKiA78", "https://www.youtube.com/watch?v=Yq0zBXN1o2A", "https://www.youtube.com/watch?v=UavAXELySiY", "https://www.youtube.com/watch?v=vMs3Nuhd2a4", "https://www.youtube.com/watch?v=ns7jeST41SM", "https://www.youtube.com/watch?v=mQryrtN1RWg"]
 	},{
-		"keywords": ["multi"],
+		"keywords": ["sus"],
+		"type": 2,
+		"rarity": [1,5],
+		"responses": ["susImage/1.jpg", "susImage/2.jpg", "susImage/3.jpg", "susImage/4.jpg", "susImage/5.jpg", "susImage/6.jpg", "susImage/7.jpg", "susImage/8.jpg", "susImage/9.jpg", "susImage/10.jpg", "susImage/11.jpg", "susImage/12.jpg", "susImage/13.jpg", "susImage/14.jpg", "susImage/15.jpg", "susImage/16.jpg", "susImage/17.jpg", "susImage/18.jpg", "susImage/19.jpg", "susImage/20.jpg", "susImage/21.jpg"]
+	},{
+		"keywords": ["god i wish that were me"],
+		"type": 3,
+		"rarity": [1,1],
+		"responses": ["wishthatwereme.jpg"]
+	},{
+		"keywords": ["ddr"],
+		"type": 1,
+		"rarity": [1,5],
+		"responses": ["You got the step, you got the flow, keep up the perfect combo.", "You are now dancing in the danger zone.", "We gave it up, and now we want it back.", "You're dancin' like a pro!", "You're the one they came to see!", "You light the crowd on fire!", "Ongaku, saikou da!", "They're cheerin' for you and only you baby!", "Wow I can't count anymore combos!", "Superb! Perfection! Greatness... thy name suits YOU."]
+	},{
+		"keywords": [""],
 		"type": 1,
 		"rarity": [1,1],
-		"responses": ["1", "2"]
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
+	},{
+		"keywords": [""],
+		"type": 1,
+		"rarity": [1,1],
+		"responses": [""]
 	}
 ]
