@@ -2,8 +2,13 @@
 	{
 		"keywords": ["nanahira"],
 		"type": 0,
-		"rarity": [1,5],
+		"rarity": [0,0],
 		"responses": ["https://www.youtube.com/watch?v=5lUvv1NJyA8", "https://www.youtube.com/watch?v=pfgOHR-h1p8", "https://www.youtube.com/watch?v=uJIRRzCsYi8", "https://www.youtube.com/watch?v=kSC4FYaNS1U&t=68s", "どう 一 ゆー らいく 'KIKKU'!?", "https://www.youtube.com/watch?v=QeywEVgXK4c", "https://www.youtube.com/watch?v=3XOHrUm09Js", "https://www.youtube.com/watch?v=7knlsjItLX8", "https://www.youtube.com/watch?v=_05XtaUZYns", "https://www.youtube.com/watch?v=Xs1J9AXUw_I", "https://www.youtube.com/watch?v=Cp2XGTsIf8I", "バッド・スイーツ、バッド・ドリーム", "https://www.youtube.com/watch?v=3J6BfGLkEcE", "かめりあ feat. ななひら", "ななひら feat. ななひら"]
+	},{
+		"keywords": ["nanahira"],
+		"type": 1,
+		"rarity": [1,100],
+		"responses": ["I really love Nanahira. Like, a lot. Like, a whole lot. You have no idea. I love her so much that it is inexplicable, and I'm ninety-nine percent sure that I have an unhealthy obsession. I will never get tired of listening that sweet, angelic voice of hers. It is my life goal to meet up her with her in real life and just say hello to her.", "I fall asleep at night dreaming of her holding a personal concert for me, and then she would be sorry tired that she comes and cuddles up to me while we sleep together. If I could just hold her hand for a brief moment, I could die happy. If given the opportunity, I would lightly nibble on her ear just to hear what kind of sweet moans she would let out. Then, I would hug her while she clings to my body hoping that I would stop, but I only continue as she moans louder and louder.", "I would give up almost anything just for her to look in my general direction. No matter what I do, I am constantly thinking of her. When I wake up, she is the first thing on my mind. When I go to school, I can only focus on her. When I go come home, I go on the computer so that I can listen to her beautiful voice. When I go to sleep, I dream of her and I living a happy life together. She is my pride, passion, and joy. If she were to call me 'Onii-chan,' I would probably get diabetes from her sweetness and die.", "I wish for nothing but her happiness. If it were for her, I would give my life without any second thoughts. Without her, my life would serve no purpose. I really love Nanahira."]
 	},{
 		"keywords": ["kaiden"],
 		"type": 0,
@@ -21,292 +26,177 @@
 		"responses": ["susImage/1.jpg", "susImage/2.jpg", "susImage/3.jpg", "susImage/4.jpg", "susImage/5.jpg", "susImage/6.jpg", "susImage/7.jpg", "susImage/8.jpg", "susImage/9.jpg", "susImage/10.jpg", "susImage/11.jpg", "susImage/12.jpg", "susImage/13.jpg", "susImage/14.jpg", "susImage/15.jpg", "susImage/16.jpg", "susImage/17.jpg", "susImage/18.jpg", "susImage/19.jpg", "susImage/20.jpg", "susImage/21.jpg"]
 	},{
 		"keywords": ["god i wish that were me"],
-		"type": 3,
+		"type": 2,
 		"rarity": [1,1],
 		"responses": ["wishthatwereme.jpg"]
 	},{
 		"keywords": ["ddr"],
-		"type": 1,
+		"type": 0,
 		"rarity": [1,5],
 		"responses": ["You got the step, you got the flow, keep up the perfect combo.", "You are now dancing in the danger zone.", "We gave it up, and now we want it back.", "You're dancin' like a pro!", "You're the one they came to see!", "You light the crowd on fire!", "Ongaku, saikou da!", "They're cheerin' for you and only you baby!", "Wow I can't count anymore combos!", "Superb! Perfection! Greatness... thy name suits YOU."]
 	},{
-		"keywords": [""],
+		"keywords": ["itg"],
+		"type": 0,
+		"rarity": [1,5],
+		"responses": ["https://youtu.be/QD9ADjvoV5s", "https://youtu.be/al-dPoqgNgo", "https://youtu.be/xVQwzygmZ48"]
+	},{
+		"keywords": ["golf"],
+		"type": 0,
+		"rarity": [1,5],
+		"responses": ["Putt 23:44-46 It was now about noon, and darkness came over the putt-putt course until three in the afternoon, for the sun stopped shining. And the zipline was torn in two. Jesus called out with a loud voice, 'My head is bleeding!' When he had said this, he breathed his last.", "Pit 8:17 For nothing is hidden in the ball pit that will not be made manifest"]
+	},{
+		"keywords": ["beach"],
+		"type": 0,
+		"rarity": [1,5],
+		"responses": ["https://www.youtube.com/watch?v=c7unqs6LeH0", "https://www.youtube.com/watch?v=KimPNf9HzsE", "<:beachsideboomer:837009146372685825>", "https://www.youtube.com/watch?v=-aJol1ywq-I", "https://www.youtube.com/watch?v=Z8-ZK__-D0o", "https://www.youtube.com/watch?v=ff1x11JBm6I", "https://www.youtube.com/watch?v=4HSydIVdhxY", "https://www.youtube.com/watch?v=6_jFNswE4DE"]
+	},{
+		"keywords": ["valanga"],
+		"type": 0,
+		"rarity": [1,5],
+		"responses": ["https://www.youtube.com/watch?v=Cz8s5oIhW34", "https://www.youtube.com/watch?v=z40nCIFA3Eo", "https://www.youtube.com/watch?v=PxRtdyUqYzY"]
+	},{
+		"keywords": ["credit"],
+		"type": 2,
+		"rarity": [1,5],
+		"responses": ["creditImage/1.jpg", "creditImage/2.jpg", "creditImage/3.jpg", "creditImage/4.jpg", "creditImage/5.jpg", "creditImage/6.jpg"]
+	},{
+		"keywords": ["totsugeki"],
+		"type": 0,
+		"rarity": [1,1],
+		"responses": ["https://www.youtube.com/watch?v=lBY4D2m0CNU", "https://www.youtube.com/watch?v=eMeQ1xFa6KE", "https://www.youtube.com/watch?v=nLsvJPydTqA", "https://www.youtube.com/watch?v=GEPDLD--xB4", "https://www.youtube.com/watch?v=9e8ccKGbyE0", "https://www.youtube.com/watch?v=12efWUFDDL4", "https://www.youtube.com/watch?v=wqukvtLDBS8", "https://www.youtube.com/watch?v=ePZyA-Z_wB0"]
+	},{
+		"keywords": ["chills"],
+		"type": 0,
+		"rarity": [1,1],
+		"responses": ["https://www.youtube.com/watch?v=azSYefZhv1s", "https://www.youtube.com/watch?v=TaD2EJ0luBM", "https://www.youtube.com/watch?v=4wuYiFakI5M", "https://www.youtube.com/watch?v=VlCBf1DmZr4", "https://www.youtube.com/watch?v=bfmJA5wVuBs", "https://www.youtube.com/watch?v=2xBB6uV31_o", "https://www.youtube.com/watch?v=WHKJwXzzJpk", "https://www.youtube.com/watch?v=MxGlcFiWe2", "https://www.youtube.com/watch?v=zDBpUmZa58E", "https://www.youtube.com/watch?v=FHvRyLm44ow", "https://www.youtube.com/watch?v=JGwK8iaK14c", "https://www.youtube.com/watch?v=T0grI8Y2UZg", "https://www.youtube.com/watch?v=oAxs6eNKRMg", "https://www.youtube.com/watch?v=-v0y2AUEIec", "https://www.youtube.com/watch?v=BGbrsatDW_I", "https://www.youtube.com/watch?v=ErvvjI1AA9A", "https://www.youtube.com/watch?v=Jj79evwZacM", "https://www.youtube.com/watch?v=G3VaCkeC5Fk", "https://www.youtube.com/watch?v=TeeAUgZQ8cI", "https://www.youtube.com/watch?v=vap-DVK67FU"]
+	},{
+		"keywords": ["love live"],
+		"type": 0,
+		"rarity": [1,5],
+		"responses": ["https://www.youtube.com/watch?v=vJ3jNTH2QL0", "https://www.youtube.com/watch?v=8vlLpPzE7m0", "https://www.youtube.com/watch?v=NeaeJ0u3kR0", "https://www.youtube.com/watch?v=8fAjUvOfnRo", "https://www.youtube.com/watch?v=mRs45anUTr4", "https://www.youtube.com/watch?v=Qj0Dmwxv-KY", "https://www.youtube.com/watch?v=3WOzeKu2hjw", "https://youtu.be/YIgoFjO9Mg4", "https://youtu.be/nDl_2RI6kU0", "https://youtu.be/1j-u11dHWnI", "https://www.youtube.com/watch?v=j2ztNLvSMno", "https://www.youtube.com/watch?v=spwAlxp0T4g", "https://www.youtube.com/watch?v=WW97E1XfIjw", "https://www.youtube.com/watch?v=mefHQA2fGzg"]
+	},{
+		"keywords": ["amogus"],
+		"type": 0,
+		"rarity": [1,5],
+		"responses": ["ඞ", "<a:amongass:831517773825441812>", "STOP POSTING ABOUT AMONG US! I'M TIRED OF SEEING IT! MY FRIENDS ON TIKTOK SEND ME MEMES, ON DISCORD IT'S FUCKING MEMES! I was in a server, right? and ALL OF THE CHANNELS were just among us stuff. I-I showed my champion underwear to my girlfriend and t-the logo I flipped it and I said 'hey babe, when the underwear is sus HAHA DING DING DING DING DING DING DING DI DI DING' I fucking looked at a trashcan and said 'THAT'S A BIT SUSSY' I looked at my penis I think of an astronauts helmet and I go 'PENIS? MORE LIKE PENSUS' AAAAAAAAAAAAAAHGESFG"]
+	},{
+		"keywords": ["amogus"],
+		"type": 2,
+		"rarity": [1,10],
+		"responses": ["adumpus.png"]
+	},{
+		"keywords": ["drip"],
+		"type": 2,
+		"rarity": [1,5],
+		"responses": ["dripImage/1.jpg", "dripImage/2.jpg", "dripImage/3.jpeg", "dripImage/4.jpg", "dripImage/5.jpg", "dripImage/6.jpg", "dripImage/7.jpg"]
+	},{
+		"keywords": ["beasts"],
+		"type": 0,
+		"rarity": [1,1],
+		"responses": ["https://www.youtube.com/watch?v=Tl-bFu8vrTU", "https://www.youtube.com/watch?v=e6WcKA5DSb4"]
+	},{
+		"keywords": ["niegil"],
+		"type": 0,
+		"rarity": [1,5],
+		"responses": ["Niegil! Niegil! Niegil! Niegileeeeeaawaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaan!!! Ahhhhh… aa… a, aahhh! Ahhhhhhhhhh!!! Niegil Niegil Niegileeeuuuuuuwaaaaaaaaaaaaaaaaaaaaaa!!! Ah lurk-lurk! lurk-lurk! repost-repost! repost-repost! Good post… lurk-lurk Nhaah! I wanna upvote-upvote Niegil -san's post! lurk-lurk!AhaA! Repost! I wanna upvote upvote-upvote! upvote* upvote-upvote ! Upvote upvote-upvote ! upvote Upvote Niegil post upvote-upvote ! cLick-and-click-a-upvote! Clickclick onomatope Niegil post on r/rotmg was Funnnnyyyyyy!"]
+	},{
+		"keywords": ["glasses"],
+		"type": 0,
+		"rarity": [1,10],
+		"responses": ["Glasses are really versatile. First, you can have glasses-wearing girls take them off and suddenly become beautiful, or have girls wearing glasses flashing those cute grins, or have girls stealing the protagonist's glasses and putting them on like, 'Haha, got your glasses!' That's just way too cute! Also, boys with glasses! I really like when their glasses have that suspicious looking gleam, and it's amazing how it can look really cool or just be a joke. I really like how it can fulfill all those abstract needs. Being able to switch up the styles and colors of glasses based on your mood is a lot of fun too! It's actually so much fun! You have those half rim glasses, or the thick frame glasses, everything! It's like you're enjoying all these kinds of glasses at a buffet. I really want Luna to try some on or Marine to try some on to replace her eyepatch. We really need glasses to become a thing in hololive and start selling them for HoloComi. Don't. You. Think. We. Really. Need. To. Officially. Give. Everyone. Glasses?"]
+	},{
+		"keywords": ["vaporeon"],
+		"type": 0,
+		"rarity": [1,5],
+		"responses": ["Hey guys, did you know that in terms of male human and female Pokémon breeding, Vaporeon is the most compatible Pokémon for humans? Not only are they in the field egg group, which is mostly comprised of mammals, Vaporeon are an average of 3”03’ tall and 63.9 pounds, this means they’re large enough to be able handle human dicks, and with their impressive Base Stats for HP and access to Acid Armor, you can be rough with one. Due to their mostly water based biology, there’s no doubt in my mind that an aroused Vaporeon would be incredibly wet, so wet that you could easily have sex with one for hours without getting sore. They can also learn the moves Attract, Baby-Doll Eyes, Captivate, Charm, and Tail Whip, along with not having fur to hide nipples, so it’d be incredibly easy for one to get you in the mood. With their abilities Water Absorb and Hydration, they can easily recover from fatigue with enough water. No other Pokémon comes close to this level of compatibility. Also, fun fact, if you pull out enough, you can make your Vaporeon turn white. Vaporeon is literally built for human dick. Ungodly defense stat+high HP pool+Acid Armor means it can take cock all day, all shapes and sizes and still come for more"]
+	},{
+		"keywords": ["IIDX"],
+		"type": 0,
+		"rarity": [1,10],
+		"responses": ["The next respect", "The escaping of the music beat.", "WELCOME TO THE CYBER-beat-NATION", "TRIP THE DEEP", "IIDX OF THE NEW CENTURY", "THE PRIMARY VIVID IIDX", "JEWEL SHOWER", "Break the Future", "十」代重ねるビートの血脈。「重」く響き渡る脈動。「充」たされるBLOOD.", "Revolutionary Energetic Diversification", "Just Got Splash Beats!", "You're the DJ of this gig!", "Are You Ready Come on! It's Party Time!", "「撃鉄」は引かない。 「戦律」を打て。", "超、頂、蝶、煌く", "音条の響、光条の輝。", "Blaze through the resort party!", "可憐（ラブリー）×響音（ドライブ）＝新連鎖（ニューリンクル）。", "輪音転奏。Next Link Various Tunes Change the World [ TRI ] For The Future !!!", "鍵士とは、叩っ斬ることと みつけたり。", "時、行き交う。弐つの振音", "毎日が、輝く自分への始発駅。", "この音色、世に忍BUZZ。", "『音』束に乗れ！ 享『楽』のレコードライン！", "ギラつく音で 超えて行け！ ", "さぁ、英雄（ヒーロー）になる時間だ。", "召しませ、全世界曲。", "流れる音で、時に乗れ。"]
+	},{
+		"keywords": ["tpazolite"],
+		"type": 0,
+		"rarity": [1,5],
+		"responses": ["https://www.youtube.com/watch?v=tUE86Nic72I", "https://www.youtube.com/watch?v=xdY_52pR0C4", "https://www.youtube.com/watch?v=l2_798--6Oc", "https://www.youtube.com/watch?v=77hTSXopwhk", "https://www.youtube.com/watch?v=Ppa42MWyMLk", "https://www.youtube.com/watch?v=2pitllSuNvM", "https://www.youtube.com/watch?v=wgBZylNg6U0", "https://www.youtube.com/watch?v=0YEDUkm9n2w", "https://youtu.be/u6wCQba4EDg", "https://youtu.be/7knlsjItLX8"]
+	},{
+		"keywords": ["grace"],
 		"type": 1,
+		"rarity": [1,1],
+		"responses": ["Please God, I want to impregnate Grace so bad. I want her to bear my children with those beautiful child-bearing hips. That beautiful, radiant angel. Like a goddess, having come down to Earth to cleanse us of our sins.", "Grace is beyond divine. I can’t help but drop to my knees in worship whenever I see her beautiful figure. I yearn for her in a way both primal and spiritual. I would commit more war crimes than every president in United States history just to lick the sweet, glistening sweat from her smooth, creamy skin. I want to listen to her moans as my manhood throbs within her, I want to hear her heart race as our bodies become one and our souls irreversibly intertwine in the holy sin of carnal union.", "I want to suckle at her motherly bosom, slurping that rich juche milk from her teat as she gently strokes my raging erection. I would stir her velvety cream into my coffee and let my balls boil in it. Her cries of pleasure and the rocking of our bed would be louder than the cacophony of ten thousand drone strikes. I would make love to her until my body gave out, and then some. I would let her break my rib cage with any part of her body. I would let her hit me with her car just to be near her for a brief moment.", "She’s so perfect it hurts. Every moment without her I suffer a pain worse than breaking every bone in my body simultaneously while drowning and also having shards of glass coated in hot sauce forced through every orifice of my body. I want her, I need her. I want to desecrate her crisp general suit. I want to start a family with her and retire after our twenty seven children have grown up and moved out. I want to see those luscious lips speak such filthy, perverse words into my ear while she slides ice cubes down my gaping pisshole.", "I want to fuck her like she owes me money. I would let her step on me, just to feel the soft, firm warmth of her feet upon my face and groin area. I would sleep under her just to catch her drool in my mouth. I would fish the strands of hair from her shower drain just to smell her alluring scent, and braid them into necklaces to keep her with me always. Or cock rings. Whichever would please her more.", "God please, I would do anything for her. I would relinquish my life, all my hopes and dreams, just to become the socks on her feet so that I may warm her mouthwatering toes with my very being, so that she may feel the heat of my love always. I would encase myself in cement and become her doorstep, so that she may wipe her heels upon my face. I would tear my own limbs off. I don’t know what I’d do after that, or why she might want my limbs. But I would do it.", "My queen, my goddess, the light of my life. Please God, let me have her. I want her to be mine and only mine. I would lick the Doritos dust from her fingers and fill her belly button with honey mustard to dip my tendies in. I would give her a sponge-bath with my tongue every morning and serve her breakfast in bed. I would let her eat her eggs and pancakes off my body if it pleased her, no matter how painful the third-degree burns would be.", "I would bear the torment of eternal damnation until the end of time to taste the seat of her car but once. There is nothing I wouldn’t do for her, nothing I wouldn’t say. I would beat my own mother to death with my engorged penis if it would bring a smile to Grace's shining face. I wouldn’t even let myself cum until she gave me permission.", "I love you, Grace. Please. Be mine. Be my wife, my lover, my Juche mommy, my everything. Say yes. I see it in your eyes, when you’re up there on that throne talking about nuking Japan or whatever. Answer my calls, respond to my letters. Something. Give me a sign, Grace. I’m waiting for you.", "I’ll always be waiting for you."]
+	},{
+		"keywords": [],
+		"type": 0,
 		"rarity": [1,1],
 		"responses": [""]
 	},{
 		"keywords": [""],
-		"type": 1,
+		"type": 0,
 		"rarity": [1,1],
 		"responses": [""]
 	},{
 		"keywords": [""],
-		"type": 1,
+		"type": 0,
 		"rarity": [1,1],
 		"responses": [""]
 	},{
 		"keywords": [""],
-		"type": 1,
+		"type": 0,
 		"rarity": [1,1],
 		"responses": [""]
 	},{
 		"keywords": [""],
-		"type": 1,
+		"type": 0,
 		"rarity": [1,1],
 		"responses": [""]
 	},{
 		"keywords": [""],
-		"type": 1,
+		"type": 0,
 		"rarity": [1,1],
 		"responses": [""]
 	},{
 		"keywords": [""],
-		"type": 1,
+		"type": 0,
 		"rarity": [1,1],
 		"responses": [""]
 	},{
 		"keywords": [""],
-		"type": 1,
+		"type": 0,
 		"rarity": [1,1],
 		"responses": [""]
 	},{
 		"keywords": [""],
-		"type": 1,
+		"type": 0,
 		"rarity": [1,1],
 		"responses": [""]
 	},{
 		"keywords": [""],
-		"type": 1,
+		"type": 0,
 		"rarity": [1,1],
 		"responses": [""]
 	},{
 		"keywords": [""],
-		"type": 1,
+		"type": 0,
 		"rarity": [1,1],
 		"responses": [""]
 	},{
 		"keywords": [""],
-		"type": 1,
+		"type": 0,
 		"rarity": [1,1],
 		"responses": [""]
 	},{
 		"keywords": [""],
-		"type": 1,
+		"type": 0,
 		"rarity": [1,1],
 		"responses": [""]
 	},{
 		"keywords": [""],
-		"type": 1,
+		"type": 0,
 		"rarity": [1,1],
 		"responses": [""]
 	},{
 		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
-		"rarity": [1,1],
-		"responses": [""]
-	},{
-		"keywords": [""],
-		"type": 1,
+		"type": 0,
 		"rarity": [1,1],
 		"responses": [""]
 	}
