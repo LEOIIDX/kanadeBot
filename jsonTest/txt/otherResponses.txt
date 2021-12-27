@@ -38,7 +38,6 @@ glasses|glasses
 vaporeon|vaporeon
 iidx|iidx
 tpazolite|tpazolite
-party|party
 grace|grace
 another world|isekai
 isekai|isekai
