@@ -38,7 +38,6 @@ glasses|glasses
 vaporeon|vaporeon
 iidx|iidx
 tpazolite|tpazolite
-party|party
 grace|grace
 another world|isekai
 isekai|isekai
@@ -59,4 +58,38 @@ novel|ddlc
 ddlc|ddlc
 lain|lain
 door|door
+cum|cum
+dababy|dababy
+himiko|himiko
+s&v|salt and vinegar
+salt and vinegar|salt and vinegar
+elemental creation|elemental creation
+#15|number 15
+number 15|number 15
+dropkick|drop kick
+drop kick|drop kick
+if god had wanted you to live|if god had wanted you to live
+yandere dev|yandev
+yandev|yandev
+furry|furry
+single core|single core
+prozep|prozep
+f off|fuck off
+fuck off|fuck off
+bad bot|bad bot
+dr pepper|dr pepper
+pizza hut|pizza hut
+chocolate cornet|chocolate cornet
+what is love|what is love
+fortnite card|fortnite card
+smrt|smrt
+spiderpig|spiderpig
+snow halation|snow halation
+smell of the game|smell of the game
+sauhlt|salt
+salt|salt
+motivation|motivation
+wack|wack
+good bot|good bot
+camel|camel
 cum|cum
