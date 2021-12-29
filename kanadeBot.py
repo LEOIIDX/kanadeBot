@@ -31,6 +31,7 @@ import datetime
 import asyncio
 import string
 import math
+import json
 
 from discord.ext import commands
 from dotenv import load_dotenv
@@ -46,7 +47,7 @@ intents.members = True
 intents.emojis = True
 intents.reactions = True
 
-print('Kanade Bot Speedstar 1.2\n')
+print('Kanade Bot\n')
 
 '''
 Debug Mode details
@@ -597,108 +598,29 @@ async def on_message(message):
 
 	mDict = dictionaryMessages() #generates everything needed for dictionaries
 
-	iidxRan = random.randint(1, mDict.iidxCount)
-	nanaRan = random.randint(1, mDict.nanaCount)
-	mikuRan = random.randint(1, mDict.mikuCount)
-	tpazRan = random.randint(1, mDict.tPazCount)
-	susRan = random.randint(1, mDict.susCount)
-	chillsRan = random.randint(1,mDict.chillsCount)
-	amogusRan = random.randint(1,4)
-	ddrRan = random.randint(1, mDict.ddrCount)
-	itgRan = random.randint(1, mDict.itgCount)
-	bsbRan = random.randint(1, mDict.bsbCount)
-	dripRan = random.randint(1, mDict.dripCount)
-	golfRan = random.randint(1, mDict.golfCount)
-	loveliveRan = random.randint(1, mDict.loveliveCount)
-	valangaRan = random.randint(1, mDict.valangaCount)
-	creditRan = random.randint(1, mDict.creditCount)
-	totsugekiRan = random.randint(1, mDict.totsugekiCount)
-	fRareRan = random.randint(1, mDict.fRareCount)
-	isekaiRan = random.randint(1, mDict.isekaiCount)
-	chinaRan = random.randint(1, mDict.chinaCount)
-	lainRan = random.randint(1, mDict.lainCount)
-	nanaCopyChance = random.randint(1,2)
-
 	if debugValue >= 1:
-		print('iidxRan: ' + str(iidxRan))
-		print('nanaRan: ' + str(nanaRan))
-		print('mikuRan: ' + str(mikuRan))
-		print('tpazRan: ' + str(tpazRan))
-		print('susRan: ' + str(susRan))
-		print('chillsRan: ' + str(chillsRan))
-		print('amogusRan: ' + str(amogusRan))
-		print('ddrRan: ' + str(ddrRan))
-		print('itgRan: ' + str(itgRan))
-		print('bsbRan: ' + str(bsbRan))
-		print('dripRan: ' + str(dripRan))
-		print('golfRan: ' + str(golfRan))
-		print('loveliveRan: ' + str(loveliveRan))
-		print('valangaRan: ' + str(valangaRan))
-		print('creditRan: ' + str(creditRan))
-		print('totsugekiRan: ' + str(totsugekiRan))
-		print('fRareRan: ' + str(fRareRan))
-		print('isekaiRan: ' + str(isekaiRan))
-		print('chinaRan: '+ str(chinaRan))
-		print('lainRan: ' + str(lainRan))
-		print('nanaCopyChance: ' + str(nanaCopyChance) + '\n')
-
+		print('haha')
 	if debugValue == 1:
 		coinflip = random.randint(1,2)
 		chance =  1
-		superRare = 1
-		ultraRare = 1
 		fuckinRare = 1
 		print('coinflip: '+ str(coinflip))
 		print('chance: ' + str(chance))
-		print('superRare: ' + str(superRare))
-		print('ultraRare: ' + str(ultraRare))
 		print('fuckinRare: ' + str(fuckinRare) + '\n')
 	elif debugValue == 2:
 		coinflip = random.randint(1,2)
 		chance = random.randint(1,10)
-		superRare =random.randint(1,5)
-		ultraRare =random.randint(1,100)
 		fuckinRare = random.randint(1,500)
 		print('coinflip: '+ str(coinflip))
 		print('chance: ' + str(chance))
-		print('superRare: ' + str(superRare))
-		print('ultraRare: ' + str(ultraRare)) 
 		print('fuckinRare: ' + str(fuckinRare) + '\n')
 	else:
 		coinflip = random.randint(1,2)	
 		chance = random.randint(1,10)
-		superRare = random.randint(1,5)
-		ultraRare = random.randint(1,100)
 		fuckinRare = random.randint(1,500)
 
 #	If the message sent contains a keyword in the dumbLetters dictionary.
 #	The corresponding value is sent to the message's channel
-
-	for key in mDict.dumbPhrases: #sends simple text replies
-		if key in dumbLetters:
-			if debugValue >= 1:
-				print('Triggered Keyword: ' + key + '\n')
-			await message.channel.send(mDict.dumbPhrases.get(key))
-			return
-
-	for key in mDict.dumbImages: #sends simple image replies
-		if key in dumbLetters:
-			if debugValue >= 1:
-				print('Triggered Keyword: ' + key + '\n')
-			if key == 'cum':
-				if superRare == 1:
-					await message.channel.send(file=discord.File("img/" + mDict.dumbImages.get(key)))
-					return
-				else:
-					return
-			if key == 'camel':
-				if superRare == 1:
-					await message.channel.send(file=discord.File("img/" + mDict.dumbImages.get(key)))
-				else:
-					return
-
-			await message.channel.send(file=discord.File("img/" + mDict.dumbImages.get(key)))
-			return
 
 	if dumbLetters == "bork":
 		if debugValue >= 1:
@@ -715,10 +637,6 @@ async def on_message(message):
 		await message.delete()
 		await message.channel.send(message.author.mention + " fuck u")
 
-	for key in mDict.emojiResponses:
-		if key in dumb:
-			dumbLetters = mDict.emojiResponses.get(key)
-			
 	for key in mDict.otherResponses:
 		if key in dumbLetters:
 			if debugValue >= 1:
@@ -741,77 +659,16 @@ async def on_message(message):
 				while mikuCounter != 0:
 					await message.channel.send(f"{michael.mention}")
 					mikuCounter = mikuCounter - 1
-				if chance == 1:
-					for key in mDict.mikuDict:
-						ranStr = str(mikuRan)
-						if key == ranStr:
-							await message.channel.send(mDict.mikuDict.get(key))
-							return
+					pass
 			else:	
 				while mikuCounter != 0:
 					await message.channel.send(f"{miku.mention}")
 					mikuCounter = mikuCounter - 1
-				if chance == 1:
-					for key in mDict.mikuDict:
-						ranStr = str(mikuRan)
-						if key == ranStr:
-							await message.channel.send(mDict.mikuDict.get(key))
-							return
+					pass
+
 		case 'love live':
 			await message.channel.send(f"{michael.mention}")
-			if chance == 1:
-				for key in mDict.loveliveDict:
-					ranStr = str(loveliveRan)
-					if key == ranStr:
-						await message.channel.send(mDict.loveliveDict.get(key))
-						return
-		case 'amogus':
-			match amogusRan:
-				case 1:
-					await message.channel.send('ඞ')
-					return
-				case 2:
-					await message.channel.send('<a:amongass:831517773825441812>')
-					return
-				case 3:
-					await message.channel.send('STOP POSTING ABOUT AMONG US! I\'M TIRED OF SEEING IT! MY FRIENDS ON TIKTOK SEND ME MEMES, ON DISCORD IT\'S FUCKING MEMES! I was in a server, right? and ALL OF THE CHANNELS were just among us stuff. I-I showed my champion underwear to my girlfriend and t-the logo I flipped it and I said \"hey babe, when the underwear is sus HAHA DING DING DING DING DING DING DING DI DI DING\" I fucking looked at a trashcan and said \"THAT\'S A BIT SUSSY\" I looked at my penis I think of an astronauts helmet and I go \"PENIS? MORE LIKE PENSUS\" AAAAAAAAAAAAAAHGESFG')
-					return
-				case 4:
-					await message.channel.send(file=discord.File('img/' + 'adumpus.png'))
-					return
-		
-		case 'valanga':
-			for key in mDict.valanga:
-				ranStr = str(valangaRan)
-				if key == ranStr:
-					await message.channel.send(mDict.valanga.get(key))
-					return
-
-		case 'totsugeki':
-			for key in mDict.totsugeki:
-				ranStr = str(totsugekiRan)
-				if key == ranStr:
-					await message.channel.send(mDict.totsugeki.get(key))
-					return
-
-		case 'niegil':
-			await message.channel.send(mDict.otherRare.get('4'))
-			return
-
-		case 'isekai':
-			for key in mDict.isekai:
-				ranStr = str(isekaiRan)
-				if key == ranStr:
-					await message.channel.send(mDict.isekai.get(key))
-					return
-
-		case 'mayo':
-			if coinflip == 1:
-				await message.channel.send('mayo is yummi')
-				return
-			else:
-				await message.channel.send('mayo is bad')
-				return
+			pass
 
 	if chance == 1:
 		if "im " == dumbLetters[0:3]:
@@ -819,137 +676,48 @@ async def on_message(message):
 		if "i am " == dumbLetters[0:5]:
 			await message.channel.send("Hi \"" + string.capwords(dumb[5:]) + "\", I'm Kanade Bot!")
 
-		match dumbLetters:
-			case 'glasses':
-				await message.channel.send(mDict.otherRare.get('1'))
-				return
-			case 'vaporeon':
-				await message.channel.send(mDict.otherRare.get('3'))
-				return
-			case 'kaiden':
-				await message.channel.send(mDict.otherRare.get('2'))
-				return
-			case 'nanahira':
-				for key in mDict.nanahira:
-					ranStr = str(nanaRan)
-					if key == ranStr:
-						await message.channel.send(mDict.nanahira.get(key))
-						return	
-			case 'iidx':
-				for key in mDict.iidxQuotes:
-					ranStr = str(iidxRan)
-					if key == ranStr:
-						await message.channel.send(mDict.iidxQuotes.get(key))
-						return
-			case 'tpazolite':
-				for key in mDict.tPaz:
-					ranStr = str(tpazRan)
-					if key == ranStr:
-						await message.channel.send(mDict.tPaz.get(key))
-						return
-			case 'sus':
-				for key in mDict.sus:
-					ranStr = str(susRan)
-					if key == ranStr:
-						await message.channel.send(file=discord.File('img/susImage/' + mDict.sus.get(key)))
-						return
-			case 'ddr':
-				for key in mDict.ddr:
-					ranStr = str(ddrRan)
-					if key == ranStr:
-						await message.channel.send(mDict.ddr.get(key))
-						return
-			case 'itg':
-				for key in mDict.itg:
-					ranStr = str(itgRan)
-					if key == ranStr:
-						await message.channel.send(mDict.itg.get(key))
-						return
-			case 'golf':
-				for key in mDict.golf:
-					ranStr = str(golfRan)
-					if key == ranStr:
-						await message.channel.send(mDict.golf.get(key))
-						return
-			case 'party':
-				await message.channel.send('I came to start the party!\n**CAUSE IM THE PARTY STARTER!!**')
-				return
-			case 'beach':
-				if bsbRan == 4:
-					await message.channel.send(file=discord.File('img/' + 'bsb.jpg'))
-					return
-				for key in mDict.bsb:
-					ranStr = str(bsbRan)
-					if key == ranStr:
-						await message.channel.send(mDict.bsb.get(key))
-						return
-			case 'credit':
-				for key in mDict.credit:
-					ranStr = str(creditRan)
-					if key == ranStr:
-						await message.channel.send(file=discord.File('img/creditImage/' + mDict.credit.get(key)))
-						return
-			case 'drip':
-				for key in mDict.drip:
-					ranStr = str(dripRan)
-					if key == ranStr:
-						await message.channel.send(file=discord.File('img/dripImage/' + mDict.drip.get(key)))
-						return
-			case 'crazy':
-				await message.channel.send('cRRRaAaAZZy')
-				return
-			case 'china':
-				for key in mDict.china:
-					ranStr = str(chinaRan)
-					if key == ranStr:
-						await message.channel.send(file=discord.File('img/chinaImage/' + mDict.china.get(key)))
-						return
-			case 'chills':
-				for key in mDict.chills:
-					ranStr = str(chillsRan)
-					if key == ranStr:
-						await message.channel.send(mDict.chills.get(key))
-						return
-			case 'persona 5':
-				await message.channel.send(mDict.otherRare.get('5'))
-				return
-			case 'endymion':
-				await message.channel.send('https://youtu.be/g1lCI3YfoqQ')
-				return
-			case 'beast':
-				await message.channel.send('Mankind knew they cannot change society.\n\nSo instead of reflecting on themselves, they blamed the Beasts.')
-				return
-			case 'lain':
-				for key in mDict.lain:
-					ranStr = str(lainRan)
-					if key == ranStr:
-						await message.channel.send(mDict.lain.get(key))
-						return
-			case 'door':
-				await message.channel.send(mDict.otherRare.get('8'))
-				return
+	with open ('input.json', 'r') as f:
+		bResp = json.load(f)
 
-	if ultraRare == 1:
-		match dumbLetters:
-			case 'grace':
-				for key in mDict.cursedGrace:
-					await message.channel.send(mDict.cursedGrace.get(key) + '\n')
-					await message.channel.send(' ឵឵')
-
-				return
-			case 'nanahira':
-				for key in mDict.nanaCopy:
-					await message.channel.send(mDict.nanaCopy.get(key) + '\n')
-					await message.channel.send(' ឵឵')
-
-				return
-			case 'ddlc':
-				if coinflip == 1:
-					await message.channel.send(mDict.otherRare.get('6'))
-					return
+	for data in bResp:
+		respStep = 0
+		for item in data['keywords']:
+			if dumbLetters == data['keywords'][0]:
+				if data['type'] == 0:
+					ran = random.randint(data['rarity'][0], data['rarity'][1])
+					if ran == 1:
+						for item in data['responses']:
+							respStep = respStep + 1
+						respStep = respStep - 1
+						respRan = random.randint(0, respStep)
+						await message.channel.send(data['responses'][respRan])
+						return
+					else:
+						pass
+				elif data['type'] == 1:
+					ran = random.randint(data['rarity'][0], data['rarity'][1])
+					if ran == 1:
+						for item in data['responses']:
+							await message.channel.send(data['responses'][respStep])
+							await message.channel.send('‏')
+							respStep = respStep + 1
+						return
+					else:
+						pass
+				elif data['type'] == 2:
+					ran = random.randint(data['rarity'][0], data['rarity'][1])
+					if ran == 1:
+						for item in data['responses']:
+							respStep = respStep + 1
+						respStep = respStep - 1
+						respRan = random.randint(0, respStep)
+						await message.channel.send(file=discord.File("img/" + data['responses'][respRan]))
+						return
+					else:
+						pass
 				else:
-					await message.channel.send(mDict.otherRare.get('7'))
-					return
+					pass
+
 	if fuckinRare == 1:
 		for key in mDict.fRare:
 			ranStr = str(fRareRan)
