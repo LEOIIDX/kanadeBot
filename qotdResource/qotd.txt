@@ -132,3 +132,25 @@
 133|What is/was your favorite activity to do on the beach?
 134|What is/was your favorite activity to do in the snow?
 135|What is/was your favorite activity to do in a pool?
+136|Why?
+137|What is the longest road trip you've been on?
+138|What is the longest amount of time you've waited for something?
+139|What would be your role if The Nanahira Monke™ became a hunter/gatherer society?
+140|What is your favorite thing to lounge on in your house?
+141|What is your favorite flower?
+142|How do you like your pillows?
+143|How do you like your eggs?
+144|What is the best and worst flag?
+145|What is your preferred seat on a plane?
+146|What is your "wind down" routine?
+147|What is your feeling on Adam Sandler comedies?
+148|What programming language do you think Kanade Bot™ is written in?
+149|What fast food chain has the best fries?
+150|Pancakes or Waffles?
+151|Do you take naps during the day?
+152|What fast food chain has the best chicken sandwich?
+153|What fast food chain has the best chicken?
+154|What was your first PC?
+155|Replace a word(or words) in a movie title with cum.
+156|What is your favorite painting?
+157|What would be your role if The Nanahira Monke™ became an organized crime syndacate?
