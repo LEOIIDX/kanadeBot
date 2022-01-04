@@ -330,10 +330,10 @@
 		"rarity": [1,5],
 		"responses": ["https://youtu.be/gMx9FyIXTkg", "https://youtu.be/u3in8xMhpuA", "https://youtu.be/HOAKXWTtIuE", "https://youtu.be/GT4uAyqzlWQ", "https://youtu.be/RgFaK6ZQifE", "https://youtu.be/1ZSM2L5o0JI"]
 	},{
-		"keywords": [""],
+		"keywords": ["lain"],
 		"type": 0,
-		"rarity": [1,1],
-		"responses": [""]
+		"rarity": [1,10],
+		"responses": ["http://nanamonke.xyz:2480"]
 	},{
 		"keywords": [""],
 		"type": 0,
