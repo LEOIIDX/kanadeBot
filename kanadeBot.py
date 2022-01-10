@@ -718,12 +718,12 @@ async def on_message(message):
 				else:
 					pass
 
-	if fuckinRare == 1:
-		for key in mDict.fRare:
-			ranStr = str(fRareRan)
-			if key == ranStr:
-				await message.channel.send(mDict.fRare.get(key))
-				return
+	if random.randint(bResp[67]["rarity"][0], bResp[67]["rarity"][1]) == 1:
+		respStep = 0
+		for data in bResp[67]["responses"]:
+			respStep = respStep + 1
+		await message.channel.send(bResp[67]["responses"][random.randint(0, respStep)])
+		return
 
 	if fuckinRare == 2:
 		if debugValue != 1:
