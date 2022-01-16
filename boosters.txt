@@ -1,8 +1,7 @@
-ar!member weeamoo#3939 give 1000
-ar!member Lolzep#5723 give 1000
 ar!member YggBasil#0573 give 1000
 ar!member ☆LEO!☆#7340 give 1000
-ar!member Meu#0038 give 1000
+ar!member Lolzep#5723 give 1000
+ar!member weeamoo#3939 give 1000
 ar!member FiJRE#1872 give 1000
 ar!member Fyzx#0217 give 1000
 ar!member Udo Octim#7976 give 1000
