@@ -309,6 +309,53 @@ async def noresponse(ctx):
 	else:
 		await ctx.channel.send('Bot responses have already been disabled.')
 
+@bot.command(name='gacha')
+async def gacha(ctx):
+	gachaChan = 932177985774182400
+	testChan = 841586692640735242
+
+	with open ('gacha.json', 'r') as f:
+		bResp = json.load(f)
+
+	if ctx.channel.id == gachaChan or ctx.channel.id == testChan:
+		for data in bResp:
+			respStep = 0
+			for item in data['keywords']:
+				if data['type'] == 0:
+					ran = random.randint(data['rarity'][0], data['rarity'][1])
+					if ran == 1:
+						for item in data['responses']:
+							respStep = respStep + 1
+						respStep = respStep - 1
+						respRan = random.randint(0, respStep)
+						await ctx.channel.send(data['responses'][respRan])
+						return
+					else:
+						pass
+				elif data['type'] == 1:
+					ran = random.randint(data['rarity'][0], data['rarity'][1])
+					if ran == 1:
+						for item in data['responses']:
+							await ctx.channel.send(data['responses'][respStep])
+							await ctx.channel.send('‏')
+							respStep = respStep + 1
+						return
+					else:
+						pass
+				elif data['type'] == 2:
+					ran = random.randint(data['rarity'][0], data['rarity'][1])
+					if ran == 1:
+						for item in data['responses']:
+							respStep = respStep + 1
+						respStep = respStep - 1
+						respRan = random.randint(0, respStep)
+						await ctx.channel.send(file=discord.File("img/" + data['responses'][respRan]))
+						return
+					else:
+						pass
+				else:
+					pass
+
 @bot.command()
 async def copy(ctx):
 	start = time.time()
