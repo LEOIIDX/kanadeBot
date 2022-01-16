@@ -355,6 +355,8 @@ async def gacha(ctx):
 						pass
 				else:
 					pass
+	else:
+		await ctx.channel.send("This command cannot be used in this channel.")
 
 @bot.command()
 async def copy(ctx):

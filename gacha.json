@@ -375,11 +375,6 @@
 		"rarity": [1,50],
 		"responses": ["The colors, they won't\nBright, bea t ful c l rs\nFlash ng, exp nd ng, piercing\nRed, green, blue\nAn ndless\nCACOPHONY\nOf meaningless\nnoise\n\nThe noise, it won't STOP.\nViol nt, grating w vef rms\nSq e king, screech ng, piercing\nSINE, COSINE, TANGENT\nLike play ng a ch lkboard on a t rntable\nLike playing a KNIFE on a BREATHING RIBCAGE\nn ndl ss\np m\nOf m n ngl ss\n\nDelete Her"]
 	},{
-		"keywords": ["END"],
-		"type": 0,
-		"rarity": [1,1],
-		"responses": ["No Response Sent!\nPlease try again."]
-	},{
 		"keywords": ["fRare"],
 		"type": 0,
 		"rarity": [1,1],
