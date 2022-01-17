@@ -104,3 +104,10 @@ natsuki|natsuki
 yuri|yuri
 sayori|sayori
 monika|monika
+integration|integral
+integrate|integral
+integral|integral
+flower|flower
+topranker|topranker
+measurements|measurements
+linux|linux

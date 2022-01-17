@@ -41,3 +41,4 @@
 41_ky!help || Guilty Gear Xrd -SIGN-
 42_ky!help || Guilty Gear Xrd -REVELATOR-
 43_ky!help || Guilty Gear XX
+44_ky!help || I use Artix btw
