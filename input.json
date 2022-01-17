@@ -377,7 +377,7 @@
 	},{
 		"keywords": ["measurements"],
 		"type": 0,
-		"rarity": [1,1],
+		"rarity": [1,10],
 		"responses": ["Horizontal Circumference of Head: 53.8cm\nVertical Circumference of Head: 57.7cm\nNeck: 27.3cm\nShoulder Width: 35cm\nSleeve Length: 52.1cm\nUpper Arm: 22.9cm\nElbow: 21.2cm\nWrist: 13.1cm\nShoulder Circumference: 34.5cm\nThighs: 43.8cm\nKnees: 29.5cm\nCalves: 31.6cm\nWaist: 58.7cm\nHips: 84.8cm\nAnkles: 19.2cm\nFoot Length: 23.2cm\nFoot Circumference: 22.4cm\nFoot Width: 9.5cm\nBust: 86.8cm\nUnderbust: 68.2cm\nBust Point: 20cm\nInseam: 79.2cm"]
 	},{
 		"keywords": ["flower"],
