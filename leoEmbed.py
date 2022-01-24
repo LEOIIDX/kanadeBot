@@ -10,17 +10,17 @@ class iidxSPClassEmbeds:
 	danD = {}
 	denD = {}
 
-	with open('embedResources/'+'kyu.txt') as f:
+	with open('embedResources/'+'kyu.txt', encoding="utf8") as f:
 		for line in f:
 			(key, val) = line.split('~')
 			kyuD[str(key)] = val
 
-	with open('embedResources/'+'dan.txt') as f:
+	with open('embedResources/'+'dan.txt', encoding="utf8") as f:
 		for line in f:
 			(key, val) = line.split('~')
 			danD[str(key)] = val
 
-	with open('embedResources/'+'den.txt') as f:
+	with open('embedResources/'+'den.txt', encoding="utf8") as f:
 		for line in f:
 			(key, val) = line.split('~')
 			denD[str(key)] = val
@@ -64,17 +64,17 @@ class iidxDPClassEmbeds:
 	danD = {}
 	denD = {}
 
-	with open('embedResources/'+'kyuDP.txt') as f:
+	with open('embedResources/'+'kyuDP.txt', encoding="utf8") as f:
 		for line in f:
 			(key, val) = line.split('~')
 			kyuD[str(key)] = val
 
-	with open('embedResources/'+'danDP.txt') as f:
+	with open('embedResources/'+'danDP.txt', encoding="utf8") as f:
 		for line in f:
 			(key, val) = line.split('|')
 			danD[str(key)] = val
 
-	with open('embedResources/'+'denDP.txt') as f:
+	with open('embedResources/'+'denDP.txt', encoding="utf8") as f:
 		for line in f:
 			(key, val) = line.split('~')
 			denD[str(key)] = val
@@ -118,17 +118,17 @@ class sdvxDanEmbeds:
 	sixToTen = {}
 	elevenAndInf = {}
 
-	with open('embedResources/'+'sdvx1to5.txt') as f:
+	with open('embedResources/'+'sdvx1to5.txt', encoding="utf8") as f:
 		for line in f:
 			(key, val) = line.split('|')
 			oneToFive[str(key)] = val
 
-	with open('embedResources/'+'sdvx6to10.txt') as f:
+	with open('embedResources/'+'sdvx6to10.txt', encoding="utf8") as f:
 		for line in f:
 			(key, val) = line.split('|')
 			sixToTen[str(key)] = val
 
-	with open('embedResources/'+'sdvx11andInf.txt') as f:
+	with open('embedResources/'+'sdvx11andInf.txt', encoding="utf8") as f:
 		for line in f:
 			(key, val) = line.split('|')
 			elevenAndInf[str(key)] = val
@@ -232,7 +232,7 @@ class infoEmbeds:
 	
 	sDict = dictionaryStatuses()
 
-	with open('embedResources/'+'events.txt') as f:
+	with open('embedResources/'+'events.txt', encoding="utf8") as f:
 		for line in f:
 			(key, val) = line.split('~')
 			eventD[str(key)] = val
