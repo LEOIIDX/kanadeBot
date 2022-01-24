@@ -314,7 +314,7 @@ async def gacha(ctx):
 	gachaChan = 932177985774182400
 	testChan = 841586692640735242
 
-	with open ('gacha.json', 'r', encoding="utf8") as f:
+	with open ('input.json', 'r', encoding="utf8") as f:
 		bResp = json.load(f)
 
 	if ctx.channel.id == gachaChan or ctx.channel.id == testChan:
@@ -322,7 +322,7 @@ async def gacha(ctx):
 			respStep = 0
 			for item in data['keywords']:
 				if data['type'] == 0:
-					ran = random.randint(data['rarity'][0], data['rarity'][1])
+					ran = random.randint(data['gRarity'][0], data['gRarity'][1])
 					if ran == 1:
 						for item in data['responses']:
 							respStep = respStep + 1
@@ -333,7 +333,7 @@ async def gacha(ctx):
 					else:
 						pass
 				elif data['type'] == 1:
-					ran = random.randint(data['rarity'][0], data['rarity'][1])
+					ran = random.randint(data['gRarity'][0], data['gRarity'][1])
 					if ran == 1:
 						for item in data['responses']:
 							await ctx.channel.send(data['responses'][respStep])
@@ -343,7 +343,7 @@ async def gacha(ctx):
 					else:
 						pass
 				elif data['type'] == 2:
-					ran = random.randint(data['rarity'][0], data['rarity'][1])
+					ran = random.randint(data['gRarity'][0], data['gRarity'][1])
 					if ran == 1:
 						for item in data['responses']:
 							respStep = respStep + 1
