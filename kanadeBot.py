@@ -314,7 +314,7 @@ async def gacha(ctx):
 	gachaChan = 932177985774182400
 	testChan = 841586692640735242
 
-	with open ('gacha.json', 'r') as f:
+	with open ('gacha.json', 'r', encoding="utf8") as f:
 		bResp = json.load(f)
 
 	if ctx.channel.id == gachaChan or ctx.channel.id == testChan:
@@ -674,7 +674,7 @@ async def on_message(message):
 	if dumbLetters == "bork":
 		if debugValue >= 1:
 			print('Triggered Keyword: ' + dumbLetters + '\n')
-		with open("txt/bestGabe.txt", "r") as f:
+		with open("txt/bestGabe.txt", "r", encoding="utf8") as f:
 			videos = [(line.strip()).split() for line in f]
 			f.close()
 		rand = str(videos[random.randint(1,271)])
@@ -725,7 +725,7 @@ async def on_message(message):
 		if "i am " == dumbLetters[0:5]:
 			await message.channel.send("Hi \"" + string.capwords(dumb[5:]) + "\", I'm Kanade Bot!")
 
-	with open ('input.json', 'r') as f:
+	with open ('input.json', 'r', encoding="utf8") as f:
 		bResp = json.load(f)
 
 	for data in bResp:
