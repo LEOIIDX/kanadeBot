@@ -9,19 +9,19 @@ class dictionaryMessages:
 
 	emojiResponses = {}
 
-	with open('txt/'+'otherResponses.txt') as f:
+	with open('txt/'+'otherResponses.txt', encoding="utf8") as f:
 		for line in f:
 			(key, val) = line.split('|')
 			newVal = val.rstrip()
 			otherResponses[str(key)] = newVal
 
-	with open('txt/'+'emojiResponses.txt') as f:
+	with open('txt/'+'emojiResponses.txt', encoding="utf8") as f:
 		for line in f:
 			(key, val) = line.split('|')
 			newVal = val.rstrip()
 			emojiResponses[str(key)] = newVal
 
-	with open('qotdResource/'+'qotd.txt') as f:
+	with open('qotdResource/'+'qotd.txt', encoding="utf8") as f:
 		for line in f:
 			(key, val) = line.split('|')
 			newVal = val.rstrip()
@@ -32,7 +32,7 @@ class dictionaryStatuses:
 	multiStatus = {}
 	statusCount = 0
 
-	with open('txt/'+'multiStatus.txt') as f:
+	with open('txt/'+'multiStatus.txt', encoding="utf8") as f:
 		for line in f:
 	    		(key, val) = line.split('_')
 	    		newVal = val.rstrip()
