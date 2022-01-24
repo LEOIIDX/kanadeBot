@@ -9,6 +9,9 @@ class dictionaryMessages:
 
 	emojiResponses = {}
 
+	qotdList = {}
+	qotdCount = 0
+
 	with open('txt/'+'otherResponses.txt', encoding="utf8") as f:
 		for line in f:
 			(key, val) = line.split('|')
