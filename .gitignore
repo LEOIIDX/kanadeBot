@@ -131,3 +131,6 @@ qotdResource/used-qotd.txt
 
 # vscode stuff
 .vscode
+
+#test file
+testy.py

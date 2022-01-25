@@ -674,11 +674,20 @@ async def on_message(message):
 	if dumbLetters == "bork":
 		if debugValue >= 1:
 			print('Triggered Keyword: ' + dumbLetters + '\n')
-		with open("txt/bestGabe.txt", "r", encoding="utf8") as f:
-			videos = [(line.strip()).split() for line in f]
-			f.close()
-		rand = str(videos[random.randint(1,271)])
-		rand = rand[2:-2]
+
+		# Opening a file
+		file = open("txt/bestGabe.txt", "r", encoding="utf8")
+		Counter = 0
+			
+		# Reading from file
+		Content = file.read()
+		videos = Content.split("\n")
+			
+		for i in videos:
+			if i:
+				Counter += 1
+
+		rand = str(videos[random.randint(1,Counter)])
 		await message.channel.send(rand)
 
 	lolzep = "126068015094693888"
