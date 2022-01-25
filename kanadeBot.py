@@ -668,28 +668,6 @@ async def on_message(message):
 		chance = random.randint(1,10)
 		fuckinRare = random.randint(1,500)
 
-#	If the message sent contains a keyword in the dumbLetters dictionary.
-#	The corresponding value is sent to the message's channel
-
-	if dumbLetters == "bork":
-		if debugValue >= 1:
-			print('Triggered Keyword: ' + dumbLetters + '\n')
-
-		# Opening a file
-		file = open("txt/bestGabe.txt", "r", encoding="utf8")
-		Counter = 0
-			
-		# Reading from file
-		Content = file.read()
-		videos = Content.split("\n")
-			
-		for i in videos:
-			if i:
-				Counter += 1
-
-		rand = str(videos[random.randint(1,Counter)])
-		await message.channel.send(rand)
-
 	lolzep = "126068015094693888"
 	if lolzep == dumbLetters:
 		await message.delete()
