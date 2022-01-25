@@ -154,3 +154,12 @@
 155|Replace a word(or words) in a movie title with cum.
 156|What is your favorite painting?
 157|What would be your role if The Nanahira Monke™ became an organized crime syndacate?
+158|What is your favorite kind of instant ramen?
+159|What is your favorite kind of shoes?
+160|What is your favorite historical event?
+161|What is your favorite kind of Melee Weapon
+162|What Fantasy/Sci-Fi weapon/tool you would like to use?
+163|What would be your role in a Nanahira Monke™ themed Romantic Visual Novel?
+164|What is the tallest thing in your fridge?
+165|Would you play an 18 hole set of golf?
+166|What would be your role in a Nanahira Monke™ post-apocalyptic society?
