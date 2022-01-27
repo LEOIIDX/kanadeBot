@@ -252,7 +252,7 @@ class infoEmbeds:
 	help = discord.Embed(colour = discord.Colour.red())
 
 	help.set_author(name='Help')
-	help.set_thumbnail(url='https://i.postimg.cc/vTbZZ43s/valanga.png')
+	help.set_thumbnail(url='https://i.ibb.co/jgK8fN5/kanade-Smug.png')
 
 	help.add_field(name='about', value='ky!about || Displays Kanade Bot version and patch notes', inline=False)
 	help.add_field(name='adminHelp', value='ky!adminHelp || Shows admin commands (admin only)', inline=False)
@@ -284,7 +284,7 @@ class infoEmbeds:
 
 	aboutEMBED = discord.Embed(colour = discord.Colour.red())
 
-	aboutEMBED.set_thumbnail(url='https://i.postimg.cc/vTbZZ43s/valanga.png')
+	aboutEMBED.set_thumbnail(url='https://i.ibb.co/jgK8fN5/kanade-Smug.png')
 
 	aboutEMBED.add_field(name="Kanade Bot", value='Multi Purpose Discord bot made for the Nanahira Monke server', inline=False)
 	aboutEMBED.add_field(name="Contributors", value='Lolzep #5723\nProphetOfTruth1#1783\n☆LEO!☆#7340', inline=False)
@@ -292,7 +292,7 @@ class infoEmbeds:
 
 	aboutTEST = discord.Embed(colour = discord.Colour.red())
 
-	aboutTEST.set_thumbnail(url='https://i.postimg.cc/vTbZZ43s/valanga.png')
+	aboutTEST.set_thumbnail(url='https://i.ibb.co/jgK8fN5/kanade-Smug.png')
 
 	aboutTEST.add_field(name="Kanade Bot TEST VERSION", value='Testing branch of the main Kanade Bot', inline=False)
 	aboutTEST.add_field(name="Recent Changes", value='Remember to put recent changes in aboutEMBED!', inline=False)
@@ -300,7 +300,7 @@ class infoEmbeds:
 	adminHelp = discord.Embed(colour = discord.Colour.red())
 
 	adminHelp.set_author(name='Kanade Bot Admin Help')
-	adminHelp.set_thumbnail(url='https://i.postimg.cc/vTbZZ43s/valanga.png')
+	adminHelp.set_thumbnail(url='https://i.ibb.co/jgK8fN5/kanade-Smug.png')
 
 	adminHelp.add_field(name='statuschange', value='ky!statuschange || randomly replaces status (☆LEO!☆ only)', inline=False)
 	adminHelp.add_field(name='boost', value='ky!boost || Creates a txt file listing all current server boosters', inline=False)
