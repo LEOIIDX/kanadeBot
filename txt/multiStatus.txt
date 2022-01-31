@@ -42,3 +42,4 @@
 42_ky!help || Guilty Gear Xrd -REVELATOR-
 43_ky!help || Guilty Gear XX
 44_ky!help || I use Artix btw
+45_ky!help || New Suck When?

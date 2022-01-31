@@ -492,11 +492,11 @@
 		"gRarity": [1,50],
 		"responses": ["https://www.youtube.com/watch?v=HSk1Lq3pFhM&t=0s"]
 	},{
-		"keywords": [""],
+		"keywords": ["suck"],
 		"type": 0,
-		"rarity": [1,1],
-		"gRarity": [0,0],
-		"responses": [""]
+		"rarity": [1,15],
+		"gRarity": [1,50],
+		"responses": ["https://youtu.be/3tu-GNMOsig"]
 	},{
 		"keywords": [""],
 		"type": 0,

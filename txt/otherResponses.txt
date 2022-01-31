@@ -111,4 +111,5 @@ flower|flower
 topranker|topranker
 measurements|measurements
 linux|linux
-quasar|quasar
+succ|suck
+suck|suck
