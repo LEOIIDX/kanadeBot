@@ -17,6 +17,7 @@ import json
 
 from discord.ext import commands
 from dotenv import load_dotenv
+from PIL import Image
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
@@ -46,15 +47,30 @@ async def dataPrep():
 	for item in imgList:
 		imgList_COUNT = imgList_COUNT + 1
 
+async def imgGen(imgA, imgB):
+	im1 = Image.open("dbIMG/" + str(imgA) + ".png") 
+	im2 = Image.open("dbIMG/" + str(imgB) + ".png")
+	im3 = Image.open("img/orig.png")
+
+	finIM = im3.copy()
+	finIM.paste(im1)
+	finIM.paste(im2, (303, 0))
+	finIM.save('dbIMG/final.png')
+
 async def embedCreator():
-	ran = (random.randint(1, imgList_COUNT) - 1)
+	ranOne = (random.randint(1, imgList_COUNT) - 1)
+	ranTwo = (random.randint(1, imgList_COUNT) - 1)
+
+	await imgGen(ranOne, ranTwo)
 
 	charaEmbed = discord.Embed()
 
-	file = discord.File('dbIMG/'+ str(ran)  +'.png', filename= str(ran) + '.png')
+	file = discord.File('dbIMG/final.png', filename= 'final.png')
 
-	charaEmbed.set_image(url='attachment://'+ str(ran) +'.png')
-	charaEmbed.add_field(name=charaList[ran]['name'], value=charaList[ran]['source'])
+	charaEmbed.set_image(url='attachment://'+ 'final.png')
+	charaEmbed.add_field(name=charaList[ranOne]['name'], value=charaList[ranOne]['source'])
+	charaEmbed.add_field(name='‏', value='‏')
+	charaEmbed.add_field(name=charaList[ranTwo]['name'], value=charaList[ranTwo]['source'])
 	charaEmbed.set_footer(text='Nanahira Monke Vs.')
 
 	await bot.get_channel(qotdTestCh).send(file=file, embed=charaEmbed)
@@ -66,7 +82,6 @@ async def on_ready():
 	file = discord.File('dbIMG/' + str(charaList[0]['id']) + '.png')
 
 	await embedCreator()
-	await bot.get_channel(qotdTestCh).send('\nVs.\n')
-	await embedCreator()
+	os.system('rm dbIMG/final.png')
 	exit()
 bot.run(TOKEN)
