@@ -69,7 +69,7 @@ async def embedCreator():
 
 	charaEmbed.set_image(url='attachment://'+ 'final.png')
 	charaEmbed.add_field(name=charaList[ranOne]['name'], value=charaList[ranOne]['source'])
-	charaEmbed.add_field(name='‏', value='‏')
+	charaEmbed.add_field(name='VS.', value='‏')
 	charaEmbed.add_field(name=charaList[ranTwo]['name'], value=charaList[ranTwo]['source'])
 	charaEmbed.set_footer(text='Nanahira Monke Vs.')
 
