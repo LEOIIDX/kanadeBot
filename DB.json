@@ -80,223 +80,427 @@
 		"name": "RIOT DESTRUDO",
 		"source": "Sound Voltex"
 	},{
-		"id": 19,
+		"id": 20,
+		"name": "Hifumi Ajitani",
+		"source": "Blue Archive"
+	},{
+		"id": 21,
+		"name": "Arisu Tendou",
+		"source": "Blue Archive"
+	},{
+		"id": 22,
+		"name": "Aru Rikuhachima",
+		"source": "Blue Archive"
+	},{
+		"id": 23,
+		"name": "Asuna Ichinose",
+		"source": "Blue Archive"
+	},{
+		"id": 24,
+		"name": "Nonomi Izayoi",
+		"source": "Blue Archive"
+	},{
+		"id": 25,
+		"name": "Cherino Renkawa",
+		"source": "Blue Archive"
+	},{
+		"id": 26,
+		"name": "Karin Kakudate",
+		"source": "Blue Archive"
+	},{
+		"id": 27,
+		"name": "Hina Sorasaki",
+		"source": "Blue Archive"
+	},{
+		"id": 28,
+		"name": "Hoshino Takanashi",
+		"source": "Blue Archive"
+	},{
+		"id": 29,
+		"name": "Shiroko Sunaōkami",
+		"source": "Blue Archive"
+	},{
+		"id": 30,
+		"name": "Mutsuki Asagi",
+		"source": "Blue Archive"
+	},{
+		"id": 31,
+		"name": "Koharu Shimoe",
+		"source": "Blue Archive"
+	},{
+		"id": 32,
+		"name": "Midori Saiba",
+		"source": "Blue Archive"
+	},{
+		"id": 33,
+		"name": "Momoi Saiba",
+		"source": "Blue Archive"
+	},{
+		"id": 34,
+		"name": "Neru Mikamo",
+		"source": "Blue Archive"
+	},{
+		"id": 35,
+		"name": "Chise Waraku",
+		"source": "Blue Archive"
+	},{
+		"id": 36,
+		"name": "Reimu Hakurei",
+		"source": "Touhou Project"
+	},{
+		"id": 37,
+		"name": "Marisa Kirisame",
+		"source": "Touhou Project"
+	},{
+		"id": 38,
+		"name": "Cirno",
+		"source": "Touhou Project"
+	},{
+		"id": 39,
+		"name": "Suika Ibuki",
+		"source": "Touhou Project"
+	},{
+		"id": 40,
+		"name": "Reisen Udongein Inaba",
+		"source": "Touhou Project"
+	},{
+		"id": 41,
+		"name": "Fujiwara no Mokou",
+		"source": "Touhou Project"
+	},{
+		"id": 42,
+		"name": "Flandre Scarlet",
+		"source": "Touhou Project"
+	},{
+		"id": 43,
+		"name": "Remilia Scarlet",
+		"source": "Touhou Project"
+	},{
+		"id": 44,
+		"name": "Sakuya Izayoi",
+		"source": "Touhou Project"
+	},{
+		"id": 45,
+		"name": "Chen",
+		"source": "Touhou Project"
+	},{
+		"id": 46,
+		"name": "Youmu Konpaku",
+		"source": "Touhou Project"
+	},{
+		"id": 47,
+		"name": "Yuyuko Saigyouji",
+		"source": "Touhou Project"
+	},{
+		"id": 48,
+		"name": "Ran Yakumo",
+		"source": "Touhou Project"
+	},{
+		"id": 49,
+		"name": "Yukari Yakumo",
+		"source": "Touhou Project"
+	},{
+		"id": 50,
+		"name": "Kaguya Houraisan",
+		"source": "Touhou Project"
+	},{
+		"id": 51,
+		"name": "Aya Shameimaru",
+		"source": "Touhou Project"
+	},{
+		"id": 52,
+		"name": "Nitori Kawashiro",
+		"source": "Touhou Project"
+	},{
+		"id": 53,
+		"name": "Sanae Kochiya",
+		"source": "Touhou Project"
+	},{
+		"id": 54,
+		"name": "Suwako Moriya",
+		"source": "Touhou Project"
+	},{
+		"id": 55,
+		"name": "Tenshi Hinanawi",
+		"source": "Touhou Project"
+	},{
+		"id": 56,
+		"name": "Satori Komeiji",
+		"source": "Touhou Project"
+	},{
+		"id": 57,
+		"name": "Koishi Komeiji",
+		"source": "Touhou Project"
+	},{
+		"id": 58,
+		"name": "Momiji Inubashiri",
+		"source": "Touhou Project"
+	},{
+		"id": 59,
+		"name": "Patchouli Knowledge",
+		"source": "Touhou Project"
+	},{
+		"id": 60,
+		"name": "Keine Kamishirasawa",
+		"source": "Touhou Project"
+	},{
+		"id": 61,
+		"name": "Naruto Uzumaki",
+		"source": "Naruto"
+	},{
+		"id": 62,
+		"name": "Boruto's Dad",
+		"source": "Boruto -Naruto Next Generations-"
+	},{
+		"id": 63,
+		"name": "Sasuke Uchiha",
+		"source": "Naruto"
+	},{
+		"id": 64,
+		"name": "Sakura Haruno",
+		"source": "Naruto"
+	},{
+		"id": 65,
+		"name": "Itachi Uchiha",
+		"source": "Naruto"
+	},{
+		"id": 66,
+		"name": "Kakashi Hatake",
+		"source": "Naruto"
+	},{
+		"id": 67,
+		"name": "Jonathan Joestar",
+		"source": "Jojo's Bizarre Adventure - (1) Phantom Blood"
+	},{
+		"id": 68,
+		"name": "Joseph Joestar",
+		"source": "JoJo's Bizarre Adventure - (2) Battle Tendency"
+	},{
+		"id": 69,
+		"name": "Jotaro Kujo",
+		"source": "JoJo's Bizarre Adventure - (3) Stardust Crusaders"
+	},{
+		"id": 70,
+		"name": "Josuke Higashikata",
+		"source": "JoJo's Bizarre Adventure - (4) Diamond is Unbreakable"
+	},{
+		"id": 71,
+		"name": "Giorno Giovanna",
+		"source": "JoJo's Bizarre Adventure - (5) Vento Aureo"
+	},{
+		"id": 72,
+		"name": "Jolyne Cuhjoh",
+		"source": "JoJo's Bizarre Adventure - (6) Stone Ocean"
+	},{
+		"id": 73,
+		"name": "Johnny Joestar",
+		"source": "JoJo's Bizarre Adventure - (7) Steel Ball Run"
+	},{
+		"id": 74,
+		"name": "Josuke Higashikata",
+		"source": "JoJo's Bizarre Adventure - (8) JoJolion"
+	},{
+		"id": 75,
+		"name": "Jota Kujo",
+		"source": "JoJo's Bizarre Married Life (Unofficial)"
+	},{
+		"id": 76,
+		"name": "Dio Brando",
+		"source": "Jojo's Bizarre Adventure - (1) Phantom Blood"
+	},{
+		"id": 77,
+		"name": "DIO",
+		"source": "JoJo's Bizarre Adventure - (3) Stardust Crusaders"
+	},{
+		"id": 78,
+		"name": "Kars",
+		"source": "JoJo's Bizarre Adventure - (2) Battle Tendency"
+	},{
+		"id": 79,
+		"name": "Esidisi",
+		"source": "JoJo's Bizarre Adventure - (2) Battle Tendency"
+	},{
+		"id": 80,
+		"name": "Wamuu",
+		"source": "JoJo's Bizarre Adventure - (2) Battle Tendency"
+	},{
+		"id": 81,
+		"name": "Santana",
+		"source": "JoJo's Bizarre Adventure - (2) Battle Tendency"
+	},{
+		"id": 82,
+		"name": "Joseph Joestar",
+		"source": "JoJo's Bizarre Adventure - (3) Stardust Crusaders"
+	},{
+		"id": 83,
+		"name": "Noriaki Kakyoin",
+		"source": "JoJo's Bizarre Adventure - (3) Stardust Crusaders"
+	},{
+		"id": 84,
+		"name": "Jean Pierre Polnareff",
+		"source": "JoJo's Bizarre Adventure - (3) Stardust Crusaders"
+	},{
+		"id": 85,
+		"name": "Muhammad Avdol",
+		"source": "JoJo's Bizarre Adventure - (3) Stardust Crusaders"
+	},{
+		"id": 86,
+		"name": "Hol Horse",
+		"source": "JoJo's Bizarre Adventure - (3) Stardust Crusaders"
+	},{
+		"id": 87,
+		"name": "Rohan Kishibe",
+		"source": "JoJo's Bizarre Adventure - (4) Diamond is Unbreakable"
+	},{
+		"id": 88,
+		"name": "Yoshikage Kira",
+		"source": "JoJo's Bizarre Adventure - (4) Diamond is Unbreakable"
+	},{
+		"id": 89,
+		"name": "Okuyasu Nijimura",
+		"source": "JoJo's Bizarre Adventure - (4) Diamond is Unbreakable"
+	},{
+		"id": 90,
+		"name": "Koichi Hirose",
+		"source": "JoJo's Bizarre Adventure - (4) Diamond is Unbreakable"
+	},{
+		"id": 91,
+		"name": "Ameto Umegiri",
+		"source": "beatmania IIDX"
+	},{
+		"id": 92,
+		"name": "Nix",
+		"source": "beatmania IIDX"
+	},{
+		"id": 93,
+		"name": "TRAN",
+		"source": "beatmania IIDX"
+	},{
+		"id": 94,
+		"name": "Celica Mizushiro",
+		"source": "beatmania IIDX"
+	},{
+		"id": 95,
+		"name": "Siren",
+		"source": "beatmania IIDX"
+	},{
+		"id": 96,
+		"name": "Himmel",
+		"source": "beatmania IIDX"
+	},{
+		"id": 97,
+		"name": "Iroha Umegiri",
+		"source": "beatmania IIDX"
+	},{
+		"id": 98,
+		"name": "Hihumi Umegiri",
+		"source": "beatmania IIDX"
+	},{
+		"id": 99,
+		"name": "Tsugaru Hishimiya",
+		"source": "beatmania IIDX"
+	},{
+		"id": 100,
+		"name": "Honoka Kosaka",
+		"source": "Love Live! School Idol Project"
+	},{
+		"id": 101,
+		"name": "Eli Ayase",
+		"source": "Love Live! School Idol Project"
+	},{
+		"id": 102,
+		"name": "Kotori Minami",
+		"source": "Love Live! School Idol Project"
+	},{
+		"id": 103,
+		"name": "Umi Sonoda",
+		"source": "Love Live! School Idol Project"
+	},{
+		"id": 104,
+		"name": "Rin Hoshizora",
+		"source": "Love Live! School Idol Project"
+	},{
+		"id": 105,
+		"name": "Maki Nishikino",
+		"source": "Love Live! School Idol Project"
+	},{
+		"id": 106,
+		"name": "Nozomi Tojo",
+		"source": "Love Live! School Idol Project"
+	},{
+		"id": 107,
+		"name": "Hanayo Koizumi",
+		"source": "Love Live! School Idol Project"
+	},{
+		"id": 108,
+		"name": "Nico Yazawa",
+		"source": "Love Live! School Idol Project"
+	},{
+		"id": 109,
+		"name": "Kirito (SAO)",
+		"source": "Sword Art Online"
+	},{
+		"id": 110,
+		"name": "Heathcliff",
+		"source": "Sword Art Online"
+	},{
+		"id": 111,
+		"name": "Kirito (ALO)",
+		"source": "Sword Art Online"
+	},{
+		"id": 112,
+		"name": "Kirito (GGO)",
+		"source": "Sword Art Online II"
+	},{
+		"id": 113,
+		"name": "LLENN",
+		"source": "Sword Art Online Alternative - Gun Gale Online"
+	},{
+		"id": 114,
+		"name": "Sinon",
+		"source": "Sword Art Online II"
+	},{
+		"id": 115,
+		"name": "Goku",
+		"source": "Dragon Ball"
+	},{
+		"id": 116,
+		"name": "Goku (Super Saiyan)",
+		"source": "Dragon Ball"
+	},{
+		"id": 117,
+		"name": "Goku (Super Saiyan 2)",
+		"source": "Dragon Ball"
+	},{
+		"id": 118,
+		"name": "Goku (Super Saiyan 3)",
+		"source": "Dragon Ball"
+	},{
+		"id": 119,
+		"name": "Goku (Super Saiyan God)",
+		"source": "Dragon Ball"
+	},{
+		"id": 120,
+		"name": "Goku (Super Saiyan Blue)",
+		"source": "Dragon Ball"
+	},{
+		"id": 121,
+		"name": "Goku (Ultra Instinct -Sign-)",
+		"source": "Dragon Ball"
+	},{
+		"id": 122,
 		"name": "",
 		"source": ""
 	},{
-		"id": 19,
+		"id": 123,
 		"name": "",
 		"source": ""
 	},{
-		"id": 19,
+		"id": 124,
 		"name": "",
 		"source": ""
 	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
-		"name": "",
-		"source": ""
-	},{
-		"id": 19,
+		"id": 125,
 		"name": "",
 		"source": ""
 	}

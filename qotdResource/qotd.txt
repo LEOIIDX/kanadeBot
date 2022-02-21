@@ -191,3 +191,6 @@
 191|What is your usual process when waking up?
 192|What is the most expensive personal project you have ever taken on?
 193|How long was recess at your elementary school?
+194|What is a lyric that you that you habitually mishear?
+195|How much money would you need to be given to order a breast milk latte?\n\nYou have to stammer/repeat yourself at least 5 times and you can't clarify that it was a dare/joke after the fact.
+196|What is the longest amount of time you put food into the microwave?
