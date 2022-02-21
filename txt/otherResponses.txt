@@ -113,3 +113,9 @@ measurements|measurements
 linux|linux
 succ|suck
 suck|suck
+レオ|leo
+leo|leo
+happy day|rember
+yuuka|rember
+rember|rember
+presidents day|presidents day
