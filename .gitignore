@@ -135,6 +135,6 @@ qotdResource/used-qotd.txt
 #test file
 testy.py
 
-dbIMG/*
+dbResource/dbIMG/*
 
 img/*

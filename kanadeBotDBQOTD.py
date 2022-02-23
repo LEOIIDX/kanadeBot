@@ -28,7 +28,7 @@ intents.members = True
 intents.emojis = True
 intents.reactions = True
 
-print('Kanade Bot DEATH BATTLE COTD module\n')
+print('Kanade Bot DEATH BATTLE QOTD module\n')
 
 bot = commands.Bot(command_prefix='kyt!',intents=intents)
 
@@ -42,14 +42,14 @@ async def dataPrep():
 	with open ('DB.json', 'r', encoding='utf8') as f:
 		charaList = json.load(f)
 
-	imgList = os.listdir("dbIMG/")
+	imgList = os.listdir("dbResource/dbIMG/")
 
 	for item in imgList:
 		imgList_COUNT = imgList_COUNT + 1
 
 async def imgGen(imgA, imgB):
-	im1 = Image.open("dbIMG/" + str(imgA) + ".png") 
-	im2 = Image.open("dbIMG/" + str(imgB) + ".png")
+	im2 = Image.open("dbResource/dbIMG/" + str(imgB) + ".png")
+	im1 = Image.open("dbResource/dbIMG/" + str(imgA) + ".png") 
 	im3 = Image.open("img/orig.png")
 
 	finIM = im3.copy()
@@ -65,12 +65,13 @@ async def embedCreator():
 
 	charaEmbed = discord.Embed()
 
-	file = discord.File('dbIMG/final.png', filename= 'final.png')
+	file = discord.File('dbResource/dbIMG/final.png', filename= 'final.png')
 
 	charaEmbed.set_image(url='attachment://'+ 'final.png')
-	charaEmbed.add_field(name=charaList[ranOne]['name'], value=charaList[ranOne]['source'])
-	charaEmbed.add_field(name='VS.', value='‏')
-	charaEmbed.add_field(name=charaList[ranTwo]['name'], value=charaList[ranTwo]['source'])
+	charaEmbed.add_field(name="Who would win in a fight?",value='‏', inline=False)
+	charaEmbed.add_field(name=charaList[ranOne]['name'], value=charaList[ranOne]['source'], inline=True)
+	charaEmbed.add_field(name='OR', value='‏',inline=True)
+	charaEmbed.add_field(name=charaList[ranTwo]['name'], value=charaList[ranTwo]['source'], inline=True)
 	charaEmbed.set_footer(text='Nanahira Monke Vs.')
 
 	await bot.get_channel(qotdTestCh).send(file=file, embed=charaEmbed)
@@ -78,10 +79,8 @@ async def embedCreator():
 @bot.event
 async def on_ready():
 	await dataPrep()
-
-	file = discord.File('dbIMG/' + str(charaList[0]['id']) + '.png')
-
 	await embedCreator()
-	os.system('rm dbIMG/final.png')
+
+	os.system('rm dbResource/dbIMG/final.png')
 	exit()
 bot.run(TOKEN)
