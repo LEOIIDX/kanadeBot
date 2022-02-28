@@ -322,7 +322,7 @@ async def gacha(ctx):
 			respStep = 0
 			for item in data['keywords']:
 				if data['type'] == 0:
-					ran = random.randint(data['gRarity'][0], data['gRarity'][1])
+					ran = random.randint(1,35)
 					if ran == 1:
 						for item in data['responses']:
 							respStep = respStep + 1
@@ -333,7 +333,7 @@ async def gacha(ctx):
 					else:
 						pass
 				elif data['type'] == 1:
-					ran = random.randint(data['gRarity'][0], data['gRarity'][1])
+					ran = random.randint(1,35)
 					if ran == 1:
 						for item in data['responses']:
 							await ctx.channel.send(data['responses'][respStep])
@@ -343,7 +343,7 @@ async def gacha(ctx):
 					else:
 						pass
 				elif data['type'] == 2:
-					ran = random.randint(data['gRarity'][0], data['gRarity'][1])
+					ran = random.randint(1,35)
 					if ran == 1:
 						for item in data['responses']:
 							respStep = respStep + 1
