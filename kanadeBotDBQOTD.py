@@ -55,7 +55,7 @@ async def imgGen(imgA, imgB):
 	finIM = im3.copy()
 	finIM.paste(im1)
 	finIM.paste(im2, (303, 0))
-	finIM.save('dbIMG/final.png')
+	finIM.save('dbResource/dbIMG/final.png')
 
 async def embedCreator():
 	ranOne = (random.randint(1, imgList_COUNT) - 1)
