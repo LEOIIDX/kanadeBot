@@ -203,3 +203,6 @@
 203|What is your favorite Pokémon?
 204|What is your favorite kind of apple?
 205|What is the most used appliance in your house?
+206|What is your favorite piece of video game trivia you know?
+207|What is the worst looking car?
+208|What is your favorite "what if life was bideo game?" thought?
