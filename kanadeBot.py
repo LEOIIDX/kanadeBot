@@ -314,47 +314,39 @@ async def gacha(ctx):
 	gachaChan = 932177985774182400
 	testChan = 841586692640735242
 
+	gachaCount = 0
+
 	with open ('input.json', 'r', encoding="utf8") as f:
 		bResp = json.load(f)
 
 	if ctx.channel.id == gachaChan or ctx.channel.id == testChan:
 		for data in bResp:
-			respStep = 0
-			for item in data['keywords']:
-				if data['type'] == 0:
-					ran = random.randint(1,35)
-					if ran == 1:
-						for item in data['responses']:
-							respStep = respStep + 1
-						respStep = respStep - 1
-						respRan = random.randint(0, respStep)
-						await ctx.channel.send(data['responses'][respRan])
-						return
-					else:
-						pass
-				elif data['type'] == 1:
-					ran = random.randint(1,35)
-					if ran == 1:
-						for item in data['responses']:
-							await ctx.channel.send(data['responses'][respStep])
-							await ctx.channel.send('‏')
-							respStep = respStep + 1
-						return
-					else:
-						pass
-				elif data['type'] == 2:
-					ran = random.randint(1,35)
-					if ran == 1:
-						for item in data['responses']:
-							respStep = respStep + 1
-						respStep = respStep - 1
-						respRan = random.randint(0, respStep)
-						await ctx.channel.send(file=discord.File("img/" + data['responses'][respRan]))
-						return
-					else:
-						pass
-				else:
-					pass
+			gachaCount = gachaCount + 1
+
+		gachaCount = gachaCount - 1
+		gachaRan = random.randint(0, gachaCount)
+		respStep = 0
+
+		if bResp[gachaRan]['type'] == 0:
+				for item in bResp[gachaRan]['responses']:
+					respStep = respStep + 1
+				respStep = respStep - 1
+				respRan = random.randint(0, respStep)
+				await ctx.channel.send(bResp[gachaRan]['responses'][respRan])
+				return
+		elif bResp[gachaRan]['type'] == 1:
+				for item in data['responses']:
+					await ctx.channel.send(bResp[gachaRan]['responses'][respStep])
+					await ctx.channel.send('‏')
+					respStep = respStep + 1
+				return
+		elif bResp[gachaRan]['type'] == 2:
+				for item in bResp[gachaRan]['responses']:
+					respStep = respStep + 1
+				respStep = respStep - 1
+				respRan = random.randint(0, respStep)
+				await ctx.channel.send(file=discord.File("img/" + bResp[gachaRan]['responses'][respRan]))
+				return
 	else:
 		await ctx.channel.send("This command cannot be used in this channel.")
 
