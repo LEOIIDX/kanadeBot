@@ -335,7 +335,7 @@ async def gacha(ctx):
 				await ctx.channel.send(bResp[gachaRan]['responses'][respRan])
 				return
 		elif bResp[gachaRan]['type'] == 1:
-				for item in data['responses']:
+				for item in bResp[gachaRan]['responses']:
 					await ctx.channel.send(bResp[gachaRan]['responses'][respStep])
 					await ctx.channel.send('‏')
 					respStep = respStep + 1
