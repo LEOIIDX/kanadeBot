@@ -536,7 +536,7 @@
 	},{
 		"keywords": ["brian"],
 		"type": 2,
-		"rarity": [1,50],
+		"rarity": [1,25],
 		"gRarity": [0,0],
 		"responses": ["brianImage/1.png","brianImage/2.png","brianImage/3.png","brianImage/4.png","brianImage/5.png","brianImage/6.png","brianImage/7.png","brianImage/8.png","brianImage/9.png","brianImage/10.png","brianImage/11.png"]
 	},{
