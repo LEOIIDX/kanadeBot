@@ -350,6 +350,20 @@ async def gacha(ctx):
 	else:
 		await ctx.channel.send("This command cannot be used in this channel.")
 
+@bot.command(name='newHelp')
+async def newHelp(ctx):
+	helpEmbed = discord.Embed()
+	helpEmbed.set_author(name='Kanade Bot Help')
+
+	with open ('help.json', 'r', encoding='utf8') as f:
+		helpContent = json.load(f)
+
+	for data in helpContent:
+		helpEmbed.add_field(name=data['title'], value=data['text'], inline=False)
+
+	await ctx.channel.send(embed=helpEmbed)
+
+
 @bot.command()
 async def copy(ctx):
 	start = time.time()

@@ -206,3 +206,5 @@
 206|What is your favorite piece of video game trivia you know?
 207|What is the worst looking car?
 208|What is your favorite "what if life was bideo game?" thought?
+209|What is your default store for groceries?
+210|Light mode or dark mode?
