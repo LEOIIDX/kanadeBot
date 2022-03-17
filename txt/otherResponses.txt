@@ -133,3 +133,4 @@ namco|765
 mishiro|346
 cinderella|346
 346|346
+hisakawa|hisakawa
