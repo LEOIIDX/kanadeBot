@@ -128,3 +128,8 @@ wysi|727
 727|727
 paranoia|brian
 brian|brian
+namco|765
+765|765
+mishiro|346
+cinderella|346
+346|346

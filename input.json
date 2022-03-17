@@ -542,20 +542,14 @@
 	},{
 		"keywords": ["765"],
 		"type": 0,
-		"rarity": [1,1],
+		"rarity": [1,15],
 		"gRarity": [0,0],
-		"responses": ["https://youtu.be/HJKqSYK_z0w", "https://youtu.be/ovOQ69u4njw", "https://www.youtube.com/watch?v=LULl-LJiRVw", "https://youtu.be/wHWGowfW7A4"]
+		"responses": ["https://youtu.be/HJKqSYK_z0w", "https://youtu.be/ovOQ69u4njw", "https://www.youtube.com/watch?v=LULl-LJiRVw", "https://youtu.be/wHWGowfW7A4", "https://youtu.be/jOI1NslkcjY", "https://youtu.be/Qc4zVz44QXg", "https://youtu.be/BZbmbITB54M", "https://youtu.be/H2XR03rcau0"]
 	},{
 		"keywords": ["346"],
 		"type": 0,
-		"rarity": [1,1],
+		"rarity": [1,15],
 		"gRarity": [0,0],
-		"responses": ["https://youtu.be/HJKqSYK_z0w", "https://youtu.be/ZLetfBXOMKc", "https://youtu.be/7TUT6Uq7vVM", "https://youtu.be/uYn_yUjjeUc", "https://youtu.be/Ig0Ce5QfM88", "https://youtu.be/F4orhsVAdMA", "https://youtu.be/QLrB1ISt7T0", "https://youtu.be/fnThu74tRA0", "https://youtu.be/0dXMuXv8kWU", "https://youtu.be/Y0rNQtJcvos", "https://youtu.be/qKN7Epk8KYE", "https://youtu.be/V3EUp377NE0", "https://youtu.be/qbGTT8Nguoc", "https://youtu.be/dOkQa5dpYe8"]
-	},{
-		"keywords": ["315"],
-		"type": 0,
-		"rarity": [1,1],
-		"gRarity": [0,0],
-		"responses": ["https://youtu.be/HJKqSYK_z0w"]
+		"responses": ["https://youtu.be/HJKqSYK_z0w", "https://youtu.be/ZLetfBXOMKc", "https://youtu.be/wkP5TEfwp3c", "https://youtu.be/uYn_yUjjeUc", "https://youtu.be/Ig0Ce5QfM88", "https://youtu.be/t6Q20pbomOw", "https://youtu.be/QLrB1ISt7T0", "https://youtu.be/fnThu74tRA0", "https://youtu.be/0dXMuXv8kWU", "https://youtu.be/Y0rNQtJcvos", "https://youtu.be/qKN7Epk8KYE", "https://youtu.be/V3EUp377NE0", "https://youtu.be/qbGTT8Nguoc", "https://youtu.be/dOkQa5dpYe8", "https://youtu.be/mJaD9D6y1ww", "https://youtu.be/z0bKSb5EmFo", "https://youtu.be/oL4IVNMCQbw", "https://youtu.be/gpt0oNW1blw", "https://youtu.be/96rmz41v6QE", "https://youtu.be/CGGKrmo5XCY", "https://youtu.be/HQeR-mvHK_Y", "https://youtu.be/6StovahGJWE", "https://youtu.be/WC4PoBOpKh0", "https://youtu.be/FB3OpPmKnLE", "https://youtu.be/SkAyJDA7idI", "https://youtu.be/l0gFx1NqwyQ", "https://youtu.be/mn4MOE7yObo", "https://youtu.be/_G6a1mlCgSQ", "https://youtu.be/JRtNY1YNhZo", "https://youtu.be/5qh53e0pKGk", "https://youtu.be/83Mb6HZhjok", "https://youtu.be/8c3bSgsaGzI"]
 	}
 ]

@@ -113,13 +113,6 @@ async def on_command_error(ctx, error):
 	if isinstance(error, commands.MissingRequiredArgument):
 		await ctx.send('Command missing arguments')
 
-@bot.command(name='help')
-#Command that displays all availible commands in an Embed Object.
-async def help(ctx):
-	helpEM = infoEmbeds()
-
-	await ctx.channel.send(embed=helpEM.help)
-
 @bot.command(name='exscore')
 #Calculates IIDX Score necesary to get IIDX grade ranks
 #Calcuations are made by taking a given note count, doubling it to find maximum EXSCORE, then multiplying by percentage corresponding to grade rank.
@@ -258,13 +251,6 @@ async def about(ctx):
 	else:
 		await ctx.channel.send(embed=about.aboutEMBED)
 
-@bot.command(name='adminHelp')
-@commands.has_any_role("Admin", "Mod")
-#sends an embed containing commands for admins only from leoEmbed.py to the channel the command was sent.
-async def adminHelp(ctx):
-	aHelp = infoEmbeds()
-	await ctx.channel.send(embed=aHelp.adminHelp)
-
 @bot.command(name='statuslist')
 @commands.has_any_role("Admin")
 #sends embeds that contain every possible status for the bot from leoEmbed.py the the channel the command was sent.
@@ -350,19 +336,28 @@ async def gacha(ctx):
 	else:
 		await ctx.channel.send("This command cannot be used in this channel.")
 
-@bot.command(name='newHelp')
-async def newHelp(ctx):
-	helpEmbed = discord.Embed()
+@bot.command(name='help')
+async def help(ctx, tag=None):
+	helpEmbed = discord.Embed(colour=discord.Colour.red())
 	helpEmbed.set_author(name='Kanade Bot Help')
+	helpEmbed.set_thumbnail(url='https://i.ibb.co/jgK8fN5/kanade-Smug.png')	
 
 	with open ('help.json', 'r', encoding='utf8') as f:
 		helpContent = json.load(f)
-
-	for data in helpContent:
-		helpEmbed.add_field(name=data['title'], value=data['text'], inline=False)
+	if tag is None:
+		for data in helpContent:
+			if data['tag'] == 'admin':
+				pass
+			else:
+				helpEmbed.add_field(name=data['title'], value=data['text'], inline=False)
+	else:
+		for data in helpContent:
+			if data['tag'] == tag:
+				helpEmbed.add_field(name=data['title'], value=data['text'], inline=False)
+			else:
+				pass
 
 	await ctx.channel.send(embed=helpEmbed)
-
 
 @bot.command()
 async def copy(ctx):
