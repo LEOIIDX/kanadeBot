@@ -578,7 +578,7 @@ async def remywiki(ctx, *args):
 
 @bot.command()
 async def playsleft(ctx, arg):
-  await ctx.channel.send("You can play " + str(math.floor(float(arg)/6.4)) + " more rounds of a 6.4 credit rhythm game. You will have " + str(round((float(arg)-((float(math.floor(float(arg)/6.4))*float(6.4)))),1)) + " credits leftover.")
+  await ctx.channel.send("You can play " + str(math.floor(float(arg)/8)) + " more rounds of a 8 credit rhythm game. You will have " + str(round((float(arg)-((float(math.floor(float(arg)/8))*float(8)))),1)) + " credits leftover.")
 
 @bot.command()
 async def wacca(ctx):
