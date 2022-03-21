@@ -31,6 +31,7 @@ print('Kanade Bot QOTD module\n')
 bot = commands.Bot(command_prefix='ky!',intents=intents)
 
 qotdCh = 792646559601917963
+qotdTest = 867088318466359338
 
 @bot.event
 async def on_ready():

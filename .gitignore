@@ -138,3 +138,5 @@ testy.py
 dbResource/dbIMG/*
 
 img/*
+
+qotdResource/used-qotd.txt
