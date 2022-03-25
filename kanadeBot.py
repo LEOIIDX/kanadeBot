@@ -359,8 +359,8 @@ async def help(ctx, tag=None):
 
 	await ctx.channel.send(embed=helpEmbed)
 
-@bot.command(name='lore')
-async def lore(ctx, tag=None):
+@bot.command(name='lrre')
+async def lrre(ctx, tag=None):
 	directoryEmbed = discord.Embed(colour=discord.Colour.red())
 	loreEmbed = discord.Embed(colour=discord.Colour.red())
 	avaTag = ''
@@ -377,6 +377,7 @@ async def lore(ctx, tag=None):
 
 	if tag is None:
 		await ctx.channel.send(embed=directoryEmbed)
+		return
 	else:
 		for data in loreContent:
 			if data['tag'] == tag:
