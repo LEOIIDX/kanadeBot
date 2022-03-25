@@ -359,6 +359,32 @@ async def help(ctx, tag=None):
 
 	await ctx.channel.send(embed=helpEmbed)
 
+@bot.command(name='lore')
+async def lore(ctx, tag=None):
+	directoryEmbed = discord.Embed(colour=discord.Colour.red())
+	loreEmbed = discord.Embed(colour=discord.Colour.red())
+	avaTag = ''
+
+	with open ('loreResource/lore.json', 'r', encoding='utf8') as f:
+		loreContent = json.load(f)
+	for data in loreContent:
+		avaTag += data['tag'] + ', '
+
+	directoryEmbed.set_author(name='Nanahira Monke Lore')
+	directoryEmbed.add_field(name='Availible Pages', value=avaTag, inline=False)
+
+	loreEmbed.set_author(name='Nanahira Monke Lore')
+
+	if tag is None:
+		await ctx.channel.send(embed=directoryEmbed)
+	else:
+		for data in loreContent:
+			if data['tag'] == tag:
+				loreEmbed.add_field(name=data['title'], value=data['text'], inline=False)
+				await ctx.channel.send(embed=loreEmbed)
+				return
+	await ctx.channel.send('Invalid tag.')
+
 @bot.command()
 async def copy(ctx):
 	start = time.time()
@@ -761,6 +787,10 @@ async def on_message(message):
 		for data in bResp[67]["responses"]:
 			respStep = respStep + 1
 		await message.channel.send(bResp[67]["responses"][random.randint(0, respStep)])
+		return
+
+	if random.randint(bResp[94]["rarity"][0], bResp[94]["rarity"][1]) == 1:
+		await message.channel.send(file=discord.File("img/" + bResp[94]['responses'][0]))
 		return
 
 	if fuckinRare == 2:
