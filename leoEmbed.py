@@ -3,7 +3,11 @@
 Container for all non user input embeds
 '''
 import discord
+import os
 from leoDictionary import dictionaryStatuses
+
+global version
+version = os.popen('git rev-parse HEAD').read()
 
 class iidxSPClassEmbeds:
 	kyuD = {}
@@ -270,23 +274,12 @@ class infoEmbeds:
 	help.add_field(name='gacha', value='ky!gacha || Sends a random response', inline=False)
 	help.add_field(name='certain messages', value='imminent funni', inline=False)
 
-	eventEMBED = discord.Embed(colour = discord.Colour.red())
-
-	eventEMBED.set_author(name='Nanahira Monkey Events in July')
-	eventEMBED.set_thumbnail(url='https://i.ibb.co/z6ftf9X/monke.png')
-
-	eventEMBED.add_field(name="Week 27", value='1. ' + eventD.get('1-1') + '2. ' + eventD.get('1-2') + '3. ' + eventD.get('1-3'), inline=False)
-	eventEMBED.add_field(name="Week 28", value='1. ' + eventD.get('2-1') + '2. ' + eventD.get('2-2') + '3. ' + eventD.get('2-3'), inline=False)
-	eventEMBED.add_field(name="Week 29", value='1. ' + eventD.get('3-1') + '2. ' + eventD.get('3-2') + '3. ' + eventD.get('3-3'), inline=False)
-	eventEMBED.add_field(name="Week 30", value='1. ' + eventD.get('4-1') + '2. ' + eventD.get('4-2') + '3. ' + eventD.get('4-3'), inline=False)
-	eventEMBED.add_field(name="Week 31", value='1. ' + eventD.get('5-1') + '2. ' + eventD.get('5-2') + '3. ' + eventD.get('5-3'), inline=False)
-	eventEMBED.add_field(name="Week 32", value='1. ' + eventD.get('6-1') + '2. ' + eventD.get('6-2') + '3. ' + eventD.get('6-3'), inline=False)
-
 	aboutEMBED = discord.Embed(colour = discord.Colour.red())
 
 	aboutEMBED.set_thumbnail(url='https://i.ibb.co/jgK8fN5/kanade-Smug.png')
 
 	aboutEMBED.add_field(name="Kanade Bot", value='Multi Purpose Discord bot made for the Nanahira Monke server', inline=False)
+	aboutEMBED.add_field(name='Commit', value=str(version), inline=False)
 	aboutEMBED.add_field(name="Contributors", value='Lolzep #5723\nProphetOfTruth1#1783\n☆LEO!☆#7340', inline=False)
 	aboutEMBED.add_field(name="Recent Changes", value='Nerfed a bit more', inline=False)
 

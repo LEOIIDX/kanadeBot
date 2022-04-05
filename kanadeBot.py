@@ -47,7 +47,9 @@ intents.members = True
 intents.emojis = True
 intents.reactions = True
 
-print('Kanade Bot\n')
+global version 
+version = os.popen('git rev-parse HEAD').read()
+print('Kanade Bot\n' + 'Commit: ' + str(version))
 
 '''
 Debug Mode details
