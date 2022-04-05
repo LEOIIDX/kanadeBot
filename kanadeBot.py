@@ -679,21 +679,16 @@ async def on_message(message):
 	if debugValue >= 1:
 		print('haha')
 	if debugValue == 1:
-		coinflip = random.randint(1,2)
 		chance =  1
 		fuckinRare = 1
-		print('coinflip: '+ str(coinflip))
 		print('chance: ' + str(chance))
 		print('fuckinRare: ' + str(fuckinRare) + '\n')
 	elif debugValue == 2:
-		coinflip = random.randint(1,2)
 		chance = random.randint(1,10)
 		fuckinRare = random.randint(1,500)
-		print('coinflip: '+ str(coinflip))
 		print('chance: ' + str(chance))
 		print('fuckinRare: ' + str(fuckinRare) + '\n')
 	else:
-		coinflip = random.randint(1,2)	
 		chance = random.randint(1,10)
 		fuckinRare = random.randint(1,500)
 
@@ -794,15 +789,41 @@ async def on_message(message):
 		await message.channel.send(file=discord.File("img/" + bResp[94]['responses'][0]))
 		return
 
-	if fuckinRare == 2:
-		if debugValue != 1:
-			pass
-		else:
-			if coinflip == 1:
+	if fuckinRare == 1:
+		textRan = random.randint(0,10)
+		match textRan:
+			case 0:
 				await message.channel.send('*' + dumb + '*')
 				return
-			else:
+			case 1:
 				await message.channel.send('||' + dumb + '||')
+				return
+			case 2:
+				await message.channel.send('**' + dumb + '**')
+				return
+			case 3:
+				await message.channel.send('***' + dumb + '***')
+				return
+			case 4:
+				await message.channel.send('__' + dumb + '__')
+				return
+			case 5:
+				await message.channel.send('__*' + dumb + '*__')
+				return
+			case 6:
+				await message.channel.send('__*' + dumb + '**__')
+				return
+			case 7:
+				await message.channel.send('__***' + dumb + '***__')
+				return
+			case 8:
+				await message.channel.send('~~' + dumb + '~~')
+				return
+			case 9:
+				await message.channel.send('`' + dumb + '`')
+				return
+			case 10:
+				await message.channel.send('>' + dumb)
 				return
 
 if masterQuery == 1:

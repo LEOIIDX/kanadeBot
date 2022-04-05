@@ -506,7 +506,7 @@
 	},{
 		"keywords": ["rember"],
 		"type": 0,
-		"rarity": [1,25],
+		"rarity": [1,5],
 		"gRarity": [1,200],
 		"responses": ["pls rember that wen u feel scare or frigten never forget ttimes wen u feeled happy\nwen day is dark alway rember happy day"]
 	},{
@@ -518,7 +518,7 @@
 	},{
 		"keywords": ["tomato"],
 		"type": 2,
-		"rarity": [1,25],
+		"rarity": [1,15],
 		"gRarity": [0,0],
 		"responses": ["tomato.jpg"]
 	},{
@@ -536,19 +536,19 @@
 	},{
 		"keywords": ["brian"],
 		"type": 2,
-		"rarity": [1,15],
+		"rarity": [1,5],
 		"gRarity": [0,0],
 		"responses": ["brianImage/1.png","brianImage/2.png","brianImage/3.png","brianImage/4.png","brianImage/5.png","brianImage/6.png","brianImage/7.png","brianImage/8.png","brianImage/9.png","brianImage/10.png","brianImage/11.png"]
 	},{
 		"keywords": ["765"],
 		"type": 0,
-		"rarity": [1,15],
+		"rarity": [1,5],
 		"gRarity": [0,0],
 		"responses": ["https://youtu.be/HJKqSYK_z0w", "https://youtu.be/ovOQ69u4njw", "https://www.youtube.com/watch?v=LULl-LJiRVw", "https://youtu.be/wHWGowfW7A4", "https://youtu.be/jOI1NslkcjY", "https://youtu.be/Qc4zVz44QXg", "https://youtu.be/BZbmbITB54M", "https://youtu.be/H2XR03rcau0"]
 	},{
 		"keywords": ["346"],
 		"type": 0,
-		"rarity": [1,15],
+		"rarity": [1,5],
 		"gRarity": [0,0],
 		"responses": ["https://youtu.be/HJKqSYK_z0w", "https://youtu.be/ZLetfBXOMKc", "https://youtu.be/wkP5TEfwp3c", "https://youtu.be/uYn_yUjjeUc", "https://youtu.be/Ig0Ce5QfM88", "https://youtu.be/t6Q20pbomOw", "https://youtu.be/QLrB1ISt7T0", "https://youtu.be/fnThu74tRA0", "https://youtu.be/0dXMuXv8kWU", "https://youtu.be/Y0rNQtJcvos", "https://youtu.be/qKN7Epk8KYE", "https://youtu.be/V3EUp377NE0", "https://youtu.be/qbGTT8Nguoc", "https://youtu.be/dOkQa5dpYe8", "https://youtu.be/mJaD9D6y1ww", "https://youtu.be/z0bKSb5EmFo", "https://youtu.be/oL4IVNMCQbw", "https://youtu.be/gpt0oNW1blw", "https://youtu.be/96rmz41v6QE", "https://youtu.be/CGGKrmo5XCY", "https://youtu.be/HQeR-mvHK_Y", "https://youtu.be/6StovahGJWE", "https://youtu.be/WC4PoBOpKh0", "https://youtu.be/FB3OpPmKnLE", "https://youtu.be/SkAyJDA7idI", "https://youtu.be/l0gFx1NqwyQ", "https://youtu.be/mn4MOE7yObo", "https://youtu.be/_G6a1mlCgSQ", "https://youtu.be/JRtNY1YNhZo", "https://youtu.be/5qh53e0pKGk", "https://youtu.be/83Mb6HZhjok", "https://youtu.be/8c3bSgsaGzI"]
 	},{
@@ -566,7 +566,7 @@
 	},{
 		"keywords": ["~daoba"],
 		"type": 2,
-		"rarity": [1,250],
+		"rarity": [1,1000],
 		"gRarity": [0,0],
 		"responses": ["cringe.jpg"]
 	}
