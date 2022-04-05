@@ -6,8 +6,9 @@ import discord
 import os
 from leoDictionary import dictionaryStatuses
 
-global version
-version = os.popen('git rev-parse HEAD').read()
+global VERSION, COMMIT_MESSAGE
+VERSION = os.popen('git rev-parse HEAD').read()
+COMMIT_MESSAGE = os.popen('git show --pretty=format:%s -s HEAD').read()
 
 class iidxSPClassEmbeds:
 	kyuD = {}
@@ -279,9 +280,9 @@ class infoEmbeds:
 	aboutEMBED.set_thumbnail(url='https://i.ibb.co/jgK8fN5/kanade-Smug.png')
 
 	aboutEMBED.add_field(name="Kanade Bot", value='Multi Purpose Discord bot made for the Nanahira Monke server', inline=False)
-	aboutEMBED.add_field(name='Commit', value=str(version), inline=False)
+	aboutEMBED.add_field(name='Commit', value=str(VERSION), inline=False)
+	aboutEMBED.add_field(name="Recent Changes", value=COMMIT_MESSAGE, inline=False)
 	aboutEMBED.add_field(name="Contributors", value='Lolzep #5723\nProphetOfTruth1#1783\n☆LEO!☆#7340', inline=False)
-	aboutEMBED.add_field(name="Recent Changes", value='Nerfed a bit more', inline=False)
 
 	aboutTEST = discord.Embed(colour = discord.Colour.red())
 
