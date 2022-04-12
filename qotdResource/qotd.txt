@@ -18,3 +18,7 @@
 18|What is the longest amount of time it took for you to get a package?
 19|What is your favorite material for pants?
 20|What is your favorite eSports moment?
+21|What is your favorite kind of bread?
+22|How often do you eat rice?
+23|What is the worst US state?
+24|What is your favorite Pre-Release Video Game Trivia
