@@ -73,6 +73,9 @@ stDict = dictionaryStatuses()
 for key in stDict.multiStatus:
 	print(key + ' ' + stDict.multiStatus.get(key))
 
+global sPick 
+sPick = str(input('Input Desired Status.\n'))
+
 '''
 command section
 command prefix ky!
@@ -97,12 +100,6 @@ responseCheck = 1
 @bot.event
 async def on_ready():
 	sDict = dictionaryStatuses()
-	qDict = dictionaryMessages()
-	uQotd = {}
-	uQotdCount = 0
-
-	readyVer = 1
-	sPick = str(input('Input Desired Status. \n (0) for random \n'))
 
 	await bot.change_presence(status=discord.Status.online, activity=discord.Game(sDict.multiStatus.get(sPick)))
 
