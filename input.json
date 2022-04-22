@@ -502,7 +502,7 @@
 		"type": 2,
 		"rarity": [1,100],
 		"gRarity": [1,200],
-		"responses": ["leoImage/1.png", "leoImage/2.png", "leoImage/3.png", "leoImage/4.png", "leoImage/5.jpg", "leoImage/6.png", "leoImage/7.jpg", "leoImage/8.jpg", "leoImage/9.jpg", "leoImage/10.png", "leoImage/11.png", "leo/Image/12.jpg", "leoImage/13.jpg", "leoImage/14.png", "leoImage/15.png", "leoImage/16.png", "leoImage/17.jpg", "leoImage/18.png", "leoImage/19.png", "leoImage/20.png", "leoImage/21.png"]
+		"responses": ["leoImage/1.png", "leoImage/2.png", "leoImage/3.png", "leoImage/4.png", "leoImage/5.jpg", "leoImage/6.png", "leoImage/7.jpg", "leoImage/8.jpg", "leoImage/9.jpg", "leoImage/10.png", "leoImage/11.png", "leo/Image/12.jpg", "leoImage/13.jpg", "leoImage/14.png", "leoImage/15.png", "leoImage/16.png", "leoImage/17.jpg", "leoImage/18.png", "leoImage/19.png", "leoImage/20.png", "leoImage/21.png", "leoImage/22.png"]
 	},{
 		"keywords": ["rember"],
 		"type": 0,
