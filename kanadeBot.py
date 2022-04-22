@@ -294,6 +294,20 @@ async def noresponse(ctx):
 	else:
 		await ctx.channel.send('Bot responses have already been disabled.')
 
+def respReveal(ranVal): #Creates an embed that shows the keyword and rarity of a bot response
+	with open ('input.json', 'r', encoding="utf8") as f:
+		bResp = json.load(f)
+
+	keyword = re.sub(r"[^a-zA-Z0-9i]"," ",str(bResp[ranVal]['keywords']))
+	rarity = re.sub(r"[^a-zA-Z0-9i,]","",str(bResp[ranVal]['rarity']))
+
+	embed = discord.Embed(colour=discord.Colour.red())
+	embed.set_author(name='Kanade Bot Response Gacha')
+
+	embed.add_field(name='Main Keyword', value=keyword, inline=True)
+	embed.add_field(name='Odds', value=rarity, inline=True)
+	return embed
+
 @bot.command(name='gacha')
 async def gacha(ctx):
 	gachaChan = 932177985774182400
@@ -310,7 +324,11 @@ async def gacha(ctx):
 
 		gachaCount = gachaCount - 1
 		gachaRan = random.randint(0, gachaCount)
+		revealRan = random.randint(1,100)
 		respStep = 0
+
+		if revealRan == 1:
+			await ctx.send(embed=respReveal(gachaRan))
 
 		if bResp[gachaRan]['type'] == 0:
 				for item in bResp[gachaRan]['responses']:
@@ -334,6 +352,7 @@ async def gacha(ctx):
 				return
 	else:
 		await ctx.channel.send("This command cannot be used in this channel.")
+
 
 @bot.command(name='help')
 async def help(ctx, tag=None):
@@ -384,6 +403,7 @@ async def lrre(ctx, tag=None):
 				await ctx.channel.send(embed=loreEmbed)
 				return
 	await ctx.channel.send('Invalid tag.')
+
 
 @bot.command()
 async def copy(ctx):
