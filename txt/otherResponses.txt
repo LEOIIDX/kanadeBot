@@ -136,3 +136,4 @@ cinderella|346
 hisakawa|hisakawa
 steel vengeance|coaster
 coaster|coaster
+wacca|wacca

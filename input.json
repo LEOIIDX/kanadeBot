@@ -569,5 +569,11 @@
 		"rarity": [1,1000],
 		"gRarity": [0,0],
 		"responses": ["cringe.jpg"]
+	},{
+		"keywords": ["wacca"],
+		"type": 0,
+		"rarity": [1,10],
+		"gRarity": [0,0],
+		"responses": ["https://youtu.be/EAiJ2Z0LIfQ"]
 	}
 ]
