@@ -43,3 +43,15 @@
 43|What is the longest time you have been in a discord voice chat?
 44|What is your favorite thing to eat with rice?
 45|What is the first thing you would say the federal agent outside your home?
+46|What is the worst place you've traveled to?
+47|Do you believe in the paranormal?
+48|What is the best name?
+49|What is the weirdest law you know?
+50|What is the easiest food to eat while driving?
+51|How was your morning?
+52|How often do you check your email?
+53|Have you seen any skinwalkers lately?
+54|How often do you stub your toe?
+55|What is the most overated food?
+56|What is the first place you would visit in Japan?
+57|What is your favorite traditional sport?
