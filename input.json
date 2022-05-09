@@ -581,5 +581,11 @@
 		"rarity": [1,1],
 		"gRarity": [1,200],
 		"responses": ["https://youtu.be/a6nGbUsvvvg"]
+	},{
+		"keywords": ["lolzep is a dummy"],
+		"type": 0,
+		"rarity": [1,1],
+		"gRarity": [1,200],
+		"responses": ["that's right"]
 	}
 ]
