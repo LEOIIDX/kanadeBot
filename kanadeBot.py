@@ -74,7 +74,7 @@ for key in stDict.multiStatus:
 	print(key + ' ' + stDict.multiStatus.get(key))
 
 global sPick 
-sPick = random.randint(1, len(stDict.multiStatus))
+sPick = str(random.randint(1, len(stDict.multiStatus)))
 
 '''
 command section
