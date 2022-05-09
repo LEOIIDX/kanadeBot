@@ -80,6 +80,14 @@
 		"tag": "admin",
 		"text": "ky!noresponse || Disables bot responses in all channels for 30 mins."
 	},{
+		"title": "admin - restart",
+		"tag": "admin",
+		"text": "ky!restart || Restarts Kanade Bot"
+	},{
+		"title": "admin - gitpull",
+		"tag": "admin",
+		"text": "ky!gitpull || pulls latest git commit"
+	},{
 		"title": "main - certain messages",
 		"tag": "main",
 		"text": "imminent funni"

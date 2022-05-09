@@ -70,9 +70,6 @@ debugValue = int(os.getenv('DEBUG_VALUE'))
 
 stDict = dictionaryStatuses()
 
-for key in stDict.multiStatus:
-	print(key + ' ' + stDict.multiStatus.get(key))
-
 global sPick 
 sPick = str(random.randint(1, len(stDict.multiStatus)))
 
@@ -149,24 +146,6 @@ async def ealinks(ctx):
 async def selfie(ctx):
 	await ctx.channel.send(file=discord.File('img/'+'selfie.jpg'))
 
-@bot.command(name='statuschange')
-#Calls the above @bot.event
-#Cant spam
-async def statuschange(ctx):
-	sDict = dictionaryStatuses()
-	statusRan = random.randint(1,sDict.statusCount)
-
-	if ctx.author.id == 194605769419784192:
-		for key in sDict.multiStatus:
-			ranStr = str(statusRan)
-			if key == ranStr:
-				print('Switching to: ' + sDict.multiStatus.get(key))
-				await ctx.channel.send('Switching to: ' + sDict.multiStatus.get(key))
-				await bot.change_presence(status=discord.Status.online, activity=discord.Game(sDict.multiStatus.get(key)))
-				return
-	else:
-		await ctx.channel.send('Can\'t do that, sorry!')
-		return
 '''
 ky!iidxdan(sp/dp) and ky!sdvxdan commands
 sends the class embeds from leoEmbed.py to the channel the command sent from.
@@ -232,13 +211,6 @@ async def sdvxdan(ctx, rank: str):
 			await ctx.channel.send(embed=sdvxDan.infEMBED)
 		case _:
 			await ctx.channel.send('Not a Valid Class Level')
-
-@bot.command(name='events')
-#Sends the event schedule embed from leoEmbed.py to channel the command was sent.
-async def events(ctx):
-	event = infoEmbeds()
-
-	await ctx.channel.send(embed=event.eventEMBED)
 
 @bot.command(name='about')
 #Sends an embed describing the bot from leoEmbed.py to channel the command was sent.
@@ -410,7 +382,7 @@ async def restart(ctx):
 	await ctx.channel.send("Restarting Kanade Bot")
 	os.execv(sys.executable, ['python3'] + sys.argv)
 
-@bot.command(name='gitpull')
+@bot.command(name='gitpull') #Pulls latest commit and prints command output into chat - leo
 async def gitpull(ctx):
 	await ctx.channel.send(os.popen('git pull').read())
 
@@ -806,18 +778,18 @@ async def on_message(message):
 				else:
 					pass
 
-	if random.randint(bResp[67]["rarity"][0], bResp[67]["rarity"][1]) == 1:
+	if random.randint(bResp[67]["rarity"][0], bResp[67]["rarity"][1]) == 1: #fRare Responses
 		respStep = 0
 		for data in bResp[67]["responses"]:
 			respStep = respStep + 1
 		await message.channel.send(bResp[67]["responses"][random.randint(0, respStep)])
 		return
 
-	if random.randint(bResp[94]["rarity"][0], bResp[94]["rarity"][1]) == 1:
+	if random.randint(bResp[94]["rarity"][0], bResp[94]["rarity"][1]) == 1: #cringe response
 		await message.channel.send(file=discord.File("img/" + bResp[94]['responses'][0]))
 		return
 
-	if fuckinRare == 1:
+	if fuckinRare == 1: #The response that mocks what you say
 		textRan = random.randint(0,10)
 		match textRan:
 			case 0:
