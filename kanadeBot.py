@@ -32,6 +32,7 @@ import asyncio
 import string
 import math
 import json
+import sys
 
 from discord.ext import commands
 from dotenv import load_dotenv
@@ -40,6 +41,8 @@ from leoEmbed import iidxSPClassEmbeds, iidxDPClassEmbeds, sdvxDanEmbeds, infoEm
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
+
+os.system('clear')
 
 #intents
 intents = discord.Intents.default()
@@ -62,11 +65,8 @@ debugValue = 2: only prints message debug info
 -Changes command prefix to kyt!
 '''
 masterQuery = 0
-debugValue = int(input('Input desired debug value. \n (1) for debug display plus randoms to 100%. \n (2) for debug display only. \n (0) for standard operation.\n'))
-if debugValue >= 1:
-	masterQuery = int(input('Is a Master .env in use? \n (1) for yes. \n (0) for no. \n'))
-	if masterQuery == 1:
-		testTOKEN = os.getenv('DEBUG_TOKEN')
+#! DEBUG VALUE IS SET BY ".env" FILE (DONE IN ORDER TO DIFFERENTIATE BETWEEN WORKSTATIONS AND THE HOST SERVER)
+debugValue = int(os.getenv('DEBUG_VALUE'))
 
 stDict = dictionaryStatuses()
 
@@ -354,7 +354,7 @@ async def gacha(ctx):
 		await ctx.channel.send("This command cannot be used in this channel.")
 
 
-@bot.command(name='help')
+@bot.command(name='help') #the 2nd iteration of the help command and probably my proudest work - leo
 async def help(ctx, tag=None):
 	helpEmbed = discord.Embed(colour=discord.Colour.red())
 	helpEmbed.set_author(name='Kanade Bot Help')
@@ -377,7 +377,7 @@ async def help(ctx, tag=None):
 
 	await ctx.channel.send(embed=helpEmbed)
 
-@bot.command(name='lrre')
+@bot.command(name='lrre') #The lore command in a obstructed state, shhhhh - leo
 async def lrre(ctx, tag=None):
 	directoryEmbed = discord.Embed(colour=discord.Colour.red())
 	loreEmbed = discord.Embed(colour=discord.Colour.red())
@@ -404,6 +404,15 @@ async def lrre(ctx, tag=None):
 				return
 	await ctx.channel.send('Invalid tag.')
 
+@bot.command(name='restart') #Restarts the bot, simple as - leo
+@commands.has_any_role("Admin", "Mod")
+async def restart(ctx):
+	await ctx.channel.send("Restarting Kanade Bot")
+	os.execv(sys.executable, ['python3'] + sys.argv)
+
+@bot.command(name='gitpull')
+async def gitpull(ctx):
+	await ctx.channel.send(os.popen('git pull').read())
 
 @bot.command()
 async def copy(ctx):
@@ -845,7 +854,4 @@ async def on_message(message):
 				await message.channel.send('>' + dumb)
 				return
 
-if masterQuery == 1:
-	bot.run(testTOKEN)
-else:
-	bot.run(TOKEN)
+bot.run(TOKEN)
