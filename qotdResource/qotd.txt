@@ -1,57 +1,13 @@
 1|placeholder
-2|What is your favorite collectable figure?
-3|What is the funniest way that you can be cancelled on social media platforms?
-4|Hypothetically speaking, if Jeffery Epstein was still alive and touring around the world to have photo-ops with random people. What would you do when he shows up to take a picture with you?
-5|What would be the first place you go to if noclip was possible irl?
-6|Who should have won the first season of Total Drama Island?
-7|What would a morally absent Mr. Beast video look like?
-8|Create a name for a rhythm game boss song.
-9|Has a horror film ever traumatized you?
-10|What was the first anime you have seen?
-11|What western pop song would be funny to see in DDR?
-12|What is your favorite music album?
-13|Post a pic that goes hard.
-14|What is the worst food take you are aware of?
-15|What is the worst weapon you have used in any video game?
-16|What do you think is the least practical historical weapon?
-17|Zipper Hoodies or Parkas?
-18|What is the longest amount of time it took for you to get a package?
-19|What is your favorite material for pants?
-20|What is your favorite eSports moment?
-21|What is your favorite kind of bread?
-22|How often do you eat rice?
-23|What is the worst US state?
-24|What is your favorite Pre-Release Video Game Trivia
-25|What is the most depressing breakfast you've had?
-26|What is your favorite licensed song in a rhythm game?
-27|What was the worst meal you've had while eating out?
-28|What was your favorite flash game?
-29|What is your preferred wood to build with in Minecraft?
-30|What is your favorite t-shirt?
-31|What is the weakest lyric you have ever heard?
-32|What is your go-to sushi?
-33|What is your first MMO experience? (if you dont have one, which MMO would you wanna play?)
-34|What was the longest grind you have pulled off in a video game?
-35|Create a concept for a subreddit.
-36|Write a Haiku that sounds like an absolute shitpost
-37|What is the hardest lyric you have ever heard?
-38|What is your favorite thumbnail from a youtube video.
-39|What's your goto pasta at a restaurant?
-40|Bottled water or Tap water?
-41|Why did Kevin(Lolzep) go to Iowa?
-42|What is your favorite chain of convience stores?
-43|What is the longest time you have been in a discord voice chat?
-44|What is your favorite thing to eat with rice?
-45|What is the first thing you would say the federal agent outside your home?
-46|What is the worst place you've traveled to?
-47|Do you believe in the paranormal?
-48|What is the best name?
-49|What is the weirdest law you know?
-50|What is the easiest food to eat while driving?
-51|How was your morning?
-52|How often do you check your email?
-53|Have you seen any skinwalkers lately?
-54|How often do you stub your toe?
-55|What is the most overated food?
-56|What is the first place you would visit in Japan?
-57|What is your favorite traditional sport?
+2|Why did Kevin(Lolzep) go to Iowa?
+3|What is the longest time you have been in a discord voice chat?
+4|What is your favorite thing to eat with rice?
+5|What is the worst place you've traveled to?
+6|Do you believe in the paranormal?
+7|What is the best name?
+8|What is the weirdest law you know?
+9|How was your morning?
+10|How often do you check your email?
+11|How often do you stub your toe?
+12|What is the most overated food?
+13|What is your favorite traditional sport?
