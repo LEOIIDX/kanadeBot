@@ -152,31 +152,31 @@ sends the class embeds from leoEmbed.py to the channel the command sent from.
 '''
 @bot.command(name='iidxdansp')
 async def iidxdansp(ctx, iidxClass: str):
-	  danSP = iidxSPClassEmbeds()
-	  danSel = iidxClass
+	danSP = iidxSPClassEmbeds()
+	danSel = iidxClass
 
-	  if danSel == 'kyu':
-	  	await ctx.channel.send(embed=danSP.kyuEMBED)
-	  elif danSel == 'dan':
-	  	await ctx.channel.send(embed=danSP.danEMBED)
-	  elif danSel == 'den':
-	  	await ctx.channel.send(embed=danSP.denEMBED)
-	  else:
-	  	await ctx.channel.send('I dont think thats a class section.')
+	if danSel == 'kyu':
+		await ctx.channel.send(embed=danSP.kyuEMBED)
+	elif danSel == 'dan':
+		await ctx.channel.send(embed=danSP.danEMBED)
+	elif danSel == 'den':
+		await ctx.channel.send(embed=danSP.denEMBED)
+	else:
+		await ctx.channel.send('I dont think thats a class section.')
 
 @bot.command(name='iidxdandp')
 async def iidxdandp(ctx, iidxClass: str):
-	  danDP = iidxDPClassEmbeds()
-	  danSel = iidxClass
+	danDP = iidxDPClassEmbeds()
+	danSel = iidxClass
 
-	  if danSel == 'kyu':
-	  	await ctx.channel.send(embed=danDP.kyuEMBED)
-	  elif danSel == 'dan':
-	  	await ctx.channel.send(embed=danDP.danEMBED)
-	  elif danSel == 'den':
-	  	await ctx.channel.send(embed=danDP.denEMBED)
-	  else:
-	  	await ctx.channel.send('I dont think thats a class section.')
+	if danSel == 'kyu':
+		await ctx.channel.send(embed=danDP.kyuEMBED)
+	elif danSel == 'dan':
+		await ctx.channel.send(embed=danDP.danEMBED)
+	elif danSel == 'den':
+		await ctx.channel.send(embed=danDP.denEMBED)
+	else:
+		await ctx.channel.send('I dont think thats a class section.')
 
 @bot.command(name='sdvxdan')
 async def sdvxdan(ctx, rank: str):
