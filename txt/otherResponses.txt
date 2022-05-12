@@ -140,3 +140,5 @@ wacca|wacca
 pimp|pimp
 lolzep is a dummy|lolzep is a dummy
 safari|safari
+dumbphrases|dumbphrases
+leak|leak

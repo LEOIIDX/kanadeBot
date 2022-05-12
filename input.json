@@ -593,5 +593,17 @@
 		"rarity": [1,5],
 		"gRarity": [1,200],
 		"responses": ["Oh my god, I'm going to Africa!\nGoing to Africa, they are going to see animals that shit outside on the fucking grass.\nLook at the lion.\nOh my! Look at giraffes.\nAnd the baboons.\nThe baboons have red asses and they shit.\nLook, there's a lion, and a giraffe, and a giraffe.\nOh look, a lion, and there's a lion, and a giraffe.\nLook at the lions, don't they look pretty.\nDon't look at the lions, look at the moose.\nDon't look at the lions... wait.\nThere are no moose. I'm in Africa.\nShoot them with the blow guns.\nGoona shoot them with the dart.\n\nPoison your ass, and they will sell you to America as a slave, and then you will get ass raped for about thirty years, and then you go to jail just 'cause you're black at night, and then you'll go away and try to... Wait, oh, run!\nRun, government [intelligible] will let you go to Africa.\nAnd look at lions, and the giraffes.\nAnd there's a baboon.\nThere's a moose... Wait, there's a moose.\nWhy is the fucking moose in Africa?\nGo to America-oh.\nLook at the lions.\nGo to the zoo now.\nLook at the lions.\nOh! Going to the Africa.\nLooking at the zoo.\nThe lions are pretty big.\n\nDamn mothafuckers! Lions... black people... at night.", "https://youtu.be/XX-qXNfmIic"]
+	},{
+		"keywords": ["dumbphrases"],
+		"type": 0,
+		"rarity": [1,1],
+		"gRarity": [1,200],
+		"responses": ["dumb_phrases dictionary means power"]
+	},{
+		"keywords": ["leak"],
+		"type": 2,
+		"rarity": [1,1],
+		"gRarity": [1,200],
+		"responses": ["lolzepBotRef.jpg"]
 	}
 ]
