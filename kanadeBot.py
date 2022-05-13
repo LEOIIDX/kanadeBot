@@ -98,10 +98,12 @@ responseCheck = 1
 async def on_ready():
 	sDict = dictionaryStatuses()
 
-	await bot.change_presence(status=discord.Status.online, activity=discord.Game(sDict.multiStatus.get(sPick)))
-
-	if debugValue == 0:
+	if debugValue > 0:
+		print('DEBUG MODE ACTIVE')
+		await bot.change_presence(status=discord.Status.online, activity=discord.Game('KANADE BOT DEBUG'))
+	else:
 		print('Bot is ready!!\n')
+		await bot.change_presence(status=discord.Status.online, activity=discord.Game(sDict.multiStatus.get(sPick)))
 			
 #command error handler
 @bot.event
@@ -680,7 +682,7 @@ async def on_message(message):
 		print('haha')
 	if debugValue == 1:
 		chance =  1
-		fuckinRare = 1
+		fuckinRare = 0
 		print('chance: ' + str(chance))
 		print('fuckinRare: ' + str(fuckinRare) + '\n')
 	elif debugValue == 2:
