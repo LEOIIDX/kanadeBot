@@ -780,11 +780,11 @@ async def on_message(message):
 				else:
 					pass
 
-	if random.randint(bResp[67]["rarity"][0], bResp[67]["rarity"][1]) == 1: #fRare Responses
+	if random.randint(bResp[68]["rarity"][0], bResp[68]["rarity"][1]) == 1: #fRare Responses
 		respStep = 0
-		for data in bResp[67]["responses"]:
+		for data in bResp[68]["responses"]:
 			respStep = respStep + 1
-		await message.channel.send(bResp[67]["responses"][random.randint(0, respStep)])
+		await message.channel.send(bResp[68]["responses"][random.randint(0, respStep)])
 		return
 
 	if random.randint(bResp[94]["rarity"][0], bResp[94]["rarity"][1]) == 1: #cringe response

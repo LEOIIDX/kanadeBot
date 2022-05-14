@@ -404,7 +404,7 @@
 	},{
 		"keywords": ["lain"],
 		"type": 0,
-		"rarity": [1,1000],
+		"rarity": [1,10],
 		"gRarity": [1,200],
 		"responses": ["http://nanamonke.xyz:2480"]
 	},{
