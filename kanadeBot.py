@@ -385,8 +385,29 @@ async def restart(ctx):
 	os.execv(sys.executable, ['python3'] + sys.argv)
 
 @bot.command(name='gitpull') #Pulls latest commit and prints command output into chat - leo
+@commands.has_any_role("Admin", "Mod")
 async def gitpull(ctx):
 	await ctx.channel.send(os.popen('git pull').read())
+
+@bot.command(name='channeldef') #Restores main channel names - leo
+@commands.has_any_role("Admin", "Mod")
+async def channeldef(ctx, tag=None):
+    if debugValue > 0: #cancels command if in DEBUG
+        await ctx.channel.send("COMMAND DENIED\nDEBUG ACTIVE")
+        return
+
+    with open ('channelDef.json', 'r', encoding='utf8') as f: #loads channel ids and names from channelDef.json
+        defaults = json.load(f)
+
+    if tag is None: #restores all common channels in loop
+        await ctx.channel.send('Restoring all channel names')
+
+        for data in defaults:
+            await bot.get_channel(data["ID"]).edit(name = data["NAME"])
+        return
+    else: #Restores specific channel by its position in json
+        await ctx.channel.send('Restoring ' + defaults[int(tag)]["NAME"])
+        await bot.get_channel(defaults[int(tag)]["ID"]).edit(name = defaults[int(tag)]["NAME"])
 
 @bot.command()
 async def copy(ctx):

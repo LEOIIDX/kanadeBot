@@ -88,6 +88,10 @@
 		"tag": "admin",
 		"text": "ky!gitpull || pulls latest git commit"
 	},{
+		"title": "admin - channeldef",
+		"tag": "admin",
+		"text": "ky!channeldef <tag(0,11)> || Restores channel names in a loop or by its specific tag"
+	},{
 		"title": "main - certain messages",
 		"tag": "main",
 		"text": "imminent funni"
