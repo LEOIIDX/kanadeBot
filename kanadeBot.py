@@ -808,8 +808,8 @@ async def on_message(message):
 		await message.channel.send(bResp[68]["responses"][random.randint(0, respStep)])
 		return
 
-	if random.randint(bResp[94]["rarity"][0], bResp[94]["rarity"][1]) == 1: #cringe response
-		await message.channel.send(file=discord.File("img/" + bResp[94]['responses'][0]))
+	if random.randint(bResp[95]["rarity"][0], bResp[95]["rarity"][1]) == 1: #cringe response
+		await message.channel.send(file=discord.File("img/" + bResp[95]['responses'][0]))
 		return
 
 	if fuckinRare == 1: #The response that mocks what you say

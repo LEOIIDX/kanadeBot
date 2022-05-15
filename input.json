@@ -391,7 +391,7 @@
 		"responses": ["cum.png", "cum2.png", "cum3.png", "cum4.png"]
 	},{
 		"keywords": ["cum"],
-		"type": 1,
+		"type": 0,
 		"rarity": [1,5],
 		"gRarity": [1,200],
 		"responses": ["https://youtu.be/k6fqj7Bp51U"]
