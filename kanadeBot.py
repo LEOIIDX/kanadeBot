@@ -27,12 +27,14 @@ import os
 import discord
 import random
 import re
-import datetime
 import asyncio
 import string
 import math
 import json
 import sys
+import time
+import shutil
+import csv
 
 from discord.ext import commands
 from dotenv import load_dotenv
@@ -408,66 +410,6 @@ async def channeldef(ctx, tag=None):
     else: #Restores specific channel by its position in json
         await ctx.channel.send('Restoring ' + defaults[int(tag)]["NAME"])
         await bot.get_channel(defaults[int(tag)]["ID"]).edit(name = defaults[int(tag)]["NAME"])
-
-@bot.command()
-async def copy(ctx):
-	start = time.time()
-	author = ctx.message.author
-	if str(author) != "Lolzep#5723": #checks to see if im running the bot
-		await ctx.send("You're not my father... command not executed.", delete_after=5)
-		if os.path.exists("file.csv"):
-			os.remove("file.csv")
-	else:
-		#counter that starts at 0 for counting amount of messages
-		overallcount = 0
-		#list for every variable tracked
-		lines = []
-		counter = []
-		authors = []
-		made_at = []
-		#react = []
-		await ctx.send("Processing channel... this might take awhile (or fail)")
-		with open("file.csv", "w") as f:
-			async for message in ctx.history(limit=20000): #for every msg in channel (up to limit)
-				msg_author = message.author.name
-				lines.append(msg_author) #lines list used for sorting
-				counter.append(str(overallcount + 1))
-				authors.append(msg_author)
-				made_at.append(message.created_at.strftime("%m/%d/%Y")) #append each message's content to each list
-				#react.append(message.reactions)
-				overallcount = overallcount + 1 #increase counter by 1 each for-loop
-
-		channel_name = message.channel.name #variables to limit api requests
-		server_name = message.guild.name
-		f.write(str(server_name) + " #" + str(channel_name) + "\n") #first line inside csv file
-
-		lines.sort() #sort usernames and then find the frequency to count amount of messages from each user
-		results = {value: len(list(freq)) for value,freq in groupby(sorted(lines))}
-
-		numbers = [] #used to write the results of frequency of usernames
-		users = []
-		for value in results.values():
-			numbers.append(value)
-		for key in results.keys():
-			users.append(key)
-
-		both = zip(numbers,users) #sort the overall messages list
-		sorted_both = sorted(both, reverse=True)
-
-		writer = csv.writer(f,delimiter='\t')
-		writer.writerows(sorted_both) #write the overall messages list
-
-		f.write(str(overallcount) + " total messages\n\n") #total messages
-
-		for w in range(overallcount):
-			writer.writerow([counter[w], authors[w], made_at[w]]) #write the appended lists
-
-		os.rename("file.csv", str(server_name) + " #" + str(channel_name) + ".csv") #rename csv
-		end = time.time()
-		shutil.move(str(server_name) + " #" + str(channel_name) + ".csv","Copy Data/" + str(server_name) + " #" + str(channel_name) + ".csv")
-		totaltime = end - start
-		totaltime = "{:.2f}".format(totaltime)
-		await ctx.send("Done! Data file made! Time taken was " + str(totaltime) + " seconds") #confirm that file was made successfully
 
 @bot.command()
 async def boost(ctx):
