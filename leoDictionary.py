@@ -37,7 +37,7 @@ class dictionaryStatuses:
 
 	with open('txt/'+'multiStatus.txt', encoding="utf8") as f:
 		for line in f:
-	    		(key, val) = line.split('_')
-	    		newVal = val.rstrip()
-	    		multiStatus[str(key)] = newVal
-	    		statusCount = statusCount + 1
+			(key, val) = line.split('_')
+			newVal = val.rstrip()
+			multiStatus[str(key)] = newVal
+			statusCount = statusCount + 1
