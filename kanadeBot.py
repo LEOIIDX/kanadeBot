@@ -484,7 +484,7 @@ async def vf(ctx, score, clear, level):
 		await ctx.send("`Level out of range (" + level + ")! Using a level of 20`")
 		level = 20
 
-  #select correct medal coefficient for clear given
+	#select correct medal coefficient for clear given
 
 	medal = 0
 	clear_medal = {"PUC":1.10,"UC":1.05,"EC":1.02,"C":1.00,"F":0.50}
@@ -498,7 +498,7 @@ async def vf(ctx, score, clear, level):
 		clear = "C"
 		medal = 1.00
 
-  #selects the correct grade coefficient and grade based on score given
+	#selects the correct grade coefficient and grade based on score given
 
 	grade = 0
 	letter = ""
@@ -516,7 +516,7 @@ async def vf(ctx, score, clear, level):
 	letter = correct[0]
 	grade = correct[1]
 
-  #calculate eg/vw volforce
+	#calculate eg/vw volforce
 
 	eg_volforce = float(level) * (score/1000) * float(grade) * float(medal) * 2 / 100
 	vw_volforce = eg_volforce
@@ -529,7 +529,7 @@ async def vf(ctx, score, clear, level):
 	vw_volforce = (vw_volforce // factor) * factor
 	vw_volforce = "{:.2f}".format(vw_volforce) #formatting
 
-  #making of the embed that's posted by the bot
+	#making of the embed that's posted by the bot
 
 	embed = discord.Embed(title = "Volforce for " + str(ctx.message.author.name), color = discord.Color.purple())
 
@@ -553,7 +553,7 @@ async def remywiki(ctx, *args):
 
 @bot.command()
 async def playsleft(ctx, arg):
-  await ctx.channel.send("You can play " + str(math.floor(float(arg)/8)) + " more rounds of a 8 credit rhythm game. You will have " + str(round((float(arg)-((float(math.floor(float(arg)/8))*float(8)))),1)) + " credits leftover.")
+	await ctx.channel.send("You can play " + str(math.floor(float(arg)/8)) + " more rounds of a 8 credit rhythm game. You will have " + str(round((float(arg)-((float(math.floor(float(arg)/8))*float(8)))),1)) + " credits leftover.")
 
 @bot.command()
 async def wacca(ctx):
