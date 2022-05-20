@@ -72,10 +72,6 @@
 		"tag": "admin",
 		"text": "ky!memberupdate || Updates the member count."
 	},{
-		"title": "admin - forceabout",
-		"tag": "admin",
-		"text": "kyt!forceabout || Forces public facing ky!about while in debug mode."
-	},{
 		"title": "admin - noresponse",
 		"tag": "admin",
 		"text": "ky!noresponse || Disables bot responses in all channels for 30 mins."

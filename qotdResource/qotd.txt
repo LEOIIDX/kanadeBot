@@ -12,3 +12,9 @@
 12|What is the most overated food?
 13|What is your favorite traditional sport?
 14|What is your favorite music game artist alias?
+15|What is your favorite version of a rhythm game thematically?
+16|Who is your favorite musical artist in rhythm games?
+17|What's a commonly accepted thing that is complex that you think can be simplified?
+18|What is your goto buffet?
+19|What color of freeze pop do you go for first?
+20|Did you learn how to swim as a child?
