@@ -18,3 +18,20 @@
 18|What is your goto buffet?
 19|What color of freeze pop do you go for first?
 20|Did you learn how to swim as a child?
+21|Walgreens or CVS Pharmacy?
+22|What is the strangest YouTube video you have seen?
+23|What's a good YouTube channel for longform content
+24|(excluding rhythm games) What is your favorite genre of video game.
+25|How many slots of ram does your motherboard have?
+26|What's a meme that you didnt expect to go viral?
+27|What is you favorite genre of anime?
+28|What is the perfect size for a TV?
+29|What's an epic money saving tip.
+30|How big is your monitor?
+31|What's the most you put down on ingame transactions?
+32|What is your favorite anime OP?
+33|What is your favorite emote/sticker?
+34|What GPU is your PC/Laptop running?
+35|What's your favorite "turn your brain off" game?
+36|Post a picture of your desk.
+37|What is your ideal summer outfit?
