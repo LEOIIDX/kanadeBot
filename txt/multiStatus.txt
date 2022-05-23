@@ -35,7 +35,7 @@
 35_ky!help || Zipline Jesus
 36_ky!help || Guilty Gear -STRIVE-
 37_ky!help || TOTSUGEKI!!
-38_ky!help || Guilty Gear 
+38_ky!help || Guilty Gear
 39_ky!help || Guilty Gear X
 40_ky!help || Guilty Gear X2
 41_ky!help || Guilty Gear Xrd -SIGN-
@@ -43,3 +43,13 @@
 43_ky!help || Guilty Gear XX
 44_ky!help || I use Artix btw
 45_ky!help || New Suck When?
+46_ky!help || Radical. Audio. Visual. Experience.
+47_ky!help || 天邪鬼
+48_ky!help || Fortnite Battle Royale
+49_ky!help || 東方永夜抄　～ Imperishable Night
+50_ky!help || 東方妖々夢　～ Perfect Cherry Blossom
+51_ky!help || beatmania IIDX
+52_ky!help || The Backrooms
+53_ky!help || Apex Legends
+54_ky!help || STREAM RIDING
+55_ky!help || Qlarabelle
