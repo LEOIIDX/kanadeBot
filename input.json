@@ -617,5 +617,11 @@
 		"rarity": [1,5],
 		"gRarity": [1,200],
 		"responses": ["Radical. Audio. Visual. Experience.", "https://youtu.be/gdY3YCcLDXE"]
+	},{
+		"keywords": ["morb"],
+		"type": 0,
+		"rarity": [1,5],
+		"gRarity": [1,200],
+		"responses": ["https://cdn.discordapp.com/attachments/750106409701736488/978719790032097310/r75oko6296191_1.mp4"]
 	}
 ]
