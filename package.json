@@ -1,0 +1,23 @@
+{
+  "name": "kanadebot",
+  "version": "1.0.0",
+  "description": "Kanade Bot written in Javascript.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LEOIIDX/kanadeBot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LEOIIDX/kanadeBot/issues"
+  },
+  "homepage": "https://github.com/LEOIIDX/kanadeBot#readme",
+  "dependencies": {
+    "discord.js": "^13.7.0",
+    "dotenv": "^16.0.1"
+  }
+}
