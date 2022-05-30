@@ -759,7 +759,7 @@ async def on_message(message):
 				await message.channel.send('__*' + dumb + '*__')
 				return
 			case 6:
-				await message.channel.send('__*' + dumb + '**__')
+				await message.channel.send('__**' + dumb + '**__')
 				return
 			case 7:
 				await message.channel.send('__***' + dumb + '***__')
