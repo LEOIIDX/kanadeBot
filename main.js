@@ -9,7 +9,7 @@ console.log("Kanade Bot");
 
 const { Client, Intents } = require('discord.js');i /*!important/import for discord.js*/
 
-require('dotenv').config(); /* Loads the .env file in working directoryi */
+require('dotenv').config(); /* Loads the .env file in working directory */
 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MEMBERS, Intents.FLAGS.GUILD_BANS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.DIRECT_MESSAGES] });
 
@@ -22,7 +22,7 @@ client.once('ready', () => {
 
 /* Message response event handler (this will be interesting) */
 client.on("messageCreate", message => {
-	if (message.author.id == 840279273021636628) return;
+	if (message.author.id == 840279273021636628) return; /* Ignores self. */
 
 	message.channel.send('placeholder message');
 	return
