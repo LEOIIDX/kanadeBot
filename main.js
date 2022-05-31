@@ -25,7 +25,7 @@ client.on("messageCreate", message => {
 	if (message.author.id == 840279273021636628) return; /* Ignores self. */
 
 	message.channel.send('placeholder message');
-	return
+	return;
 });
 
 /* Logs in the bot using a token from your local .env */
