@@ -140,3 +140,4 @@ dbResource/dbIMG/*
 img/*
 
 qotdResource/used-qotd.txt
+node_modules

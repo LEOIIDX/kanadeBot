@@ -608,7 +608,7 @@
 	},{
 		"keywords": ["leak"],
 		"type": 2,
-		"rarity": [1,1],
+		"rarity": [1,5],
 		"gRarity": [1,200],
 		"responses": ["lolzepBotRef.jpg"]
 	},{
