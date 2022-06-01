@@ -34,4 +34,18 @@
 34|What GPU is your PC/Laptop running?
 35|What's your favorite "turn your brain off" game?
 36|Post a picture of your desk.
-37|What is your ideal summer outfit?
+37|What is the worst type of person to be stuck in line behind?
+38|You are able to commit a crime, and after you commit that crime, no one else can ever do it again, but you still have to bear responsibility for the crime you committed. What crime do you do?
+39|What is the most expensive impulse purchase you have ever made?
+40|You are able to choose any video game in history to be remade for modern platforms. What game do you choose?
+41|Where would you want to be the least? England, France, or Brazil?
+42|You are tasked with losing one billion dollars as quickly as possible. What is your plan?
+43|You are able to get an infinite supply of one item that is worth under $5. What item do you choose? $5 bills and all other types of currency cannot be an answer.
+44|You are tasked with coming up with the worst convention panel ever. What do you make it about?
+45|You are told starting tomorrow you have to start teaching a college course about a topic of your choosing. What will you teach?
+46|What is the dumbest question you have ever been asked?
+47|What is the strangest thing you have seen in a gas station?
+48|What is your current wallpaper? (PC/Phone)
+49|Pick an item or product and sell it to me.
+50|What is the most complex piece of technology you own?
+51|What's a food that looks really good, but tastes like dogshit?
