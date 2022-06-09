@@ -32,7 +32,7 @@ import string
 import math
 import json
 import sys
-import time
+import datetime
 import shutil
 import csv
 
@@ -558,6 +558,18 @@ async def playsleft(ctx, arg):
 @bot.command()
 async def wacca(ctx):
 	await ctx.channel.send("Wacca cab works now holy shit.")
+
+@bot.command()
+async def a3(ctx):
+	# setup dates
+	previous_date = datetime.datetime.strptime("03-17-2022", '%m-%d-%Y')
+	today = datetime.datetime.today()
+
+	# compute difference
+	ndays = (today - previous_date).days
+
+	await ctx.channel.send(f"DDR A3 has been out for {ndays} days and is *still* not on white cab.")
+
 
 @bot.command()
 async def sdvxtier(ctx):
