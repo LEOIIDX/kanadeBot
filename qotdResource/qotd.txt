@@ -22,3 +22,10 @@
 22|What is the strangest thing you have seen in a gas station?
 23|Pick an item or product and sell it to me.
 24|What's a food that looks really good, but tastes like dogshit?
+25|What does not need an upgrade?
+26|What should you not cheap out on?
+27|What should you cheap out on?
+28|If you could be a kitchen appliance, what would you be and why.
+29|Are there more doors or more wheels?
+30|Are there more eyes or more legs?
+31|What temperature do you take showers in?
