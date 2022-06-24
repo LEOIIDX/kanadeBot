@@ -784,7 +784,7 @@ async def on_message(message):
 				await message.channel.send('`' + dumb + '`')
 				return
 			case 10:
-				await message.channel.send('>' + dumb)
+				await message.channel.send('> ' + dumb)
 				return
 
 bot.run(TOKEN)
