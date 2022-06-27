@@ -285,6 +285,7 @@ async def gacha(ctx):
 		gachaRan = random.randint(0, gachaCount)
 		revealRan = random.randint(1,100)
 		respStep = 0
+		baseRan = random.randint(0,20)
 
 		if revealRan == 1:
 			await ctx.send(embed=respReveal(gachaRan))
@@ -294,14 +295,59 @@ async def gacha(ctx):
 					respStep = respStep + 1
 				respStep = respStep - 1
 				respRan = random.randint(0, respStep)
-				await ctx.channel.send(bResp[gachaRan]['responses'][respRan])
-				return
+				match baseRan:
+					case 0:
+						baseResp = base64.standard_b64encode(bytes(bResp[gachaRan]['responses'][respRan], 'utf-8'))
+						baseRespShort = baseResp[:1500]
+						await ctx.channel.send(baseRespShort)
+						return
+					case 1:
+						binaryResp = ' '.join(format(ord(x), 'b') for x in bResp[gachaRan]['responses'][respRan])
+						binaryRespShort = binaryResp[:1500]
+						await ctx.channel.send(binaryRespShort)
+						return
+					case 2:
+						respPrep = bResp[gachaRan]['responses'][respRan].encode('utf-8')
+						hexResp = respPrep.hex()
+						hexRespShort = hexResp[:1500]
+						await ctx.channel.send(hexRespShort)
+						return
+					case _:
+						await ctx.channel.send(bResp[gachaRan]['responses'][respRan])
+						return
 		elif bResp[gachaRan]['type'] == 1:
-				for item in bResp[gachaRan]['responses']:
-					await ctx.channel.send(bResp[gachaRan]['responses'][respStep])
-					await ctx.channel.send('‏')
-					respStep = respStep + 1
-				return
+						match baseRan:
+								case 0:
+									for item in bResp[gachaRan]['responses']:
+										baseResp = base64.standard_b64encode(bytes(bResp[gachaRan]['responses'][respStep], 'utf-8'))
+										baseRespShort = baseResp[:1500]
+										await ctx.channel.send(baseRespShort)
+										await ctx.channel.send('‏')
+										respStep = respStep + 1
+									return
+								case 1:
+									for item in bResp[gachaRan]['responses']:
+										binaryResp = ' '.join(format(ord(x), 'b') for x in bResp[gachaRan]['responses'][respStep])
+										binaryRespShort = binaryResp[:1500]
+										await ctx.channel.send(binaryRespShort)
+										await ctx.channel.send('‏')
+										respStep = respStep + 1
+									return
+								case 2:
+									for item in bResp[gachaRan]['responses']:
+										respPrep = bResp[gachaRan]['responses'][respStep].encode('utf-8')
+										hexResp = respPrep.hex()
+										hexRespShort = hexResp[:1500]
+										await ctx.channel.send(hexResp)
+										await ctx.channel.send('‏')
+										respStep = respStep + 1
+									return
+								case _:
+									for item in bResp[gachaRan]['responses']:
+										await ctx.channel.send(bResp[gachaRan]['responses'][respStep])
+										await ctx.channel.send('‏')
+										respStep = respStep + 1
+									return
 		elif bResp[gachaRan]['type'] == 2:
 				for item in bResp[gachaRan]['responses']:
 					respStep = respStep + 1
