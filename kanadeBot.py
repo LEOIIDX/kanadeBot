@@ -5,10 +5,8 @@ By: Nanahira Monke Kanade Dev
 Priority TODO
 
 General TODO
-React Roles Backup (eventually)
-multiple cum images
-rework of message handler
 more messages
+
 Known Bugs
 
 Import List
@@ -35,6 +33,7 @@ import sys
 import datetime
 import shutil
 import csv
+import base64
 
 from discord.ext import commands
 from dotenv import load_dotenv
@@ -702,6 +701,7 @@ async def on_message(message):
 
 	for data in bResp:
 		respStep = 0
+		baseRan = random.randint(0,8)
 		for item in data['keywords']:
 			if dumbLetters == data['keywords'][0]:
 				if data['type'] == 0:
@@ -711,18 +711,64 @@ async def on_message(message):
 							respStep = respStep + 1
 						respStep = respStep - 1
 						respRan = random.randint(0, respStep)
-						await message.channel.send(data['responses'][respRan])
-						return
+						match baseRan:
+							case 0:
+								baseResp = base64.standard_b64encode(bytes(data['responses'][respRan], 'utf-8'))
+								baseRespShort = baseResp[:1500]
+								await message.channel.send(baseRespShort)
+								return
+							case 1:
+								binaryResp = ' '.join(format(ord(x), 'b') for x in data['responses'][respRan])
+								binaryRespShort = binaryResp[:1500]
+								await message.channel.send(binaryRespShort)
+								return
+							case 2:
+								respPrep = data['responses'][respRan].encode('utf-8')
+								hexResp = respPrep.hex()
+								hexRespShort = hexResp[:1500]
+								await message.channel.send(hexRespShort)
+								return
+							case _:
+								await message.channel.send(data['responses'][respRan])
+								return
 					else:
 						pass
 				elif data['type'] == 1:
 					ran = random.randint(data['rarity'][0], data['rarity'][1])
 					if ran == 1:
 						for item in data['responses']:
-							await message.channel.send(data['responses'][respStep])
-							await message.channel.send('‏')
-							respStep = respStep + 1
-						return
+							match baseRan:
+								case 0:
+									for item in data['responses']:
+										baseResp = base64.standard_b64encode(bytes(data['responses'][respStep], 'utf-8'))
+										baseRespShort = baseResp[:1500]
+										await message.channel.send(baseRespShort)
+										await message.channel.send('‏')
+										respStep = respStep + 1
+									return
+								case 1:
+									for item in data['responses']:
+										binaryResp = ' '.join(format(ord(x), 'b') for x in data['responses'][respStep])
+										binaryRespShort = binaryResp[:1500]
+										await message.channel.send(binaryRespShort)
+										await message.channel.send('‏')
+										respStep = respStep + 1
+									return
+								case 2:
+									for item in data['responses']:
+										respPrep = data['responses'][respStep].encode('utf-8')
+										hexResp = respPrep.hex()
+										hexRespShort = hexResp[:1500]
+										await message.channel.send(hexResp)
+										await message.channel.send('‏')
+										respStep = respStep + 1
+									return
+								case _:
+									for item in data['responses']:
+										await message.channel.send(data['responses'][respStep])
+										await message.channel.send('‏')
+										respStep = respStep + 1
+									return
 					else:
 						pass
 				elif data['type'] == 2:
@@ -743,8 +789,27 @@ async def on_message(message):
 		respStep = 0
 		for data in bResp[68]["responses"]:
 			respStep = respStep + 1
-		await message.channel.send(bResp[68]["responses"][random.randint(0, respStep)])
-		return
+		respRan = random.randint(0,respStep - 1)
+		match baseRan:
+			case 0:
+				baseResp = base64.standard_b64encode(bytes(bResp[68]['responses'][respRan], 'utf-8'))
+				baseRespShort = baseResp[:1500]
+				await message.channel.send(baseRespShort)
+				return
+			case 1:
+				binaryResp = ' '.join(format(ord(x), 'b') for x in bResp[68]['responses'][respRan])
+				binaryRespShort = binaryResp[:1500]
+				await message.channel.send(binaryRespShort)
+				return
+			case 2:
+				respPrep = bResp[68]['responses'][respRan].encode('utf-8')
+				hexResp = respPrep.hex()
+				hexRespShort = hexResp[:1500]
+				await message.channel.send(hexRespShort)
+				return
+			case _:
+				await message.channel.send(bResp[68]["responses"][respRan])
+				return
 
 	if random.randint(bResp[95]["rarity"][0], bResp[95]["rarity"][1]) == 1: #cringe response
 		await message.channel.send(file=discord.File("img/" + bResp[95]['responses'][0]))
