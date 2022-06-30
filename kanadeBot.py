@@ -747,7 +747,7 @@ async def on_message(message):
 
 	for data in bResp:
 		respStep = 0
-		baseRan = random.randint(0,8)
+		baseRan = random.randint(0,16)
 		for item in data['keywords']:
 			if dumbLetters == data['keywords'][0]:
 				if data['type'] == 0:
