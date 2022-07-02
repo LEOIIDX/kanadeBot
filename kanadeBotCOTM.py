@@ -41,10 +41,11 @@ async def on_ready():
 	memberNameCount = 0
 
 	for member in Guild.members:
-		memberIdCounter = memberIdCounter + 1
-		memberIdDict [str(memberIdCounter)] = str(member.id)
-		memberNameCount = memberNameCount + 1
-		memberNameDict [str(memberNameCount)] = str(member.display_name)
+		if 'Gold' in str(member.roles) or if 'Platinum' in str(member.roles) or if 'Diamond' in str(member.roles) or if 'Master' in str(member.roles) or if 'Grandmaster' in str(member.roles) or if 'Exalted' in str(member.roles) or if 'Galaxy' in str(member.roles) or if 'Konmai' in str(member.roles):
+			memberIdCounter = memberIdCounter + 1
+			memberIdDict [str(memberIdCounter)] = str(member.id)
+			memberNameCount = memberNameCount + 1
+			memberNameDict [str(memberNameCount)] = str(member.display_name)
 
 	memberRan = random.randint(1, memberNameCount)
 
@@ -54,9 +55,9 @@ async def on_ready():
 			coomMention = Guild.get_member(int(memberIdDict.get(key)))
 
 			coomEMBED = discord.Embed(colour = discord.Colour.red(), title=('Coomer of the Month'), description=('Congratulations to ' + memberNameDict.get(key) + ' for being Coomer of the Month'))
-			
+
 			coomEMBED.set_thumbnail(url= 'https://i.ibb.co/4RNtzYH/coomIcon.png')
-			
+
 			await bot.get_channel(cotwCh).send(embed = coomEMBED)
 			await bot.get_channel(cotwCh).send(f"{coomMention.mention}")
 			break
