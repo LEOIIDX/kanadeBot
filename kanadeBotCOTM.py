@@ -41,7 +41,7 @@ async def on_ready():
 	memberNameCount = 0
 
 	for member in Guild.members:
-		if 'Gold' in str(member.roles) or if 'Platinum' in str(member.roles) or if 'Diamond' in str(member.roles) or if 'Master' in str(member.roles) or if 'Grandmaster' in str(member.roles) or if 'Exalted' in str(member.roles) or if 'Galaxy' in str(member.roles) or if 'Konmai' in str(member.roles):
+		if 'Gold' in str(member.roles) or 'Platinum' in str(member.roles) or 'Diamond' in str(member.roles) or 'Master' in str(member.roles) or 'Grandmaster' in str(member.roles) or 'Exalted' in str(member.roles) or 'Galaxy' in str(member.roles) or 'Konmai' in str(member.roles):
 			memberIdCounter = memberIdCounter + 1
 			memberIdDict [str(memberIdCounter)] = str(member.id)
 			memberNameCount = memberNameCount + 1
