@@ -1,39 +1,15 @@
 1|placeholder
 2|What is your favorite thing to eat with rice?
-3|What is your favorite version of a rhythm game thematically?
-4|What's a good YouTube channel for longform content
-5|(excluding rhythm games) What is your favorite genre of video game.
-6|How many slots of ram does your motherboard have?
-7|What's a meme that you didnt expect to go viral?
-8|What is you favorite genre of anime?
-9|What is the perfect size for a TV?
-10|What's an epic money saving tip.
-11|What is your favorite anime OP?
-12|What is your favorite emote/sticker?
-13|What is the worst type of person to be stuck in line behind?
-14|What is the most expensive impulse purchase you have ever made?
-15|You are able to choose any video game in history to be remade for modern platforms. What game do you choose?
-16|Where would you want to be the least? England, France, or Brazil?
-17|You are tasked with losing one billion dollars as quickly as possible. What is your plan?
-18|You are able to get an infinite supply of one item that is worth under $5. What item do you choose? $5 bills and all other types of currency cannot be an answer.
-19|You are tasked with coming up with the worst convention panel ever. What do you make it about?
-20|You are told starting tomorrow you have to start teaching a college course about a topic of your choosing. What will you teach?
-21|What is the dumbest question you have ever been asked?
-22|What is the strangest thing you have seen in a gas station?
-23|Pick an item or product and sell it to me.
-24|What's a food that looks really good, but tastes like dogshit?
-25|What does not need an upgrade?
-26|What should you not cheap out on?
-27|What should you cheap out on?
-28|If you could be a kitchen appliance, what would you be and why.
-29|Are there more doors or more wheels?
-30|Are there more eyes or more legs?
-31|What temperature do you take showers in?
-32|What classic or old meme would you want to see relevant again?
-33|You can use only one emote for the rest of your life.  Which one do you pick?
-34|What is your least favorite roller coaster?
-35|What is your largest collection?
-36|If you were in a tournament bracket, who would be an absolute free win for you?  Bonus points: tag them.
-37|What is your largest collection?
-38|Would you like dinner, a bath, or would you like me?
-39|Would you rather have unlimited bacon but no more games, or games (unlimited games) and no games?
+3|(excluding rhythm games) What is your favorite genre of video game.
+4|How many slots of ram does your motherboard have?
+5|What's a meme that you didnt expect to go viral?
+6|What is your favorite anime OP?
+7|Where would you want to be the least? England, France, or Brazil?
+8|You are tasked with losing one billion dollars as quickly as possible. What is your plan?
+9|You are able to get an infinite supply of one item that is worth under $5. What item do you choose? $5 bills and all other types of currency cannot be an answer.
+10|You are tasked with coming up with the worst convention panel ever. What do you make it about?
+11|What temperature do you take showers in?
+12|What classic or old meme would you want to see relevant again?
+13|You can use only one emote for the rest of your life.  Which one do you pick?
+14|What is your least favorite roller coaster?
+15|What is your largest collection?
