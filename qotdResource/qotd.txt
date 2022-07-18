@@ -21,3 +21,5 @@
 21|What is your favorite snack?
 22|What is your favorite IIDX BGA?
 23|What is your favorite chart in any rhythm game?
+24|What?
+25|What is your favorite cheese?
