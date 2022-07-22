@@ -54,3 +54,8 @@
 54_ky!help || STREAM RIDING
 55_ky!help || Qlarabelle
 56_ky!help || It's Morbin' time.
+57_ky!help || I'd like some more coffee.
+58_ky!help || I'd like some more green tea.
+58_ky!help || EVERY NIGHT
+58_ky!help || EVERY DAY
+58_ky!help || EVERY NIGHT, EVERY DAY
