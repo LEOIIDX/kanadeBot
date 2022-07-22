@@ -638,7 +638,7 @@
 	},{
 		"keywords": ["dai"],
 		"type": 0,
-		"rarity": [1,2],
+		"rarity": [1,3],
 		"gRarity": [1,200],
 		"responses": ["https://youtu.be/Kwv_vPIL4IQ", "https://youtu.be/ckcmrdvamww", "https://youtu.be/g-Hm6KOW1DA", "https://youtu.be/2JKv4wkllhE", "https://youtu.be/pHlNdXaigJM"]
 	},{
@@ -647,5 +647,11 @@
 		"rarity": [1,5],
 		"gRarity": [1,200],
 		"responses": ["https://youtu.be/8-yZihwFTC0"]
+	},{
+		"keywords": ["cawfee"],
+		"type": 0,
+		"rarity": [1,1],
+		"gRarity": [1,200],
+		"responses": ["https://youtu.be/yaFcaemVodM", "https://youtu.be/BTkfSH8kGNs"]
 	}
 ]
