@@ -160,3 +160,5 @@ din don dan|din don dan
 green tea|cawfee
 coffee|cawfee
 cawfee|cawfee
+every day | every night
+every night | every night
