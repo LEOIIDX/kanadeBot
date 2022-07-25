@@ -161,4 +161,12 @@ green tea|cawfee
 coffee|cawfee
 cawfee|cawfee
 every day|every night
-every night|every night
+every night|every nighta
+chicken|tendies
+tenders|tendies
+tendies|tendies
+tri poloski|adidas
+ТРИ ПОЛОСКИ|adidas
+adidas|adidas
+hard bass|hardbass
+hardbass|hardbass

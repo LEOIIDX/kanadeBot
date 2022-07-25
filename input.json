@@ -659,5 +659,23 @@
 		"rarity": [1,3],
 		"gRarity": [1,200],
 		"responses": ["https://youtu.be/OEL4ShxYVgc", "https://youtu.be/x_4PjobLmkg"]
+	},{
+		"keywords": ["tendies"],
+		"type": 0,
+		"rarity": [1,5],
+		"gRarity": [1,200],
+		"responses": ["Chicken tenders are my lifeblood. I mean, of course that's not entirely a good thing, but I always carry the philosophy of 'you can't be a connoisseur of everything', therefore instead of being an expert in the matter of all foods, I  instead indulge in chicken tenders. Be they Mcdonald's selects (discontinued), BK's chicken fries, or the Clucks n' Fries from Red Robin, or CM Chicken's extra spicy tenders, chicken tenders fire off all the best taste buds on my tounge and leave off those that would rather have veggies. They are by far the easiest way to get to my heart, but probably the hardest way for me to shed the pounds I fantasize about losing every day. In fact, I'm craving some chicken tenders right now! Let's see...I've already been to Wendy's, Applebee's, and Slim's this week, how about 92 Chicken off of Metcalf and 101st street? I can always play 5 more sets of DDR to burn off those extra calories. Chhhickkkeeennnnnn tennnndddieeeeeeeeeees 🤤"]
+	},{
+		"keywords": ["adidas"],
+		"type": 0,
+		"rarity": [1,5],
+		"gRarity": [1,200],
+		"responses": ["https://youtu.be/QiFBgtgUtfw"]
+	},{
+		"keywords": ["hardbass"],
+		"type": 0,
+		"rarity": [1,5],
+		"gRarity": [1,200],
+		"responses": ["https://youtu.be/VIVu3wuDq2k", "https://youtu.be/BnTW6fZz-1E", "https://youtu.be/9KIkMBHXxlw", "https://youtu.be/EgrwP1PtCBs", "https://youtu.be/QiFBgtgUtfw"]
 	}
 ]
