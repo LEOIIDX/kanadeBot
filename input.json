@@ -677,5 +677,11 @@
 		"rarity": [1,5],
 		"gRarity": [1,200],
 		"responses": ["https://youtu.be/VIVu3wuDq2k", "https://youtu.be/BnTW6fZz-1E", "https://youtu.be/9KIkMBHXxlw", "https://youtu.be/EgrwP1PtCBs", "https://youtu.be/QiFBgtgUtfw"]
+	},{
+		"keywords": ["ghetto patrol"],
+		"type": 0,
+		"rarity": [1,5],
+		"gRarity": [1,200],
+		"responses": ["https://youtu.be/7h7bnYA1LXE", "https://youtu.be/q3SC5DGnU0w", "https://youtu.be/yIrhZsCj5_Y"]
 	}
 ]

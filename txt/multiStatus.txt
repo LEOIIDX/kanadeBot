@@ -59,3 +59,6 @@
 58_ky!help || EVERY NIGHT
 58_ky!help || EVERY DAY
 58_ky!help || EVERY NIGHT, EVERY DAY
+59_ky!help || ТРИ ПОЛОСКИ
+60_ky!help || ハードベース・フェスタ
+61_ky!help || スカーレット警察のゲットーパトロール24時

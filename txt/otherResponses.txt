@@ -170,3 +170,6 @@ tri poloski|adidas
 adidas|adidas
 hard bass|hardbass
 hardbass|hardbass
+funky|ghetto patrol
+scarlet police|ghetto patrol
+スカーレット警察のゲットーパトロール24時|ghetto patrol
