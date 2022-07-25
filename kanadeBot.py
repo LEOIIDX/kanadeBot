@@ -781,7 +781,7 @@ async def on_message(message):
 					else:
 						pass
 				elif data['type'] == 1:
-					ran = random.randint(data['rarity'][0], data['rarity'][1])
+					ran = random.randint(0, data['rarity'][1])
 					if ran == 1:
 						for item in data['responses']:
 							match baseRan:
