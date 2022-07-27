@@ -683,5 +683,11 @@
 		"rarity": [1,5],
 		"gRarity": [1,200],
 		"responses": ["https://youtu.be/7h7bnYA1LXE", "https://youtu.be/q3SC5DGnU0w", "https://youtu.be/yIrhZsCj5_Y"]
+	},{
+		"keywords": ["peroro"],
+		"type": 0,
+		"rarity": [1,3],
+		"gRarity": [1,200],
+		"responses": ["https://cdn.discordapp.com/attachments/834201080275533884/1001760331200221204/arona_and_peroro_blue_archive__6097d56f0e3b4473ce8acaac5bad524a.mp4"]
 	}
 ]

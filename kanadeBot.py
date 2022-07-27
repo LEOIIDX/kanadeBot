@@ -253,7 +253,7 @@ async def noresponse(ctx):
 	else:
 		await ctx.channel.send('Bot responses have already been disabled.')
 
-def respReveal(ranVal): #Creates an embed that shows the keyword and rarity of a bot response
+def respReveal(ranVal, encodeType): #Creates an embed that shows the keyword and rarity of a bot response
 	with open ('input.json', 'r', encoding="utf8") as f:
 		bResp = json.load(f)
 
@@ -265,6 +265,17 @@ def respReveal(ranVal): #Creates an embed that shows the keyword and rarity of a
 
 	embed.add_field(name='Main Keyword', value=keyword, inline=True)
 	embed.add_field(name='Odds', value=rarity, inline=True)
+
+	match encodeType:
+		case 0:
+			embed.add_field(name='Encryption', value='Base64', inline=True)
+		case 1:
+			embed.add_field(name='Encryption', value='Binary', inline=True)
+		case 2:
+			embed.add_field(name='Encryption', value='Hexadecimal', inline=True)
+		case _:
+			embed.add_field(name='Encryption', value='None', inline=True)
+
 	return embed
 
 @bot.command(name='gacha')
@@ -283,12 +294,12 @@ async def gacha(ctx):
 
 		gachaCount = gachaCount - 1
 		gachaRan = random.randint(0, gachaCount)
-		revealRan = random.randint(1,100)
+		revealRan = random.randint(1,50)
 		respStep = 0
 		baseRan = random.randint(0,20)
 
 		if revealRan == 1:
-			await ctx.send(embed=respReveal(gachaRan))
+			await ctx.send(embed=respReveal(gachaRan, baseRan))
 
 		if bResp[gachaRan]['type'] == 0:
 				for item in bResp[gachaRan]['responses']:
@@ -658,7 +669,7 @@ async def on_message(message):
 		print('Message Author: ' + str(message.author) + '\n')
 
 	dumb = str(message.content).strip().lower() #message with punctuation
-#   print(dumb)
+#	print(dumb)
 	dumbLetters = re.sub(r'([^\s\w]|_)+', '', dumb) #message with no punctuation
 
 	if debugValue >= 1:
@@ -710,14 +721,14 @@ async def on_message(message):
 				print('Triggered Keyword: ' + key + '\n')
 			dumbLetters = mDict.otherResponses.get(key)
 
-#   If rareChance integer equals 1.
-#   It will check if the message falls under a keyword.
-#   'iidx' will pick a random key within the dictionary and send its value to a message's channel
-#   'nanahira' has a 50% chance to either send the Nanahira copypasta or a random key with 'nanahira' dictionary
+#	If rareChance integer equals 1.
+#	It will check if the message falls under a keyword.
+#	'iidx' will pick a random key within the dictionary and send its value to a message's channel
+#	'nanahira' has a 50% chance to either send the Nanahira copypasta or a random key with 'nanahira' dictionary
 
-#   If ultraRare equals 1 (1/100 chance).
-#   Checks if message contains the term grace
-#   If true, the ENTIRE grace copypasta is sent to the message's channel (im sorry for whomever triggers it)
+#	If ultraRare equals 1 (1/100 chance).
+#	Checks if message contains the term grace
+#	If true, the ENTIRE grace copypasta is sent to the message's channel (im sorry for whomever triggers it)
 
 	match dumbLetters:
 		case 'miku':

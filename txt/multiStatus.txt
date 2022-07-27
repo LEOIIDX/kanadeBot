@@ -62,3 +62,9 @@
 59_ky!help || ТРИ ПОЛОСКИ
 60_ky!help || ハードベース・フェスタ
 61_ky!help || スカーレット警察のゲットーパトロール24時
+62_ky!help || Shopping for Peroro Merch
+63_ky!help || Blue Archive
+64_ky!help || Epic Seven
+65_ky!help || Azur Lane
+66_ky!help || 艦隊これくしょん
+67_ky!help || Noita
