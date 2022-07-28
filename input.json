@@ -692,19 +692,19 @@
 	},{
 		"keywords": ["cutter"],
 		"type": 0,
-		"rarity": [1,1],
+		"rarity": [1,3],
 		"gRarity": [1,200],
 		"responses": ["https://youtu.be/zP3NFEaY0KM", "https://youtu.be/nkY-rVumNR8", "https://youtu.be/-ZVEF6XBNKg", "https://youtu.be/El6HXpvE4rY"]
 	},{
 		"keywords": ["emocosine"],
 		"type": 0,
-		"rarity": [1,1],
+		"rarity": [1,3],
 		"gRarity": [1,200],
 		"responses": ["https://www.youtube.com/watch?v=Gv3qh6EJVoo", "https://www.youtube.com/watch?v=zH6sGTO99oI", "https://www.youtube.com/watch?v=5_hfk0bWu-8", "https://www.youtube.com/watch?v=fs6IikbafoM", "https://www.youtube.com/watch?v=1OsFBTtB5n4"]
 	},{
 		"keywords": ["retired"],
 		"type": 0,
-		"rarity": [1,1],
+		"rarity": [1,3],
 		"gRarity": [1,200],
 		"responses": ["https://www.youtube.com/watch?v=089RIFgDh_8"]
 	}
