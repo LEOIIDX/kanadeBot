@@ -410,9 +410,9 @@
 	},{
 		"keywords": ["fRare"],
 		"type": 0,
-		"rarity": [1,300],
+		"rarity": [1,250],
 		"gRarity":[0,0],
-		"responses": ["https://www.youtube.com/watch?v=bTrd-Xiwp0I", "https://www.youtube.com/watch?v=sT-mlWm_mag", "PUMP IS A SENSE", "I hear that if you play MAX 300 heavy, you will surely die.", "4(HOLD), 6 + S or HS", "Kanade Bot is proud to be sponsored by NORD VPN", "Drop the knife, Jaxxy.", "LYLE TURN ON THE TV, THEY HIT THE PENTAGON!!!!!","https://www.youtube.com/watch?v=mTn_rmpDCV8", "Higher we go, beg and plead for the culture.", "I will follow you~", "non-stop love song", "https://www.youtube.com/watch?v=WeS7VsiGNvz", "That is bullshit BLAZING!", "Grace > Rasis", "Maaan fuck u. I'll see you work.", "https://youtu.be/NQSeENqfskI", "How do you enter Heaven?", "sasoribi incident 2004 [DO NOT RESEARCH]", "Why do you need KONAMI ORIGINAL SONGS?", "You are my sunshine, My only sunshine", "I missed you.", "Play with me", "I'm just a bot, mostly", "This bot is not suitable for children or those who are easily disturbed.", "sdfasdklfgsdfgsgoinrfoenlvbd", "null", "I have granted kids to hell", "LZ died for this.", "It was only partially your fault.", "This bot is not suitable for children or those who are easily dismembered.", "Don't forget to backup my .env file.", "Those who dream of heaven never last very long", "There is a will, there is a void", "Let's all love Lain!", "Let's all love Kanade!", "Let's all love Leo!", "Ｌｅｔ’ｓ ａｌｌ ｌｏｖｅ Ｌａｉｎ！", "Ｌｅｔ’ｓ ａｌｌ ｌｏｖｅ Ｋａｎａｄｅ！", "Ｌｅｔ＇ｓ　ａｌｌ　ｌｏｖｅ　Ｌｅｏ！", "Protocol Seven is expected to allow the seamless sharing of information between the Wired and the Real World.", "玲音を好きになりましょう！", "かなでを好きになりましょう！", "レオを好きになりましょう！", "make me sad", "make me mad", "make me feel alright?", "bResp[67]", "But a poem is never actually finished.\nIt just stops moving.", "Her Third Eye is drawing me closer.", ""]
+		"responses": ["https://www.youtube.com/watch?v=bTrd-Xiwp0I", "https://www.youtube.com/watch?v=sT-mlWm_mag", "PUMP IS A SENSE", "I hear that if you play MAX 300 heavy, you will surely die.", "4(HOLD), 6 + S or HS", "Kanade Bot is proud to be sponsored by NORD VPN", "Drop the knife, Jaxxy.", "LYLE TURN ON THE TV, THEY HIT THE PENTAGON!!!!!","https://www.youtube.com/watch?v=mTn_rmpDCV8", "Higher we go, beg and plead for the culture.", "I will follow you~", "non-stop love song", "https://www.youtube.com/watch?v=WeS7VsiGNvz", "That is bullshit BLAZING!", "Grace > Rasis", "Maaan fuck u. I'll see you work.", "https://youtu.be/NQSeENqfskI", "How do you enter Heaven?", "sasoribi incident 2004 [DO NOT RESEARCH]", "Why do you need KONAMI ORIGINAL SONGS?", "You are my sunshine, My only sunshine", "I missed you.", "Play with me", "I'm just a bot, mostly", "This bot is not suitable for children or those who are easily disturbed.", "sdfasdklfgsdfgsgoinrfoenlvbd", "null", "I have granted kids to hell", "LZ died for this.", "It was only partially your fault.", "This bot is not suitable for children or those who are easily dismembered.", "Don't forget to backup my .env file.", "Those who dream of heaven never last very long", "There is a will, there is a void", "Let's all love Lain!", "Let's all love Kanade!", "Let's all love Leo!", "Ｌｅｔ’ｓ ａｌｌ ｌｏｖｅ Ｌａｉｎ！", "Ｌｅｔ’ｓ ａｌｌ ｌｏｖｅ Ｋａｎａｄｅ！", "Ｌｅｔ＇ｓ　ａｌｌ　ｌｏｖｅ　Ｌｅｏ！", "Protocol Seven is expected to allow the seamless sharing of information between the Wired and the Real World.", "玲音を好きになりましょう！", "かなでを好きになりましょう！", "レオを好きになりましょう！", "make me sad", "make me mad", "make me feel alright?", "bResp[67]", "But a poem is never actually finished.\nIt just stops moving.", "Her Third Eye is drawing me closer.", "I won't say goodbye now\ncause I'll see you again"]
 	},{
 		"keywords": ["isabelle"],
 		"type": 1,
@@ -506,7 +506,7 @@
 	},{
 		"keywords": ["leo"],
 		"type": 2,
-		"rarity": [1,100],
+		"rarity": [1,25],
 		"gRarity": [1,200],
 		"responses": ["leoImage/1.png", "leoImage/2.png", "leoImage/3.png", "leoImage/4.png", "leoImage/5.jpg", "leoImage/6.png", "leoImage/7.jpg", "leoImage/8.jpg", "leoImage/9.jpg", "leoImage/10.png", "leoImage/11.png", "leo/Image/12.jpg", "leoImage/13.jpg", "leoImage/14.png", "leoImage/15.png", "leoImage/16.png", "leoImage/17.jpg", "leoImage/18.png", "leoImage/19.png", "leoImage/20.png", "leoImage/21.png", "leoImage/22.png"]
 	},{
@@ -689,5 +689,23 @@
 		"rarity": [1,3],
 		"gRarity": [1,200],
 		"responses": ["https://cdn.discordapp.com/attachments/834201080275533884/1001760331200221204/arona_and_peroro_blue_archive__6097d56f0e3b4473ce8acaac5bad524a.mp4"]
+	},{
+		"keywords": ["cutter"],
+		"type": 0,
+		"rarity": [1,1],
+		"gRarity": [1,200],
+		"responses": ["https://youtu.be/zP3NFEaY0KM", "https://youtu.be/nkY-rVumNR8", "https://youtu.be/-ZVEF6XBNKg", "https://youtu.be/El6HXpvE4rY"]
+	},{
+		"keywords": ["emocosine"],
+		"type": 0,
+		"rarity": [1,1],
+		"gRarity": [1,200],
+		"responses": ["https://www.youtube.com/watch?v=Gv3qh6EJVoo", "https://www.youtube.com/watch?v=zH6sGTO99oI", "https://www.youtube.com/watch?v=5_hfk0bWu-8", "https://www.youtube.com/watch?v=fs6IikbafoM", "https://www.youtube.com/watch?v=1OsFBTtB5n4"]
+	},{
+		"keywords": ["retired"],
+		"type": 0,
+		"rarity": [1,1],
+		"gRarity": [1,200],
+		"responses": ["https://www.youtube.com/watch?v=089RIFgDh_8"]
 	}
 ]

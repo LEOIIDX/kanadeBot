@@ -68,3 +68,8 @@
 65_ky!help || Azur Lane
 66_ky!help || 艦隊これくしょん
 67_ky!help || Noita
+67_ky!help || Cutter
+67_ky!help || Love Kills U
+68_ky!help || Love Pills
+69_ky!help || Jammin to EmoCo.
+70_ky!help || I won't say goodbye now cause I'll see you again
