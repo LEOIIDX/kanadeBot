@@ -182,3 +182,5 @@ emocosine|emocosine
 made of fire|retired
 maid of fire|retired
 retired|retired
+little sister|imouto
+imouto|imouto

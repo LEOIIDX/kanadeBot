@@ -707,5 +707,11 @@
 		"rarity": [1,3],
 		"gRarity": [1,200],
 		"responses": ["https://www.youtube.com/watch?v=089RIFgDh_8"]
+	},{
+		"keywords": ["imouto"],
+		"type": 0,
+		"rarity": [1,3],
+		"gRarity": [1,200],
+		"responses": ["https://youtu.be/DeGw8-KwxM4", "https://youtu.be/UzFArt9M7JM", "https://youtu.be/n8AgCc3mhX8", "https://youtu.be/_7wOE6FBsL8", "https://youtu.be/tH8RijYNL0o", "https://youtu.be/i1QzafdXCls", "https://youtu.be/zC1omfx1wpQ", "https://youtu.be/D3oliPULU84", "https://youtu.be/MaBK8zzTnqU"]
 	}
 ]
