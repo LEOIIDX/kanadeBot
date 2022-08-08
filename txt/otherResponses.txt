@@ -161,7 +161,7 @@ green tea|cawfee
 coffee|cawfee
 cawfee|cawfee
 every day|every night
-every night|every nighta
+every night|every night
 chicken|tendies
 tenders|tendies
 tendies|tendies
@@ -184,3 +184,14 @@ maid of fire|retired
 retired|retired
 little sister|imouto
 imouto|imouto
+黒猫ダンジョン|kuroneko dungeon
+lindwurm|kuroneko dungeon
+laevateinn|kuroneko dungeon
+primal dragon|kuroneko dungeon
+maud|kuroneko dungeon
+lilieze|kuroneko dungeon
+リリーゼと炎龍レーヴァテイン|kuroneko dungeon
+龍と少女とデコヒーレンス|kuroneko dungeon
+龍王の霊廟|kuroneko dungeon
+量子の海のリントヴルム|kuroneko dungeon
+decoherence|kuroneko dungeon

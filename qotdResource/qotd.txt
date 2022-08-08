@@ -34,7 +34,10 @@
 34|What's a song you love that everyone else hates?
 35|What is the first computer operating system you remember using?
 36|Did you get enough sleep last night?
-37|What kind of hand soap do you usually buy? 
+37|What kind of hand soap do you usually buy?
 38|What’s something you’re glad you got to experience before it got really popular?
 39|What's something you're annoyed you didn't get to experience before it got really popular?
-40|What's the most mid roller coaster you've ridden?
+40|How do you sleep at night knowing I’m out there?
+41|Do you like cats?
+42|What's your credit card number, the expiration month/year, and the three wacky digits on the back?
+43|What do you dislike about me?
