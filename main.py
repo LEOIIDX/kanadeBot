@@ -1,6 +1,7 @@
 '''
-kanadeBot.py
+Kanade Bot
 By: Nanahira Monke Kanade Dev
+main.py
 
 Priority TODO
 
@@ -20,6 +21,7 @@ discord.ext-commands: for command creation
 dotenv-load_dotenv: environment variables for Discord Token
 leoDictionary: container for classes relating to dictionaries
 leoEmbed: container of Discord Embeds
+leoFunc: container for functions
 '''
 import os
 import discord
@@ -34,6 +36,7 @@ import datetime
 import shutil
 import csv
 import base64
+import leoFunc
 
 from discord.ext import commands
 from dotenv import load_dotenv
@@ -308,20 +311,13 @@ async def gacha(ctx):
 				respRan = random.randint(0, respStep)
 				match baseRan:
 					case 0:
-						baseResp = base64.standard_b64encode(bytes(bResp[gachaRan]['responses'][respRan], 'utf-8'))
-						baseRespShort = baseResp[:1500]
-						await ctx.channel.send(baseRespShort)
+						await ctx.channel.send(leoFunc.baseResp(bResp[gachaRan]['responses'][respRan]))
 						return
 					case 1:
-						binaryResp = ' '.join(format(ord(x), 'b') for x in bResp[gachaRan]['responses'][respRan])
-						binaryRespShort = binaryResp[:1500]
-						await ctx.channel.send(binaryRespShort)
+						await ctx.channel.send(leoFunc.binResp(bResp[gachaRan]['responses'][respRan]))
 						return
 					case 2:
-						respPrep = bResp[gachaRan]['responses'][respRan].encode('utf-8')
-						hexResp = respPrep.hex()
-						hexRespShort = hexResp[:1500]
-						await ctx.channel.send(hexRespShort)
+						await ctx.channel.send(leoFunc.hexResp(bResp[gachaRan]['responses'][respRan]))
 						return
 					case _:
 						await ctx.channel.send(bResp[gachaRan]['responses'][respRan])
@@ -330,26 +326,19 @@ async def gacha(ctx):
 						match baseRan:
 								case 0:
 									for item in bResp[gachaRan]['responses']:
-										baseResp = base64.standard_b64encode(bytes(bResp[gachaRan]['responses'][respStep], 'utf-8'))
-										baseRespShort = baseResp[:1500]
-										await ctx.channel.send(baseRespShort)
+										await ctx.channel.send(leoFunc.baseResp(bResp[gachaRan]['responses'][respStep]))
 										await ctx.channel.send('‏')
 										respStep = respStep + 1
 									return
 								case 1:
 									for item in bResp[gachaRan]['responses']:
-										binaryResp = ' '.join(format(ord(x), 'b') for x in bResp[gachaRan]['responses'][respStep])
-										binaryRespShort = binaryResp[:1500]
-										await ctx.channel.send(binaryRespShort)
+										await ctx.channel.send(leoFunc.binResp(bResp[gachaRan]['responses'][respStep]))
 										await ctx.channel.send('‏')
 										respStep = respStep + 1
 									return
 								case 2:
 									for item in bResp[gachaRan]['responses']:
-										respPrep = bResp[gachaRan]['responses'][respStep].encode('utf-8')
-										hexResp = respPrep.hex()
-										hexRespShort = hexResp[:1500]
-										await ctx.channel.send(hexResp)
+										await ctx.channel.send(leoFunc.hexResp(bResp[gachaRan]['responses'][respStep]))
 										await ctx.channel.send('‏')
 										respStep = respStep + 1
 									return
@@ -762,86 +751,67 @@ async def on_message(message):
 		baseRan = random.randint(0,32)
 		for item in data['keywords']:
 			if dumbLetters == data['keywords'][0]:
-				if data['type'] == 0:
-					ran = random.randint(data['rarity'][0], data['rarity'][1])
-					if ran == 1:
-						for item in data['responses']:
-							respStep = respStep + 1
-						respStep = respStep - 1
-						respRan = random.randint(0, respStep)
-						match baseRan:
-							case 0:
-								baseResp = base64.standard_b64encode(bytes(data['responses'][respRan], 'utf-8'))
-								baseRespShort = baseResp[:1500]
-								await message.channel.send(baseRespShort)
-								return
-							case 1:
-								binaryResp = ' '.join(format(ord(x), 'b') for x in data['responses'][respRan])
-								binaryRespShort = binaryResp[:1500]
-								await message.channel.send(binaryRespShort)
-								return
-							case 2:
-								respPrep = data['responses'][respRan].encode('utf-8')
-								hexResp = respPrep.hex()
-								hexRespShort = hexResp[:1500]
-								await message.channel.send(hexRespShort)
-								return
-							case _:
-								await message.channel.send(data['responses'][respRan])
-								return
-					else:
-						pass
-				elif data['type'] == 1:
-					ran = random.randint(0, data['rarity'][1])
-					if ran == 1:
-						for item in data['responses']:
+				match data['type']:
+					case 0:
+						ran = random.randint(data['rarity'][0], data['rarity'][1])
+						if ran == 1:
+							for item in data['responses']:
+								respStep = respStep + 1
+							respStep = respStep - 1
+							respRan = random.randint(0, respStep)
 							match baseRan:
 								case 0:
-									for item in data['responses']:
-										baseResp = base64.standard_b64encode(bytes(data['responses'][respStep], 'utf-8'))
-										baseRespShort = baseResp[:1500]
-										await message.channel.send(baseRespShort)
-										await message.channel.send('‏')
-										respStep = respStep + 1
+									await message.channel.send(leoFunc.baseResp(data['responses'][respRan]))
 									return
 								case 1:
-									for item in data['responses']:
-										binaryResp = ' '.join(format(ord(x), 'b') for x in data['responses'][respStep])
-										binaryRespShort = binaryResp[:1500]
-										await message.channel.send(binaryRespShort)
-										await message.channel.send('‏')
-										respStep = respStep + 1
+									await message.channel.send(leoFunc.binResp(data['responses'][respRan]))
 									return
 								case 2:
-									for item in data['responses']:
-										respPrep = data['responses'][respStep].encode('utf-8')
-										hexResp = respPrep.hex()
-										hexRespShort = hexResp[:1500]
-										await message.channel.send(hexResp)
-										await message.channel.send('‏')
-										respStep = respStep + 1
+									await message.channel.send(leoFunc.hexResp(data['responses'][respRan]))
 									return
 								case _:
-									for item in data['responses']:
-										await message.channel.send(data['responses'][respStep])
-										await message.channel.send('‏')
-										respStep = respStep + 1
+									await message.channel.send(data['responses'][respRan])
 									return
-					else:
-						pass
-				elif data['type'] == 2:
-					ran = random.randint(data['rarity'][0], data['rarity'][1])
-					if ran == 1:
-						for item in data['responses']:
-							respStep = respStep + 1
-						respStep = respStep - 1
-						respRan = random.randint(0, respStep)
-						await message.channel.send(file=discord.File("img/" + data['responses'][respRan]))
-						return
-					else:
-						pass
-				else:
-					pass
+					case 1:
+						ran = random.randint(0, data['rarity'][1])
+						if ran == 1:
+							for item in data['responses']:
+								match baseRan:
+									case 0:
+										for item in data['responses']:
+											await message.channel.send(leoFunc.baseResp(data['responses'][respStep]))
+											await message.channel.send('‏')
+											respStep = respStep + 1
+										return
+									case 1:
+										for item in data['responses']:
+											await message.channel.send(leoFunc.binResp(data['responses'][respStep]))
+											await message.channel.send('‏')
+											respStep = respStep + 1
+										return
+									case 2:
+										for item in data['responses']:
+											await message.channel.send(leoFunc.hexResp(data['responses'][respStep]))
+											await message.channel.send('‏')
+											respStep = respStep + 1
+										return
+									case _:
+										for item in data['responses']:
+											await message.channel.send(data['responses'][respStep])
+											await message.channel.send('‏')
+											respStep = respStep + 1
+										return
+					case 2:
+						ran = random.randint(data['rarity'][0], data['rarity'][1])
+						if ran == 1:
+							for item in data['responses']:
+								respStep = respStep + 1
+							respStep = respStep - 1
+							respRan = random.randint(0, respStep)
+							await message.channel.send(file=discord.File("img/" + data['responses'][respRan]))
+							return
+						else:
+							pass
 
 	if random.randint(bResp[68]["rarity"][0], bResp[68]["rarity"][1]) == 1: #fRare Responses
 		respStep = 0
@@ -850,20 +820,13 @@ async def on_message(message):
 		respRan = random.randint(0,respStep - 1)
 		match baseRan:
 			case 0:
-				baseResp = base64.standard_b64encode(bytes(bResp[68]['responses'][respRan], 'utf-8'))
-				baseRespShort = baseResp[:1500]
-				await message.channel.send(baseRespShort)
+				await message.channel.send(leoFunc.baseResp(bResp[68]['responses'][respRan]))
 				return
 			case 1:
-				binaryResp = ' '.join(format(ord(x), 'b') for x in bResp[68]['responses'][respRan])
-				binaryRespShort = binaryResp[:1500]
-				await message.channel.send(binaryRespShort)
+				await message.channel.send(leoFunc.binResp(bResp[68]['responses'][respRan]))
 				return
 			case 2:
-				respPrep = bResp[68]['responses'][respRan].encode('utf-8')
-				hexResp = respPrep.hex()
-				hexRespShort = hexResp[:1500]
-				await message.channel.send(hexRespShort)
+				await message.channel.send(leoFunc.hexResp(bResp[68]['responses'][respRan]))
 				return
 			case _:
 				await message.channel.send(bResp[68]["responses"][respRan])
@@ -904,7 +867,7 @@ async def on_message(message):
 				await message.channel.send('~~' + dumb + '~~')
 				return
 			case 9:
-				await message.channel.send('`' + dumb + '`')
+				await message.channel.send('```' + dumb + '```')
 				return
 			case 10:
 				await message.channel.send('> ' + dumb)
