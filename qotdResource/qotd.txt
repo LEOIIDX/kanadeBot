@@ -1,63 +1,15 @@
 1|placeholder
-2|What is your favorite thing to eat with rice?
-3|(excluding rhythm games) What is your favorite genre of video game.
-4|How many slots of ram does your motherboard have?
-5|What's a meme that you didnt expect to go viral?
-6|What is your favorite anime OP?
-7|Where would you want to be the least? England, France, or Brazil?
-8|You are tasked with losing one billion dollars as quickly as possible. What is your plan?
-9|You are able to get an infinite supply of one item that is worth under $5. What item do you choose? $5 bills and all other types of currency cannot be an answer.
-10|You are tasked with coming up with the worst convention panel ever. What do you make it about?
-11|What temperature do you take showers in?
-12|What classic or old meme would you want to see relevant again?
-13|You can use only one emote for the rest of your life.  Which one do you pick?
-14|What is your least favorite roller coaster?
-15|What is your largest collection?
-16|What entries would populate the RGC iceberg?
-17|Every Night or Every Day?
-18|What is the hardest (possible) rhythm game chart?
-19|Write a paragraph.
-20|If you had to buy a new controller for any console, which color do you pick?
-21|What is your favorite snack?
-22|What is your favorite IIDX BGA?
-23|What is your favorite chart in any rhythm game?
-24|What?
-25|What is your favorite cheese?
-26|Who do you ship?
-27|Coffee or Green Tea?
-28|What is the worst t-shirt you own?
-29|How much Adidas apparel/gear do you own?
-30|From personal experience, which online game have you had the worst time with?
-31|Name a positive aspect about something generally regarded as bad
-32|Tag someone who got no bitches
-33|What bemani artists do you think would be hella party animals?
-34|What's a song you love that everyone else hates?
-35|What is the first computer operating system you remember using?
-36|Did you get enough sleep last night?
-37|What kind of hand soap do you usually buy?
-38|What’s something you’re glad you got to experience before it got really popular?
-39|What's something you're annoyed you didn't get to experience before it got really popular?
-40|How do you sleep at night knowing I’m out there?
-41|Do you like cats?
-42|What's your credit card number, the expiration month/year, and the three wacky digits on the back?
-43|What do you dislike about me?
-44|Which do you prefer?  Beep Booboobop Booboobeep or Beep Booboobop Booboobop?
-45|When will @xXx_SteelVengeanceLover69_xXx actually submit a "good" qotd?
-46|What was your first custom ringtone?
-47|what's your favorite life hack?
-48|You have chicken nuggets, a burger, fries, and a soda in front of you.  What order are you eating these?
-49|What slang have you never picked up?
-50|Do you craft doors align left or align right?
-51|What is your favorite kind of cupcake?
-52|What is your favorite kind of cookie?
-53|When does the milk currently in your fridge expire?
-54|What is your favorite color pairing for Nintendo Switch JoyCons?
-55|When will Josh remember that he needs to add more questions?
-56|Describe your day yesterday with as much clickbait terminology as possible
-57|What are aspects of people that you remember better about them than their own names?
-58|What are your thoughts on the new for 2023 coaster coming to Worlds of Fun: Zambezi Zinger?
-59|There is no qotd.  Take off your clothes.
-60|When is the most annoying time to sneeze?
-61|What is the worst looking car that you see on the road?
-62|How many burgers can you bash in one sitting?
-63|How much does it cost to fill your car's gas tank?
+2|Do you craft doors align left or align right?
+3|What is your favorite kind of cupcake?
+4|What is your favorite kind of cookie?
+5|When does the milk currently in your fridge expire?
+6|What is your favorite color pairing for Nintendo Switch JoyCons?
+7|When will Josh remember that he needs to add more questions?
+8|Describe your day yesterday with as much clickbait terminology as possible
+9|What are aspects of people that you remember better about them than their own names?
+10|What are your thoughts on the new for 2023 coaster coming to Worlds of Fun: Zambezi Zinger?
+11|There is no qotd.  Take off your clothes.
+12|When is the most annoying time to sneeze?
+13|What is the worst looking car that you see on the road?
+14|How many burgers can you bash in one sitting?
+15|How much does it cost to fill your car's gas tank?
