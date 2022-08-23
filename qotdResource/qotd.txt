@@ -48,3 +48,16 @@
 48|You have chicken nuggets, a burger, fries, and a soda in front of you.  What order are you eating these?
 49|What slang have you never picked up?
 50|Do you craft doors align left or align right?
+51|What is your favorite kind of cupcake?
+52|What is your favorite kind of cookie?
+53|When does the milk currently in your fridge expire?
+54|What is your favorite color pairing for Nintendo Switch JoyCons?
+55|When will Josh remember that he needs to add more questions?
+56|Describe your day yesterday with as much clickbait terminology as possible
+57|What are aspects of people that you remember better about them than their own names?
+58|What are your thoughts on the new for 2023 coaster coming to Worlds of Fun: Zambezi Zinger?
+59|There is no qotd.  Take off your clothes.
+60|When is the most annoying time to sneeze?
+61|What is the worst looking car that you see on the road?
+62|How many burgers can you bash in one sitting?
+63|How much does it cost to fill your car's gas tank?
