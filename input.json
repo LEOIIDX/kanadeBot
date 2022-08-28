@@ -725,5 +725,47 @@
 		"rarity": [1,2],
 		"gRarity": [1,200],
 		"responses": ["https://youtu.be/7L90-oPrwfY"]
+	},{
+		"keywords": ["kaguya"],
+		"type": 0,
+		"rarity": [1,3],
+		"gRarity": [1,200],
+		"responses": ["https://youtu.be/pw2WQjqKpVM"]
+	},{
+		"keywords": ["koishi"],
+		"type": 0,
+		"rarity": [1,3],
+		"gRarity": [1,200],
+		"responses": ["https://youtu.be/uvJEJYuYCIQ", "https://youtu.be/IRCsOmx9Zyo", "https://youtu.be/yNT8cQvmj-M"]
+	},{
+		"keywords": ["voyage"],
+		"type": 0,
+		"rarity": [1,3],
+		"gRarity": [1,200],
+		"responses": ["https://youtu.be/dev74ItqMwo", "https://youtu.be/i7re0DkOD4s"]
+	},{
+		"keywords": ["junko"],
+		"type": 0,
+		"rarity": [1,3],
+		"gRarity": [1,200],
+		"responses": ["https://youtu.be/MgBoe_x9g2o", "https://youtu.be/yXRvMCKAQQs", "https://youtu.be/_hQq0t0EuLg"]
+	},{
+		"keywords": ["elrin"],
+		"type": 0,
+		"rarity": [1,3],
+		"gRarity": [1,200],
+		"responses": ["https://youtu.be/v-xhqldl_mw", "https://youtu.be/6cQgkhOGwlM"]
+	},{
+		"keywords": ["yuyuko"],
+		"type": 0,
+		"rarity": [1,3],
+		"gRarity": [1,200],
+		"responses": ["https://youtu.be/AAdHRSUNZUs"]
+	},{
+		"keywords": ["kanzaki hiro"],
+		"type": 0,
+		"rarity": [1,3],
+		"gRarity": [1,200],
+		"responses": ["https://youtu.be/4eFRCqaeE30", "https://youtu.be/1PP1mKtcuBA"]
 	}
 ]
