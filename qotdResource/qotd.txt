@@ -13,3 +13,10 @@
 13|What is the worst looking car that you see on the road?
 14|How many burgers can you bash in one sitting?
 15|How much does it cost to fill your car's gas tank?
+16|What is your favorite Linux Distribution?
+17|Ask Fyzx about his "favorite" labratory tests?
+18|SATA or M.2?
+19|What artist would you like to see make a debut in rhythm games?
+20|What size drink do you usually go for at fast food establishment?
+21|What is your favorite font?
+22|How many questions were added in the last batch of questions?
