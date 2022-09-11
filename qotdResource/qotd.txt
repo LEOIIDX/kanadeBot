@@ -20,3 +20,39 @@
 20|What size drink do you usually go for at fast food establishment?
 21|What is your favorite font?
 22|How many questions were added in the last batch of questions?
+23|Do you wear hats?
+24|How long does the battery on your phone last?
+25|What is your least favorite thing to happen on the road?
+26|What do you set your car's AC to?
+27|Who is your favorite Love Live character?
+28|What is the worst game you have ever played?
+29|What size are your car's tires?
+30|Who is your favorite IDOLM@STER character?
+31|How do you fall asleep?
+32|What is your favorite copypasta?
+33|What is your favorite altered Kidz Bop lyric?
+34|Tag someone who breathes
+35|What is a stupid thing that you believed in as a kid?
+36|What is your favorite recurring sample in music?
+37|Did your parents let you watch adult swim?
+38|What is your favorite internet creepypasta?
+39|Have you had head lice?
+40|What is the most expensive car that has passed you?
+41|What is your favorite PARANOiA remix?
+42|What is your favorite color scheme?
+43|What is your favorite BPM?
+44|What is your favorite art movement?
+45|What is your favorite Leo image?
+46|What is your favorite dance trend?
+47|What is your favorite fortnite season?
+48|Tag someone who is funky.
+49|Welcome to the Salty Spitoon. How tough are ya?
+50|When does a trance song begin?
+51|How old is your current phone?
+52|What is your favorite software?
+53|What is your favorite Nanahira song?
+54|What is your favorite dinosaur?
+55|When will the bass drop?
+56|When do you usually eat lunch?
+57|What is your favorite rhythm game chart?
+58|Who is the best Touhou mommy?
