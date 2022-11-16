@@ -685,16 +685,8 @@ async def on_message(message):
 
 	if debugValue >= 1:
 		print('haha')
-	if debugValue == 1:
-		chance =  1
-		fuckinRare = 0
-		print('chance: ' + str(chance))
-		print('fuckinRare: ' + str(fuckinRare) + '\n')
-	elif debugValue == 2:
-		chance = random.randint(1,10)
 		fuckinRare = random.randint(1,500)
-		print('chance: ' + str(chance))
-		print('fuckinRare: ' + str(fuckinRare) + '\n')
+		chance = random.randint(1,10)
 	else:
 		chance = random.randint(1,10)
 		fuckinRare = random.randint(1,500)
@@ -753,7 +745,7 @@ async def on_message(message):
 			if dumbLetters == data['keywords'][0]:
 				match data['type']:
 					case 0:
-						ran = random.randint(data['rarity'][0], data['rarity'][1])
+						ran = random.randint(data['rarity'][0], (data['rarity'][1] * 3))
 						if ran == 1:
 							for item in data['responses']:
 								respStep = respStep + 1
@@ -773,7 +765,7 @@ async def on_message(message):
 									await message.channel.send(data['responses'][respRan])
 									return
 					case 1:
-						ran = random.randint(0, data['rarity'][1])
+						ran = random.randint(0, (data['rarity'][1] * 3))
 						if ran == 1:
 							for item in data['responses']:
 								match baseRan:
@@ -802,7 +794,7 @@ async def on_message(message):
 											respStep = respStep + 1
 										return
 					case 2:
-						ran = random.randint(data['rarity'][0], data['rarity'][1])
+						ran = random.randint(data['rarity'][0], (data['rarity'][1] * 3))
 						if ran == 1:
 							for item in data['responses']:
 								respStep = respStep + 1
@@ -813,7 +805,7 @@ async def on_message(message):
 						else:
 							pass
 
-	if random.randint(bResp[68]["rarity"][0], bResp[68]["rarity"][1]) == 1: #fRare Responses
+	if random.randint(bResp[68]["rarity"][0], (bResp[68]["rarity"][1] * 3)) == 1: #fRare Responses
 		respStep = 0
 		for data in bResp[68]["responses"]:
 			respStep = respStep + 1
