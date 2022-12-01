@@ -54,7 +54,7 @@ async def on_ready():
     else:
         qotdEMBED.set_footer(text = bQOTD[questionID]["footer"])
 
-    await bot.get_channel(qotdTest).send(embed = qotdEMBED)
+    await bot.get_channel(qotdCh).send(embed = qotdEMBED)
 
     print('stopping script')
     exit()
