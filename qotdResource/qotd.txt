@@ -107,8 +107,12 @@
 107|Do you like eggnog?
 108|Hey. You ever wonder why we're here?
 109|How many tabs do you have open on your phone?
-110|What are you wearing? 
+110|What are you wearing?
 111|You are offered one million dollars, but you have to wear the "HOT LIMIT" outfit. Would you do it?
 112|What is the worst game controller you know of?
 113|What is your goto drink when chilling in da crib?
 114|What is the worst ad you have ever seen?
+115|Who is the best character?
+116|What is the most hype anime moment?
+117|What is the longest youtube video you have watched?
+118|What is your favorite?
