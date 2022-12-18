@@ -42,7 +42,7 @@ async def on_ready():
     else:
         exit()
 
-    questionID = 2
+    questionID = 3
 
     with open ('specQOTD.json', 'r', encoding="utf8") as f:
         bQOTD = json.load(f)

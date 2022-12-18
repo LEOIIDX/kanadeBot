@@ -17,5 +17,11 @@
 		"title" : "CHRISTMAS 2022 QOTD" ,
 		"footer" : "Christmas 2022 QOTD #2" ,
 		"image" : "none"
+	},{
+		"id" : 3 ,
+		"value" : "Post a picture of your Christmas Tree",
+		"title" : "CHRISTMAS 2022 QOTD" ,
+		"footer" : "Christmas 2022 QOTD #3" ,
+		"image" : "none"
 	}
 ]
