@@ -23,5 +23,11 @@
 		"title" : "CHRISTMAS 2022 QOTD" ,
 		"footer" : "Christmas 2022 QOTD #3" ,
 		"image" : "none"
+	},{
+		"id" : 4 ,
+		"value" : "There is no QOTD. Have a merry Christmas!",
+		"title" : "CHRISTMAS 2022 QOTD" ,
+		"footer" : "Christmas 2022 QOTD #4" ,
+		"image" : "none"
 	}
 ]
