@@ -145,3 +145,13 @@
 145|Your main PC's OS suddenly turns into Linux Mint. How long would you last?
 146|What is your ideal PC monitor?
 147|There is no question today. Have a good day! :)
+148|What song(s) do you want to get an additional difficulty?
+149|What extremely popular thing that despite your better judgments do you actually like?
+150|The object to your right is now your fursona
+151|What is the best soda?
+152|What is the best type of bagel?
+153|Whats a video that loops perfectly?
+154|What was a fascinating piece of technology thats currently obsolete?
+155|Should modern phones have headphone jacks?
+156|What is your favorite color scheme?
+157|How big is your mousepad?
