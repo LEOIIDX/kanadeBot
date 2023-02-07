@@ -158,3 +158,11 @@
 158|Do you return your shopping cart?
 159|What's your favorite TAS?
 160|What is your favorite speedrun?
+161|Post a picture of you touching grass.
+162|What's a chart you are close to memorizing (or already memorized) 
+163|What is your spice tolerance?
+164|You set sv_cheats 1 irl. What is the first thing you do?
+165|Do you have XMP on?
+166|What fellow rhythm gamer inspires you the most?
+167|Whats a fascinating piece of unused content from a video game?
+168|What is the most OP you have been in any video game?
