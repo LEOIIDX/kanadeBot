@@ -645,6 +645,15 @@ Bot will also ignore all messages if ky!noresponse is set on
 '''
 @bot.event
 async def on_message(message):
+	if debugValue >= 1:
+		if dumb[0:4] == 'kyt!': ##ignores kyt! commands
+			await bot.process_commands(message)
+			return
+	else:
+		if dumb[0:3] == 'ky!': ##ignores ky! commands
+			await bot.process_commands(message)
+			return
+
 	if str(message.channel.id) != '1084510567806550026':
 		return
 
@@ -668,15 +677,6 @@ async def on_message(message):
 
 	if 'https' in dumbLetters: #ignores links
 		return
-
-	if debugValue >= 1:
-		if dumb[0:4] == 'kyt!': ##ignores kyt! commands
-			await bot.process_commands(message)
-			return
-	else:
-		if dumb[0:3] == 'ky!': ##ignores ky! commands
-			await bot.process_commands(message)
-			return
 
 	if responseCheck != 1:
 		return
