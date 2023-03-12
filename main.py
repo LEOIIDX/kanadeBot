@@ -645,6 +645,9 @@ Bot will also ignore all messages if ky!noresponse is set on
 '''
 @bot.event
 async def on_message(message):
+	dumb = str(message.content).strip().lower() #message with punctuation
+	dumbLetters = re.sub(r'([^\s\w]|_)+', '', dumb) #message with no punctuation
+
 	if debugValue >= 1:
 		if dumb[0:4] == 'kyt!': ##ignores kyt! commands
 			await bot.process_commands(message)
@@ -665,10 +668,6 @@ async def on_message(message):
 		print('Message Guild: ' + str(message.guild))
 		print('Message Channel: ' + str(message.channel))
 		print('Message Author: ' + str(message.author) + '\n')
-
-	dumb = str(message.content).strip().lower() #message with punctuation
-#	print(dumb)
-	dumbLetters = re.sub(r'([^\s\w]|_)+', '', dumb) #message with no punctuation
 
 	if debugValue >= 1:
 		print('raw message: ' + str(message.content))
