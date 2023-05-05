@@ -283,7 +283,7 @@ def respReveal(ranVal, encodeType): #Creates an embed that shows the keyword and
 
 @bot.command(name='gacha')
 async def gacha(ctx):
-	gachaChan = 932177985774182400
+	gachaChan = 1084510567806550026
 	testChan = 841586692640735242
 
 	gachaCount = 0
