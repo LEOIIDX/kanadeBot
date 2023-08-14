@@ -37,7 +37,9 @@ import shutil
 import csv
 import base64
 import leoFunc
+import requests
 
+from bs4 import BeautifulSoup
 from discord.ext import commands
 from dotenv import load_dotenv
 from leoDictionary import dictionaryMessages, dictionaryStatuses
@@ -607,6 +609,12 @@ async def wacca(ctx):
 
 @bot.command()
 async def a3(ctx):
+	# web scrape remywiki
+	r = requests.get('https://remywiki.com/AC_DDR_A3') 
+	soup = BeautifulSoup(r.content, 'html.parser')
+	s = soup.find('div', id = 'mw-content-text')
+	lines = s.find_all('li')
+
 	# setup dates
 	previous_date = datetime.datetime.strptime("03-17-2022", '%m-%d-%Y')
 	today = datetime.datetime.today()
@@ -614,7 +622,16 @@ async def a3(ctx):
 	# compute difference
 	ndays = (today - previous_date).days
 
-	await ctx.channel.send(f"DDR A3 has been out for {ndays} days and is *still* not on white cab.")
+	# determine if A3 on white cab is released
+	for line in lines:
+		x = line.text
+		if "North America (MDX):" in x:
+			if "TBD" not in x and "June 22nd, 2022" not in x:
+				await ctx.channel.send(f"DDR A3 IS OUT ON WHITE CAB IN NORTH AMERICA HOLY SHIT HOLY SHIT")
+				break
+			else:
+				await ctx.channel.send(f"DDR A3 has been out for {ndays} days and is *still* not on white cab.")
+				break
 
 
 @bot.command()
