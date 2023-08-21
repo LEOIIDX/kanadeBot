@@ -626,7 +626,7 @@ async def a3(ctx):
 	for line in lines:
 		x = line.text
 		if "North America (Continental USA TDX upgrade kit):" in x:
-			if "TBD" not in x and "June 22nd, 2022" not in x:
+			if "TBD" not in x:
 				await ctx.channel.send(f"DDR A3 IS OUT ON WHITE CAB IN NORTH AMERICA HOLY SHIT HOLY SHIT")
 				break
 			else:
