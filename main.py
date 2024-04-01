@@ -762,7 +762,7 @@ async def on_message(message):
 				match data['type']:
 					case 0:
 #						ran = random.randint(data['rarity'][0], (data['rarity'][1] * 2))
-						ran = math.floor(random.randint(data['rarity'][0], (data['rarity'][1] / 2)))
+						ran = math.floor(random.randint(data['rarity'][0], (data['rarity'][1]) / 5)
 						if debugValue >= 1:
 							print(ran)
 						if ran == 1:
@@ -785,7 +785,7 @@ async def on_message(message):
 									return
 					case 1:
 #						ran = random.randint(0, (data['rarity'][1] * 2))
-						ran = math.floor(random.randint(data['rarity'][0], (data['rarity'][1] / 2)))
+						ran = math.floor(random.randint(data['rarity'][0], (data['rarity'][1]) / 5))
 						if debugValue >= 1:
 							print(ran)
 						if ran == 1:
@@ -817,7 +817,7 @@ async def on_message(message):
 										return
 					case 2:
 #						ran = random.randint(data['rarity'][0], (data['rarity'][1] * 2))
-						ran = math.floor(random.randint(data['rarity'][0], (data['rarity'][1] / 2)))
+						ran = math.floor(random.randint(data['rarity'][0], (data['rarity'][1]) / 5))
 						if debugValue >= 1:
 							print(ran)
 						if ran == 1:
