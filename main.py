@@ -674,8 +674,8 @@ async def on_message(message):
 			await bot.process_commands(message)
 			return
 
-	if str(message.channel.id) != '1084510567806550026':
-		return
+#	if str(message.channel.id) != '1084510567806550026':
+#		return
 
 	miku = message.guild.get_member(693294060143640586)
 	michael = message.guild.get_member(195748601639600128)
@@ -761,7 +761,8 @@ async def on_message(message):
 			if dumbLetters == data['keywords'][0]:
 				match data['type']:
 					case 0:
-						ran = random.randint(data['rarity'][0], (data['rarity'][1] * 2))
+#						ran = random.randint(data['rarity'][0], (data['rarity'][1] * 2))
+						ran = math.floor(random.randint(data['rarity'][0], (data['rarity'][1] / 2)))
 						if ran == 1:
 							for item in data['responses']:
 								respStep = respStep + 1
@@ -781,7 +782,8 @@ async def on_message(message):
 									await message.channel.send(data['responses'][respRan])
 									return
 					case 1:
-						ran = random.randint(0, (data['rarity'][1] * 2))
+#						ran = random.randint(0, (data['rarity'][1] * 2))
+						ran = math.floor(random.randint(data['rarity'][0], (data['rarity'][1] / 2)))
 						if ran == 1:
 							for item in data['responses']:
 								match baseRan:
@@ -810,7 +812,8 @@ async def on_message(message):
 											respStep = respStep + 1
 										return
 					case 2:
-						ran = random.randint(data['rarity'][0], (data['rarity'][1] * 2))
+#						ran = random.randint(data['rarity'][0], (data['rarity'][1] * 2))
+						ran = math.floor(random.randint(data['rarity'][0], (data['rarity'][1] / 2)))
 						if ran == 1:
 							for item in data['responses']:
 								respStep = respStep + 1
@@ -821,7 +824,8 @@ async def on_message(message):
 						else:
 							pass
 
-	if random.randint(bResp[68]["rarity"][0], (bResp[68]["rarity"][1] * 2)) == 1: #fRare Responses
+#	if random.randint(bResp[68]["rarity"][0], (bResp[68]["rarity"][1] * 2)) == 1: #fRare Responses
+	if math.floor(random.randint(bResp[68]["rarity"][0], (bResp[68]["rarity"][1] / 2))) == 1: #fRare Responses
 		respStep = 0
 		for data in bResp[68]["responses"]:
 			respStep = respStep + 1
