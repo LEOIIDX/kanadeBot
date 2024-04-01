@@ -674,10 +674,7 @@ async def on_message(message):
       await bot.process_commands(message)
       return
 
-  if str(message.author.id) == '840279273021636628':
-        return
-
-    if str(message.author.id) == '840869717727248444':
+  if str(message.author.id) == '840869717727248444':
         return
 
 # if str(message.channel.id) != '1084510567806550026':
