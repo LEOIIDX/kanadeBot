@@ -699,6 +699,14 @@ async def on_message(message):
 
 	mDict = dictionaryMessages() #generates everything needed for dictionaries
 
+	if debugValue >= 1:
+		print('haha')
+#		fuckinRare = random.randint(1,500)
+#		chance = random.randint(1,10)
+	else:
+		chance = random.randint(1,10)
+		fuckinRare = random.randint(1,500)
+
 	lolzep = "126068015094693888"
 	if lolzep == dumbLetters:
 		await message.delete()
