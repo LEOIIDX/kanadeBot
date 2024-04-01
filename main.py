@@ -762,7 +762,7 @@ async def on_message(message):
 				match data['type']:
 					case 0:
 #						ran = random.randint(data['rarity'][0], (data['rarity'][1] * 2))
-						ran = math.floor(random.randint(data['rarity'][0], (data['rarity'][1])) / 5)
+						ran = random.randint(data['rarity'][0], math.ceil(data['rarity'][1] / 5))
 						if debugValue >= 1:
 							print(ran)
 						if ran == 1:
@@ -785,7 +785,7 @@ async def on_message(message):
 									return
 					case 1:
 #						ran = random.randint(0, (data['rarity'][1] * 2))
-						ran = math.floor(random.randint(data['rarity'][0], (data['rarity'][1])) / 5)
+						ran = random.randint(data['rarity'][0], math.ceil(data['rarity'][1] / 5))
 						if debugValue >= 1:
 							print(ran)
 						if ran == 1:
@@ -817,7 +817,7 @@ async def on_message(message):
 										return
 					case 2:
 #						ran = random.randint(data['rarity'][0], (data['rarity'][1] * 2))
-						ran = math.floor(random.randint(data['rarity'][0], (data['rarity'][1])) / 5)
+						ran = random.randint(data['rarity'][0], math.ceil(data['rarity'][1] / 5))
 						if debugValue >= 1:
 							print(ran)
 						if ran == 1:
@@ -831,7 +831,7 @@ async def on_message(message):
 							pass
 
 #	if random.randint(bResp[68]["rarity"][0], (bResp[68]["rarity"][1] * 2)) == 1: #fRare Responses
-	if math.ceil(random.randint(bResp[68]["rarity"][0], (bResp[68]["rarity"][1])) / 5) == 1: #fRare Responses
+	if random.randint(bResp[68]["rarity"][0], math.ceil(bResp[68]["rarity"][1] / 5)) == 1: #fRare Responses
 		respStep = 0
 		for data in bResp[68]["responses"]:
 			respStep = respStep + 1
