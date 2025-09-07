@@ -767,7 +767,7 @@ async def on_message(message):
 			if dumbLetters == data['keywords'][0]:
 				match data['type']:
 					case 0:
-						ran = random.randint(data['rarity'][0], (data['rarity'][1] * 2))
+						ran = random.randint(data['rarity'][0], (data['rarity'][1] * 1))
 #						ran = random.randint(data['rarity'][0], (data['rarity'][1]))
 #						ran = math.ceil(ran / 5)
 						if debugValue >= 1:
@@ -791,7 +791,7 @@ async def on_message(message):
 									await message.channel.send(data['responses'][respRan])
 									return
 					case 1:
-						ran = random.randint(0, (data['rarity'][1] * 2))
+						ran = random.randint(0, (data['rarity'][1] * 1))
 #						ran = random.randint(data['rarity'][0], (data['rarity'][1]))
 #						ran = math.ceil(ran / 5)
 						if debugValue >= 1:
