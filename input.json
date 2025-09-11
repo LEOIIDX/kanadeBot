@@ -776,37 +776,37 @@
 	},{
 		"keywords": ["mayhem"],
 		"type": 0,
-		"rarity": [1,1],
+		"rarity": [1,5],
 		"gRarity": [1,200],
 		"responses": ["https://youtu.be/KLECYU_k4lU"]
 	},{
 		"keywords": ["floors"],
 		"type": 0,
-		"rarity": [1,3],
+		"rarity": [1,4],
 		"gRarity": [1,200],
 		"responses": ["Thank you for shopping at QuikTrip"]
 	},{
 		"keywords": ["max verstappen"],
 		"type": 0,
-		"rarity": [1,3],
+		"rarity": [1,10],
 		"gRarity": [1,200],
 		"responses": ["https://youtu.be/jG2AciJ3zHY?si=c1M_S6ox_qVAFcWA", "https://youtu.be/43HCYSXZ9GI?si=4mgXrD5gvypBcQ3j"]
 	},{
 		"keywords": ["chronocapsule"],
 		"type": 0,
-		"rarity": [1,3],
+		"rarity": [1,5],
 		"gRarity": [1,200],
 		"responses": ["https://youtu.be/sE691QamM4k?si=dD90B4oDvm59sABt", "https://youtu.be/wLh31DyosbE?si=mpIuIdlkUHMD_Fd7", "https://youtu.be/eOdK0Fb1a98?si=jqjtoKTEusmZTEJJ"]
 	},{
 		"keywords": ["mongolz"],
 		"type": 0,
-		"rarity": [1,3],
+		"rarity": [1,5],
 		"gRarity": [1,200],
 		"responses": ["https://youtu.be/rs3nrYozMVg?si=caQwqupA88KanZZW", "https://youtu.be/qL-Gyz453Gs?si=VxQzeQ-7Gq2XQub-", "https://youtube.com/shorts/E8RNTRJ55mw?si=aIlGZu7nKBZ3LdDo"]
 	},{
 		"keywords": ["danny ricciardo"],
 		"type": 0,
-		"rarity": [1,4],
+		"rarity": [1,10],
 		"gRarity": [1,200],
 		"responses": ["https://youtu.be/PoWnqJkF6Og?si=ryMRbOaAgYEAIQnM"]
 	}
